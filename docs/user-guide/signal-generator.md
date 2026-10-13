@@ -49,9 +49,9 @@ This is pink noise without the THX-like signal's band limiting — its energy sp
 
 This more generic noise is band-limited differently on the mains and on the subs. The band limiting is not so drastic, and the 1/f spectrum is not so accurate.
 
-The signal level is approximately **−20 dBFS RMS**, about 10 dB louder than the THX-like
-signal. The main-channel signal has energy between 300 Hz and 3 kHz, with a spectral
-peak at 1 kHz. The subwoofer signal uses a lower frequency band.
+The signal level is approximately **−20&nbsp;dBFS RMS**, about 10&nbsp;dB louder than the THX-like
+signal. The main-channel signal has energy between 300&nbsp;Hz and 3&nbsp;kHz, with a spectral
+peak at 1&nbsp;kHz. The subwoofer signal uses a lower frequency band.
 
 !!! tip
     It might be easier to hear if you are just listening.
