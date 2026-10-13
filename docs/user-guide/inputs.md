@@ -47,6 +47,9 @@ the visible inputs, in that order, the remote's user input buttons map as follow
 **Listening Mode** sets the upmixer the HTP-1 switches to whenever you select this input. Choose **Last
 Used** to leave the upmixer alone and keep whichever one was last selected.
 
+See [Upmix](upmix.md#available-listening-modes) for the available modes and how each one
+handles the source format.
+
 ## Lip-Sync Delay
 
 **Lip-Sync Delay (ms)** adds extra delay to an input's audio, to bring it back into sync with video

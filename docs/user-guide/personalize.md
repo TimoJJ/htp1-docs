@@ -12,13 +12,14 @@ change immediately.
 Choose what appears in the top-left and top-right corners of the Home page in desktop mode:
 nothing, the current input name, or the unit name.
 
-Three switches control extra detail on the Home page:
+Use these switches to choose additional Home page displays and volume buttons:
 
 | Switch | Effect |
 |---|---|
 | Display Video Status on Homepage | Adds the Video status card. |
 | Display Audio Sample Rate on Homepage | Adds the sample rate to the Program Format and Listening Format cards. |
 | Display Mix Out Volume on Homepage | Adds the Mix Out Volume control below the main volume. |
+| ±3 dB volume buttons | Adds outer **−3** and **+3** buttons to Main Volume and Mix Out Volume. Each press applies a single 3 dB step. |
 
 !!! note
     "Display Mix Out Volume on Homepage" is unavailable when the Seat Shaker is using the
