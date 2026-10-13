@@ -2,7 +2,7 @@
 
 Human hearing is non-linear. When the volume is turned down, listeners report that bass and
 treble seem to fade before the midrange does. This was first described by Fletcher and Munson in
-the 1930s, and the "equal loudness" contours have since been standardized and repeatedly
+the 1930s, and the [equal-loudness contours](https://en.wikipedia.org/wiki/Equal-loudness_contour) have since been standardized and repeatedly
 re-measured. Older audio receivers included a "loudness" button that simply boosted the bass.
 Loudness compensation on the HTP-1 boosts bass and treble as the volume is turned down, following
 one of these equal-loudness curves, so quiet listening still sounds full.

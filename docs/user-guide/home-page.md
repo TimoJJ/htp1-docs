@@ -33,6 +33,8 @@ the software version and update controls described in [System Status](system-sta
 [Updates and Support](maintenance.md). The **question mark** beside it opens the on-device help for
 the current page.
 
+Choose **Help** in the settings sidebar to browse the on-device Help for all pages.
+
 ## Top-Left and Top-Right Labels
 
 In desktop mode, you can show a label in the top-left and top-right corners of the page —
@@ -46,6 +48,10 @@ button to change the volume continuously. Tap the dB reading between the two but
 mute or unmute.
 The displayed Main Volume uses the scale configured with Zero Point on the Volume Setup page.
 
+To add outer **−3** and **+3** buttons, enable **±3 dB volume buttons** on the
+[Personalize](personalize.md) page. Each press changes Main Volume by a single 3 dB step;
+these buttons do not repeat when held.
+
 ## Mix Out Volume
 
 If your HTP-1 is set up to use the Mix Out volume display, a second volume control appears
@@ -53,6 +59,9 @@ below the main volume, labeled Mix Out Volume. It works the same way — press, 
 tap the dB reading to mute — but it controls the level of the Mix Out output rather than the
 main speaker outputs. Turn this display on or off from Personalize.
 Mix Out has a range of −100 to 0 dBFS and is not affected by the Main Volume Zero Point setting.
+
+The optional **−3** and **+3** buttons also appear here when enabled in Personalize,
+and apply single 3 dB steps to Mix Out Volume.
 
 ## Input Select
 
