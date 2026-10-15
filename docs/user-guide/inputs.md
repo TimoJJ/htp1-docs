@@ -113,7 +113,7 @@ appropriate for almost all modern sources.
 Turn on **Show Advanced Input Settings**, at the top of the Inputs page, to reveal the **PCM Detect
 Sensitivity** column.
 
-![Inputs page with Show Advanced Input Settings on, revealing the PCM Detect Sensitivity column](images/ui-inputs-advanced.jpg)
+![Input Setup detail with Show Advanced Input Settings on and the PCM Detect Sensitivity controls for HDMI 1 and HDMI 2](images/ui-inputs-advanced-crop.png)
 
 The choices depend on the input. Some inputs provide no PCM Detect Sensitivity setting, some provide
 **Auto** and **Biased**, and some provide **Auto**, **Biased**, and **Indicated**.
