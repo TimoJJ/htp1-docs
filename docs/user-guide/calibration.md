@@ -26,7 +26,9 @@ custom name restores the Dirac Live name, or the default name **Slot N** if no c
 
 Renaming is temporarily unavailable while Dirac Live is loading or switching filters.
 
-### Notes
+#![Custom slot name Movie Night with the original Dirac Live filter name retained in the rename editor](images/ui-calibration-slot-rename.jpg)
+
+## Notes
 
 Each slot has a **Notes** field below the table. Use it to record anything about that calibration —
 which microphone positions you used, which speaker layout it covers, or why you made it. Notes are

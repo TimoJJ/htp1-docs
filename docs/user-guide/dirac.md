@@ -141,7 +141,7 @@ Complete the [basic setup](basic-setup.md) first — be able to play sound throu
     filter is active. Notice that the delay and trim on one channel may read zero — that speaker was
     farthest from the microphone during calibration.
 
-    ![Calibration page showing Dirac Live calibration delay and trim values per channel alongside the user delay and trim columns](images/p55-1.jpg)
+    ![Calibration page showing Dirac Live calibration delay and trim values per channel alongside the user delay and trim columns](images/ui-dirac-active-calibrated.jpg)
 
 You can add **User Delay** and **User Trim** on top of the calibration values — see
 [Calibration](calibration.md#the-delay-and-trim-table). These are only editable for RC and BM
@@ -332,7 +332,7 @@ and been verified. Some controls are temporarily unavailable during this operati
 
 ## Troubleshooting
 
-![Calibration page Dirac Live controls showing the Off / Bypass / ART On buttons and the green Active status pill](images/art-p14-1.png)
+![Calibration page Dirac Live controls showing the Off / Bypass / ART On buttons and the green Active status pill](images/ui-dirac-active-calibrated.jpg)
 
 ### Resolving Dirac Live Problems
 

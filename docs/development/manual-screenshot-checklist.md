@@ -68,6 +68,14 @@ were changed. Remote uses production controls and styling with source-initialize
 and cleared browser preferences; only its connection transport was redirected to the isolated
 preview. The smaller portrait viewport reflects the Remote page's phone-oriented layout.
 
+## Adopted calibrated-state captures
+
+- [x] `ui-dirac-active-calibrated.jpg`: active ART and measured delay/trim table; Stereo and Movie Night slot labels. Replaces the legacy `p55-1.jpg` and `art-p14-1.png` illustrations.
+- [x] `ui-calibration-slot-rename.jpg`: Movie Night custom label and original Dirac filter name.
+
+Captured at 1200 px from an isolated copy of the physical unit calibration state.
+Only display labels were changed; the physical unit was unchanged.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -88,8 +96,7 @@ System Status screenshot remains until a suitable public-release capture is avai
 ## Remaining screenshot work
 
 - [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
-- [ ] Active/recovery Dirac status (`art-p14-1.png`) and custom slot-name example.
-- [ ] Replace legacy `p55-1.jpg` with a suitable calibrated-state image.
+- [ ] Dirac recovery states, only when safely reproducible.
 - [ ] Legacy Advanced PEQ Options button crop (`art-p09-1.png`).
 - [ ] Alternative front-panel theme, mini-label and text-color controls.
 - [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
