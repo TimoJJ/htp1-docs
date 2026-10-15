@@ -7,8 +7,8 @@ another unit.
 
 ## Export
 
-The **Export Preview** pane shows your current configuration in full. Click **Export Current
-Configuration to File** to save it as a JSON file.
+Click **Show Export Preview** to open your current configuration in a scrollable dialog. Click
+**Export Current Configuration to File** to save it as a JSON file.
 
 !!! tip
     Export a backup before any major change — a firmware update, a factory reset, or a big change to
@@ -23,13 +23,17 @@ Configuration to File** to save it as a JSON file.
 
 ## Import
 
-Click **Select Import Configuration File** and choose a previously exported JSON file. The HTP-1
-compares it against your current configuration and shows you exactly what would change — a list of
-additions, removals, and changed values — before anything is applied.
+Click **Select Import Configuration File** and choose a previously exported JSON file. The page lists
+differences between the selected file and your current configuration, including additions, removals,
+and changed values.
 
-If the file matches your current configuration exactly, you'll see a message saying no changes are
-necessary. Otherwise, review the list and click **Confirm Import Configuration** to apply it.
+The differences are a preview, not a list of individually selectable changes. Import uses the complete
+file. Some live system values are kept or refreshed, and settings may be adjusted automatically.
 
-!!! note
-    Nothing is changed until you confirm. Reviewing the list first is your chance to catch a file
-    you didn't mean to import, or one from a unit with a different speaker layout.
+If differences are listed, review them and click **Confirm Import Configuration** to proceed. The
+HTP-1 restarts after import.
+
+If the file matches the current configuration, the page reports that no changes are necessary.
+
+Nothing is changed until you confirm. Check that you selected the intended file, particularly when
+importing settings from another unit or speaker layout.

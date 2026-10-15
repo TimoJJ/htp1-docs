@@ -12,6 +12,15 @@ again to turn monitoring off.
 **Clear Peaks** resets the peak-hold markers so you can start a fresh measurement — useful when you
 want to check a specific scene or passage without earlier, louder peaks skewing the reading.
 
+The selector beside **Clear Peaks** controls peak-marker visibility in Bars view:
+
+- **Peak hold** shows the held peak marker for each channel.
+- **Over -1dBFS** shows markers only for peaks at or above −1 dBFS, including clipping indications.
+- **No peak hold** hides the markers.
+
+This selector changes the displayed markers, not peak measurement. Held peak values remain available
+in the numeric readings until cleared.
+
 ## Front Panel Display
 
 Tap the peak monitoring icon in the top-left corner of the front panel to start monitoring.
@@ -40,10 +49,11 @@ once it reaches clipping.
 
 ![Peak Monitor page in Bars view](images/ui-peak-monitor-bars.png)
 
-Bars view shows the same channels as vertical meters, with a scale down the left side from +6 to
-below −84 dBFS. Each bar has a peak-hold marker showing the highest level reached since you last
-cleared peaks. The marker is green while there's headroom to spare, amber as the channel approaches
-0 dBFS, and red at or above clipping.
+Bars view shows live channel levels as vertical meters, with a scale from +6 to −84 dBFS. Numeric
+readings show the highest measured peaks. When visible, peak markers are green below −1 dBFS, amber
+from −1 dBFS to below 0 dBFS, and red at or above 0 dBFS.
+
+Very brief transients may be missed by the meters.
 
 If you have a seat shaker channel active, it appears alongside the speaker channels, set apart by a
 divider and its own icon.

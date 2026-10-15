@@ -79,10 +79,10 @@ remote codes at address 0x36C9. The first table lists the codes sent by the remo
 | Vol Down | 09f6 | User Input 2 | 619e | Green | 52ad |
 | Mute Toggle | 0af5 | User Input 3 | 629d | Yellow | 53ac |
 | Vol Up | 0bf4 | User Input 4 | 639c | Blue | 54ab |
-| Mode None | 1be4 | User Input 5 | 649b | A | 55aa |
+| Mode No Upmix | 1be4 | User Input 5 | 649b | A | 55aa |
 | Mode Dolby Sur | 1ce3 | User Input 6 | 659a | B | 56a9 |
 | Mode Neural-X | 1de2 | User Input 7 | 6699 | C | 57a8 |
-| Mode Native | 1ee1 | User Input 8 | 6798 | D | 58a7 |
+| Mode Auto | 1ee1 | User Input 8 | 6798 | D | 58a7 |
 | Mode Auro | 1fe0 | User Input 9 | 6897 | | |
 | Preset 1 | 03fc | Night Toggle | 40bf | Last Input | 44bb |
 | Preset 2 | 04fb | Dialog Up | 41be | BT Pair | 59a6 |
@@ -180,21 +180,21 @@ where `XXXX` is the NEC code from the tables above. More than one code may be se
 them with commas. Each code must be sent exactly as shown — 4 lower-case characters. The examples
 below use `wget` and `curl`:
 
-- Selects HDMI 1, Native upmix mode, unmute:
+- Selects HDMI 1, Auto listening mode, and unmute:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=0ff0,1ee1,4cb3"
     curl "http://<your-htp1-ip>/ircmd?code=0ff0,1ee1,4cb3"
     ```
 
-- Selects HDMI 2, Direct upmix mode, mute:
+- Selects HDMI 2, No Upmix, and mute:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=10ef,4bb4,1be4"
     curl "http://<your-htp1-ip>/ircmd?code=10ef,4bb4,1be4"
     ```
 
-- Sets the upmixer to None and activates Dirac Live filter slot 1:
+- Selects No Upmix and Dirac Live filter slot 1:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=1be4,7887"

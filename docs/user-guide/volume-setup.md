@@ -79,7 +79,7 @@ In most systems, the default value provides a good balance between clipping prot
 
 | Control | Range | Default |
 |---|---|---|
-| Maximum Digital Headroom | 0 to 30 dB | 12 dB |
+| Maximum Digital Headroom | 1 to 30 dB | 12 dB |
 
 Use **Peak Monitor** to determine the smallest **Maximum Digital Headroom** value that avoids digital clipping. Lower values allow the HTP-1 to use more analog gain before it begins consuming digital headroom.
 

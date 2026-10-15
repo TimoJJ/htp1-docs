@@ -46,6 +46,9 @@ page or the Device Settings page. Choose which label appears, if any, on the Per
 Press the down or up volume button to change the volume by 1 dB. Press and hold either
 button to change the volume continuously. Tap the dB reading between the two buttons to
 mute or unmute.
+
+While muted, the volume reading remains visible with a **muted** label. Tap the reading again to unmute.
+
 The displayed Main Volume uses the scale configured with Zero Point on the Volume Setup page.
 
 To add outer **−3** and **+3** buttons, enable **±3 dB volume buttons** on the
@@ -58,6 +61,9 @@ If your HTP-1 is set up to use the Mix Out volume display, a second volume contr
 below the main volume, labeled Mix Out Volume. It works the same way — press, long-press, and
 tap the dB reading to mute — but it controls the level of the Mix Out output rather than the
 main speaker outputs. Turn this display on or off from Personalize.
+
+Mix Out also keeps its volume reading visible while muted.
+
 Mix Out has a range of −100 to 0 dBFS and is not affected by the Main Volume Zero Point setting.
 
 The optional **−3** and **+3** buttons also appear here when enabled in Personalize,
