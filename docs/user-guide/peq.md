@@ -2,10 +2,12 @@
 
 Parametric EQ, or PEQ, lets you boost or cut specific frequencies. Each band you add targets a center frequency, a gain, and a width — called Q — around that frequency. Up to 16 bands are available per channel.
 
-The coefficients of the PEQ filters are computed using the so-called "Robert Bristow-Johnson" equations.
+The PEQ filters use biquad equations based on Robert Bristow-Johnson’s Audio EQ Cookbook.
 
 !!! note
-    There can be differences in the definitions of Q in various audio systems.
+    For shelving filters, the HTP-1 uses Q to control the filter shape. This differs from the
+    shelf-slope parameter S used by some other equalizers, so identical numerical settings may
+    produce different curves.
 
 !!! warning "PEQ settings are global"
     PEQ settings are global and affect **all** calibration slots. Any adjustment you make to the PEQ
