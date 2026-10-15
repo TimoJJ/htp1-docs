@@ -26,7 +26,7 @@ custom name restores the Dirac Live name, or the default name **Slot N** if no c
 
 Renaming is temporarily unavailable while Dirac Live is loading or switching filters.
 
-#![Custom slot name Movie Night with the original Dirac Live filter name retained in the rename editor](images/ui-calibration-slot-rename.jpg)
+![Custom slot name Movie Night with the original Dirac Live filter name retained in the rename editor](images/ui-calibration-slot-rename-crop.png)
 
 ## Notes
 

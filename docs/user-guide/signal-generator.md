@@ -98,4 +98,4 @@ be multiples of the step. Values stay within the frequency and amplitude limits.
 Frequency and amplitude changes are unavailable while the Dirac Live calibration tool
 is connected. Disconnect the tool to adjust them here.
 
-![Signal generator page with "Sinewave" selected, showing the Sinewave Generator frequency and amplitude controls](images/ui-sinewave.jpg)
+![Signal generator page with "Sinewave" selected, showing the Sinewave Generator frequency and amplitude controls](images/ui-sinewave-crop.png)

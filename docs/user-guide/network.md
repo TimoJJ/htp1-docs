@@ -18,7 +18,7 @@ To use a static IPv4 address, turn **Use DHCP** off. Enter an **IP Address** and
 with the **Default Gateway** and **DNS Server** addresses required by your network. For example, the
 mask `255.255.255.0` appears as `/24` beside the IP Address label.
 
-![Static IPv4 controls with blank address fields and the default network mask](images/ui-network-static.jpg)
+![Static IPv4 controls with blank address fields and the default network mask](images/ui-network-static-crop.png)
 
 Use the plus and minus buttons to add or remove address and DNS rows. Click **Apply Network Settings**
 when finished. Invalid entries produce an error message and are not sent.

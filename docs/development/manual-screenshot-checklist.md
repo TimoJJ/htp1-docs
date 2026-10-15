@@ -27,19 +27,19 @@ No physical-unit configuration was changed. Hardware-default confirmation remain
 - [x] `ui-tone-control.jpg`
 - [x] `ui-personalize.jpg`
 - [x] `ui-help.jpg`
-- [x] `ui-export-preview.jpg` replaces the obsolete embedded configuration pane.
+- [x] `ui-export-preview-crop.png` replaces the obsolete embedded configuration pane.
 - [x] `ui-addons.jpg` added to the Addons chapter.
 
-- [x] `ui-inputs-cec.jpg`
-- [x] `ui-loudness-vintage-custom.jpg`
-- [x] `ui-peq-editor.jpg`
-- [x] `ui-peq-options-dialog.jpg`
-- [x] `ui-speakers-layout-dialog.jpg`
-- [x] `ui-sinewave.jpg`
-- [x] `ui-import-default-match.jpg`
+- [x] `ui-inputs-cec-crop.png`
+- [x] `ui-loudness-vintage-custom-crop.png`
+- [x] `ui-peq-editor-crop.png`
+- [x] `ui-peq-options-dialog-crop.png`
+- [x] `ui-speakers-layout-dialog-crop.png`
+- [x] `ui-sinewave-crop.png`
+- [x] `ui-import-default-match-crop.png`
 
 - [x] `ui-network.jpg` (DHCP overview with illustrative connection data).
-- [x] `ui-network-static.jpg` (static fields revealed with default blank addresses and mask).
+- [x] `ui-network-static-crop.png` (static fields revealed with default blank addresses and mask).
 - [x] `ui-bass-eq-author.jpg` (live catalogue, Author filter).
 - [x] `ui-bass-eq-applied-browsed.jpg` (applied entry distinct from browsed entry).
 
@@ -71,7 +71,7 @@ preview. The smaller portrait viewport reflects the Remote page's phone-oriented
 ## Adopted calibrated-state captures
 
 - [x] `ui-dirac-active-calibrated.jpg`: active ART and measured delay/trim table; Stereo and Movie Night slot labels. Replaces the legacy `p55-1.jpg` and `art-p14-1.png` illustrations.
-- [x] `ui-calibration-slot-rename.jpg`: Movie Night custom label and original Dirac filter name.
+- [x] `ui-calibration-slot-rename-crop.png`: Movie Night custom label and original Dirac filter name.
 
 Captured at 1200 px from an isolated copy of the physical unit calibration state.
 Only display labels were changed; the physical unit was unchanged.
@@ -118,3 +118,22 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 The Home status cards are blank because the isolated default preview has no audio stream.
 The default Calibration image has empty slots; it does not demonstrate active filtering.
+
+## Approved detail crops
+
+Ten detail illustrations now use the reviewed crops. Source captures were made at
+1200 px viewport width; crops preserve their original pixels without rescaling.
+Page overviews and native front-panel captures are unchanged.
+
+- [x] `ui-calibration-slot-rename-crop.png`
+- [x] `ui-inputs-cec-crop.png`
+- [x] `ui-import-default-match-crop.png`
+- [x] `ui-loudness-vintage-custom-crop.png`
+- [x] `ui-peq-editor-crop.png`
+- [x] `ui-sinewave-crop.png`
+- [x] `ui-speakers-layout-dialog-crop.png`
+- [x] `ui-peq-options-dialog-crop.png`
+- [x] `ui-network-static-crop.png`
+- [x] `ui-export-preview-crop.png`
+
+All unfinished screenshot items listed above remain pending.

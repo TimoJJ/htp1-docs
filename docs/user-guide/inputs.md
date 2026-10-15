@@ -136,7 +136,7 @@ the CEC options. CEC lets the HTP-1 and your TV pass remote-control commands to 
 and it underlies ARC. For what CEC and ARC/eARC do and how to connect them, see
 [Connectivity](connectivity.md).
 
-![Inputs page with HDMI CEC on, showing the CEC Options table](images/ui-inputs-cec.jpg)
+![Inputs page with HDMI CEC on, showing the CEC Options table](images/ui-inputs-cec-crop.png)
 
 Turn on the **CEC** button to enable CEC. The **CEC Options** table then appears below it:
 
