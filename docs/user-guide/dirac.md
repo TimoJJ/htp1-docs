@@ -17,8 +17,8 @@ You should do a Dirac Live calibration. Setting up your speakers correctly is a 
 the best sound out of your system.
 
 !!! note
-    The screenshots of the Dirac Live app on this page show the app itself, which looks the same
-    as it appeared when this guide was prepared. The Dirac Live app and the HTP-1 WebUI may change with software updates.
+    Screenshots on this page illustrate the calibration steps. The appearance of the Dirac Live
+    app and the HTP-1 web interface may change with software updates.
 
 ## Before You Start
 
