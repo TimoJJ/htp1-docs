@@ -64,6 +64,10 @@ configuration JSON export does not include the Dirac Live filters.
 2. After the update finishes, open the **Info / Detailed Status** page and follow the
    **ART Preparation** link. If you previously declined the upgrade, use **Prepare for ART Upgrade**.
 
+    ![Legacy version 1.13.3 ART Upgrade Preparation screen](images/legacy-1-13-3-art-upgrade-preparation-detail.jpg)
+
+    *Legacy version 1.13.3 — ART Upgrade Preparation for upgrading from version 1.x.*
+
 3. Before initiating the upgrade, follow the preparation page's link to the filter-save dialog.
    Click **prepare for download**, wait for preparation to finish, then save the files for your
    occupied filter slots to your computer. Audio is interrupted during preparation. These files are

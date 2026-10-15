@@ -89,6 +89,10 @@ No screenshots are required for those features.
 
 - [x] `ui-import-differences-detail.png`: relevant Import section cropped from the 1200 px preview, with context above and below. The example changes unit name to Living Room and lip-sync to 20 ms. No import was performed.
 
+## Adopted legacy upgrade capture
+
+- [x] `legacy-1-13-3-art-upgrade-preparation-detail.jpg`: original 1.13.3 preparation page rendered locally at a 1200 px viewport; labelled for the 1.x upgrade procedure. No upgrade action was performed.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -109,8 +113,7 @@ System Status screenshot remains until a suitable public-release capture is avai
 ## Remaining screenshot work
 
 - [ ] Dirac recovery states, only when safely reproducible.
-- [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
-- [ ] Current third-party Dirac app workflow images.
+- [ ] Current third-party Dirac app workflow images — deferred until after release.
 - [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
 - [ ] Recheck all remaining hardware/measurement figures during rendered review.
 - [ ] Confirm source-seeded defaults against a physical unit.
