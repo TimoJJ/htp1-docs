@@ -52,6 +52,7 @@ The external BEQ artwork failed to load; artwork-complete replacements remain pe
 - [x] `ui-peak-monitor.jpg` (Table, 1200 px wide).
 - [x] `ui-peak-monitor-bars.jpg` (Bars with Peak hold, 1200 px wide).
 - [x] `fp-level-meter.png` (native front-panel capture, 800 × 480).
+- [x] `fp-peak-monitor.png` (native Peak Monitor footer, 800 × 480, real signal data).
 
 These captures use real signal data and the physical unit's current speaker configuration,
 including Seat Shaker. They are not default-state examples. The user started playback
@@ -77,7 +78,6 @@ System Status screenshot remains until a suitable public-release capture is avai
 ## Remaining screenshot work
 
 - [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
-- [ ] Front-panel Peak Monitor footer (`fp-peak-monitor.png`): active peak level and channel.
 - [ ] Active/recovery Dirac status (`art-p14-1.png`) and custom slot-name example.
 - [ ] Replace legacy `p55-1.jpg` with a suitable calibrated-state image.
 - [ ] Legacy Advanced PEQ Options button crop (`art-p09-1.png`).
