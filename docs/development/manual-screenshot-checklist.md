@@ -38,6 +38,15 @@ No physical-unit configuration was changed. Hardware-default confirmation remain
 - [x] `ui-sinewave.jpg`
 - [x] `ui-import-default-match.jpg`
 
+- [x] `ui-network.jpg` (DHCP overview with illustrative connection data).
+- [x] `ui-network-static.jpg` (static fields revealed with default blank addresses and mask).
+- [x] `ui-bass-eq-author.jpg` (live catalogue, Author filter).
+- [x] `ui-bass-eq-applied-browsed.jpg` (applied entry distinct from browsed entry).
+
+Network addresses and MAC addresses in this batch are illustrative runtime data.
+No network configuration was applied. BEQ application was confined to the isolated preview.
+The external BEQ artwork failed to load; artwork-complete replacements remain pending.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -57,8 +66,7 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 ## Remaining screenshot work
 
-- [ ] Network: representative network runtime data, static address/mask view.
-- [ ] BEQ: Author filter and applied entry distinct from browsed entry.
+- [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
 - [ ] Active Peak Monitor Table/Bars and front-panel Level Meter: actual signal data.
 - [ ] Active/recovery Dirac status (`art-p14-1.png`) and custom slot-name example.
 - [ ] Replace legacy `p55-1.jpg` with a suitable calibrated-state image.

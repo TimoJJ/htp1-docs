@@ -19,7 +19,7 @@ Search the catalogue using the fields at the top of the page:
 Results appear in a paged list. Select an entry to browse its details and images. Browsing does not
 apply the filter. The currently applied entry has an **Applied** badge, distinct from the selected entry.
 
-![Bass EQ page with the search fields, results list, and a selected title's detail panel](images/ui-bass-eq.png)
+![Bass EQ page filtered by Author, with a selected title's detail panel](images/ui-bass-eq-author.jpg)
 
 ## Applying a Filter
 
@@ -29,6 +29,8 @@ channels, and PEQ is switched on.
 
 The **Active BEQ Filter** panel identifies the applied catalogue entry. Click its link to display that
 entry's details.
+
+![Bass EQ with Blade Runner 2049 applied while Blade Runner is selected for browsing](images/ui-bass-eq-applied-browsed.jpg)
 
 Click **Clear** to remove the bands marked as BEQ. Those bands are reset rather than restored from a
 saved copy of their previous settings. Other PEQ bands are left unchanged, and clearing BEQ does not
