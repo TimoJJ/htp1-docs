@@ -157,7 +157,7 @@ the active calibration type, such as **ART On**.
 The physical remote's **Dirac** button cycles through **Off → On → Bypass → Off**.
 
 A slot without a Dirac Live calibration can still be used for manual adjustments. Selecting it
-switches Dirac Live off while retaining that slot's PEQ, delay, and trim settings.
+switches Dirac Live off while retaining global PEQ and the slot's user delay and trim settings.
 
 ### Off
 
@@ -275,10 +275,10 @@ BC and ART both require phase alignment that a later delay or trim change would 
 lock out User Delay and User Trim on the Calibration page. Use [Channel Levels](channel-levels.md)
 for a permanent trim adjustment under either filter type.
 
-Room Correction (RC) and Bass Management (BM) are included with the HTP-1. Bass Control (BC) and
-Active Room Treatment (ART) require separate licenses purchased from Dirac
-(<https://www.dirac.com/products/monoprice-htp-1-monolith>); if you already own a BC license it
-also works with ART.
+Dirac Live Room Correction is included with the HTP-1. Bass Control and Active Room Treatment require
+separate licenses from [Dirac](https://www.dirac.com/products/monoprice-htp-1-monolith). ART also requires
+Bass Control when using one or more subwoofers. An existing Bass Control license satisfies that
+requirement; an ART license is still required.
 
 A more comprehensive overview of Dirac Live ART™ is available at
 <https://www.dirac.com/live/art-technology/>.
@@ -356,6 +356,5 @@ switch Dirac Live off while playing that source.
     the filter transfer has finished before changing the configuration again.
 
 !!! note "Speaker layout after upgrading from a 1.x release"
-    Upgrading from any 1.x release resets the speaker layout to 2.0, so that you deliberately choose
-    your actual configuration rather than calibrating against a stale one. Set the layout to match
-    your system before running a new calibration.
+    Check that the Speakers page shows your intended layout before running a new calibration. See
+    [Upgrading from Version 1.x](maintenance.md#upgrading-from-version-1x) for the migration procedure.

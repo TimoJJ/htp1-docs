@@ -100,9 +100,9 @@ page. See [Dirac Live](dirac.md#dirac-live-status).
 
 ### Downloading Logs
 
-Open **Device Settings**, then the **Danger Zone** section, and click **Download Logs**. This
-downloads `quicklogs.zip`, a set of logs useful for troubleshooting. It does not contain any
-personally identifiable information.
+Open **Device Settings → Danger Zone** and click **Download Logs**. This downloads a diagnostic ZIP
+archive containing logs and the current configuration. Its filename includes the unit's serial number
+and the download date and time. Review the archive before sharing it publicly.
 
 Send this file along when you report a problem — it gives the development team the detail needed
 to reproduce and diagnose it.

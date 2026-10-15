@@ -18,7 +18,7 @@ The touchscreen shows the current input, program format, volume, upmix selection
 - **Help icon (top right):** Tap to open the Help screen, which shows network information and lets you reset the network connections. The icon turns red when no network connection is available.
 - **Peak monitoring icon (top left):** Tap to start or stop Peak Monitor. While active, the display shows the highest peak level and its channel. See [Peak Monitor](peak-monitor.md#front-panel-display) for details.
 - **Input source display (top center):** Tap to show video input details. This area also shows if the signal generator is on. Tap twice to view detailed playback and processing information.
-- **Master volume level (center):** Tap to mute your HTP-1. Tap again to unmute. When muted, the display changes from white to red. The displayed value is the current master volume. 0 dB represents the configured **Reference Output Voltage**; negative values indicate attenuation below that level.
+- **Master volume level (center):** Tap to mute your HTP-1. Tap again to unmute. When muted, the display changes from white to red. The displayed value uses the Zero Point scale configured in [Volume Setup](volume-setup.md). Reference Output Voltage describes a 0 dBFS sine wave at internal 0 dB master volume; it is not a measurement of the current audio output.
 - **Input format (middle left):** Tap to show more details.
 - **Output format (middle right):** Tap to show more details.
 - **Audio input details (bottom left):** Tap to show more information about the audio input. Tap twice to view detailed playback and processing information.

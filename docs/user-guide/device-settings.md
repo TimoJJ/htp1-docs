@@ -60,7 +60,7 @@ The Danger Zone holds tools for troubleshooting and reset. Each asks you to conf
 
 | Button | What it does |
 |---|---|
-| Download Logs | Downloads `quicklogs.zip`, a log bundle useful for troubleshooting. It does not contain any personally identifiable information. |
+| Download Logs | Downloads a diagnostic ZIP archive containing logs and the current configuration. See [Downloading Logs](maintenance.md#downloading-logs). |
 | Restart Dirac Live Server | Restarts the Dirac Live server if you're seeing issues with Dirac Live filters. Takes about 30 seconds. |
 | Restart avController | Restarts the avController component — the part of the system that handles most day-to-day control. Faster than a full reboot, taking about 60 seconds. |
 | Factory Reset | Resets all settings to factory defaults and reboots the unit automatically. Network settings are left unchanged. |

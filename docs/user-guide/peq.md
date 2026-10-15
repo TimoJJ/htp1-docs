@@ -18,7 +18,9 @@ The **PEQ** page heading shows **Parametric Equalization on** or **off**, along 
 
 When PEQ is off, an alert reminds you that band settings can still be changed, but they will have no effect until PEQ is turned on.
 
-When a Dirac Live ART or Bass Control filter is loaded, PEQ is locked: an alert reads *"PEQ locked down because a Dirac Live ART/BC filter is loaded. Delete all BC/ART filters to regain access."* This is a Dirac Live requirement. See PEQ Placement below for an explanation.
+With PEQ placed **Pre**, filter editing remains available even when BC or ART calibrations are stored.
+With PEQ placed **Post**, storing any BC or ART calibration locks PEQ editing. See
+[PEQ Placement](#peq-placement).
 
 ![PEQ page showing the on/off button, Change PEQ Configuration button, and response chart](images/ui-peq.png)
 
@@ -120,7 +122,17 @@ The dialog stages your choice locally — nothing is applied until you click **S
 
 Two separate locks can appear here, and they are not the same thing: one prevents editing the PEQ filters themselves, while the other prevents changing between **Pre** and **Post** placement.
 
-Both locks are enforced whenever a Dirac Live **Bass Control (BC)** or **Active Room Treatment (ART)** filter is loaded. BC and ART optimize all speakers and subwoofers as a single system. Changing the PEQ filters or moving them between **Pre** and **Post** would alter the signal path that Dirac Live calibrated, invalidating the optimization. To preserve the calibration, Dirac Live locks these settings until all BC/ART filters have been deleted.
+The locks depend on PEQ placement and whether any slot contains a BC or ART calibration:
+
+| PEQ placement | BC or ART calibration stored | Edit PEQ filters | Change placement |
+|---|---|---|---|
+| Pre | No | Available | Available |
+| Pre | Yes | Available | Locked |
+| Post | No | Available | Available |
+| Post | Yes | Locked | Locked |
+
+These restrictions consider all stored slots, not only the selected slot. Remove all BC and ART
+calibrations to unlock placement changes or locked Post PEQ editing.
 
 !!! warning "Reloading BC/ART filters"
 
