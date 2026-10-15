@@ -18,10 +18,11 @@ and open `htp-1.local`.
 
 **Fast Start** and **Video Passthrough** are two-state switches.
 
-With **Fast Start** off, the HTP-1 enters a very low-power standby mode. In this state, CEC features such as automatic power-on are unavailable (though trigger inputs still work), and the unit takes longer to start. With **Fast Start** on, the HTP-1 remains ready to power on much more quickly.
+**Fast Start off — Slow Boot (default):** The HTP-1 powers down virtually all internal components, reducing standby power consumption to less than **0.5 W**. The front panel becomes operational in approximately **1 minute 40 seconds**, while additional initialization continues in the background and may take up to **2 minutes 30 seconds** to complete. CEC features such as automatic power-on are unavailable in this standby mode, though trigger inputs still work.
 
-**Video Passthrough** only works when Fast Start is on — it lets video pass through the HTP-1 while the
-unit itself is off.
+**Fast Start on:** Most internal electronics remain powered, so the HTP-1 starts almost instantly. Only the front panel is turned off while in standby, resulting in standby power consumption nearly as high as when the unit is fully powered on. Enable Fast Start using the switch on this page.
+
+**Video Passthrough** lets video pass through the HTP-1 while the unit is in standby. It only works when Fast Start is on.
 
 ## Amplifier Triggers
 
