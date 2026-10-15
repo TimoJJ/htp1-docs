@@ -16,8 +16,9 @@ The chart follows the selected loudness curve, reference level, and current volu
 is enabled with a nonzero bass or treble adjustment, an additional curve shows its contribution:
 **Loudness + Tone** when Loudness is on, or **Tone** when Loudness is off.
 
-With Loudness off, the loudness curve remains visible in gray for reference; it is not being applied
-to the audio. A notice explains that loudness settings have no effect until Loudness is turned on.
+With Loudness off, the loudness curve remains visible in gray for reference and is not applied to
+the audio. Loudness Reference Level and Loudness Curve Select remain editable, but the Vintage
+Custom filter controls are disabled until Loudness is turned on.
 
 The loudness response uses the reported output sample rate. If no supported rate is reported, the
 chart explains that it is using 48 kHz. If a response cannot be fully displayed, check the filter
