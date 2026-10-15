@@ -14,7 +14,7 @@ No physical-unit configuration was changed. Hardware-default confirmation remain
 - [x] `ui-balance.jpg`
 - [x] `ui-device-settings.jpg`
 - [x] `ui-inputs.jpg`
-- [x] `ui-inputs-advanced.jpg`
+- [x] `ui-inputs-advanced-crop.png` — approved PCM Detect Sensitivity detail crop.
 - [x] `ui-macros.jpg`
 - [x] `ui-loudness.jpg`
 - [x] `ui-upmix.jpg`
