@@ -89,7 +89,7 @@ The Home page is what you land on, and what most day-to-day control happens from
 - **Program Format** and **Listening Format** status cards report the incoming and actual decoded formats. A **Video** status card can also appear here, if enabled on Personalize.
 - The **Volume** readout sits in the center, with tap targets on either side to step it up or down. If Mix Out is enabled, a second **Mix Out Volume** control appears below it.
 - **Input Select** and **Upmix Select** button rows choose the active input and upmix mode. Which inputs and upmixes appear, and in what order, is set on the [Inputs](inputs.md) and [Upmix](upmix.md) pages.
-- A row of **Modes** buttons toggles **Dirac Live** (a three-state on / bypass / off control), **Loudness**, **Dialog Enhance**, and **Night** (off / auto / on).
+- The **Sound Controls** section toggles **Dirac Live** (a three-state on / bypass / off control), **Loudness**, **Dialog Enhance**, and **Night** (off / auto / on).
 - If you have Dirac Live calibrations saved, a **Dirac Live Slot Select** row lets you switch between them directly from Home.
 - Rows of **macro** buttons can also appear here, if you have set any up.
 

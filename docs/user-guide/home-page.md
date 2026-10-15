@@ -9,7 +9,7 @@ Almost everything on this page is optional. What appears here — which status c
 mode buttons, which Dirac Live slots and macros — is controlled from the [Personalize](personalize.md)
 page.
 
-![Home page showing status cards, volume control, input and upmix buttons, modes, and macros](images/ui-home.jpg)
+![Home page showing status cards, volume control, input and upmix buttons, sound controls, and macros](images/ui-home.jpg)
 
 ## Status Cards
 
@@ -80,10 +80,10 @@ Tap a button to choose an upmix or surround mode. Only modes you have marked vis
 [Upmix](upmix.md) page appear here. Tapping the "Upmix Select" heading takes you
 to the Upmix page.
 
-## Modes
+## Sound Controls
 
-The Modes row can hold any of the following buttons. Each one is turned on or off individually
-in Personalize, under Homepage Modes.
+The Sound Controls section can hold any of the following buttons. Each one is turned on or off individually
+in Personalize, under Sound Controls.
 
 | Button | Behavior |
 |---|---|

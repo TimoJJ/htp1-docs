@@ -5,7 +5,7 @@ you see throughout the web UI, and a few display preferences for the interface a
 A live preview of the Home page sits alongside the settings, so you can see the effect of a
 change immediately.
 
-![Personalize page showing homepage settings, shortcuts, modes, and the live preview](images/ui-personalize.jpg)
+![Personalize page showing homepage settings, shortcuts, sound controls, and the live preview](images/ui-personalize.jpg)
 
 ## Homepage Status Display
 
@@ -35,9 +35,9 @@ shown or hidden, along with every other settings page.
 If the Power Off shortcut is turned on, choose which buttons appear in the power dialog:
 Shutdown, Sleep, Restart, and Cancel.
 
-## Homepage Modes
+## Sound Controls
 
-Choose which buttons appear in the Home page's Modes row: Dirac Live, PEQ, Tone Control,
+Choose which buttons appear in the Home page’s Sound Controls section: Dirac Live, PEQ, Tone Control,
 Tone Control - Bass, Tone Control - Treble, Loudness, Dialog Enhance, Night Mode, Wide Synth, and
 Input Delay (lip-sync).
 
