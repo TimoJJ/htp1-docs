@@ -76,6 +76,14 @@ preview. The smaller portrait viewport reflects the Remote page's phone-oriented
 Captured at 1200 px from an isolated copy of the physical unit calibration state.
 Only display labels were changed; the physical unit was unchanged.
 
+## Adopted main-panel and PEQ button captures
+
+- [x] `fp-main.png`: native 800 × 480 Default-theme panel, actual playback state; replaces `fp-p01-1.png`.
+- [x] `ui-peq-options-button.jpg`: Change PEQ Configuration button detail from a 1200 px default-state preview; replaces `art-p09-1.png`.
+
+Alternative-panel theme, mini-labels and text-color controls remain text-only by request.
+No screenshots are required for those features.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -97,11 +105,8 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 - [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
 - [ ] Dirac recovery states, only when safely reproducible.
-- [ ] Legacy Advanced PEQ Options button crop (`art-p09-1.png`).
-- [ ] Alternative front-panel theme, mini-label and text-color controls.
 - [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
-- [ ] Other native front-panel illustrations (`fp-p01-1.png`) and alternative appearance states.
 - [ ] Current third-party Dirac app workflow images.
 - [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
 - [ ] Recheck all remaining hardware/measurement figures during rendered review.

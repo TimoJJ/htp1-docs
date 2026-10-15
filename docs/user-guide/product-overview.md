@@ -11,7 +11,7 @@
 
 ## Front Panel Display
 
-![Front panel touchscreen controls](images/fp-p01-1.png)
+![Front panel touchscreen controls](images/fp-main.png)
 
 The touchscreen shows the current input, program format, volume, upmix selection, and other system status information, and doubles as a set of touch controls:
 

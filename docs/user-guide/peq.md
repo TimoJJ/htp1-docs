@@ -108,7 +108,7 @@ Two things drive this choice:
 
 Open the **Advanced PEQ Options** dialog to change placement. On the PEQ page, the **Change PEQ Configuration** button at the top is always visible. On the Calibration page, the same control lives under an **Advanced PEQ Options** heading, but only when **Show Advanced Settings** is turned on.
 
-![Advanced PEQ Options button on the PEQ page](images/art-p09-1.png)
+![Change PEQ Configuration button on the PEQ page](images/ui-peq-options-button.jpg)
 
 ![Advanced PEQ Options dialog with pre-Dirac Live (default) and post-Dirac Live radio buttons](images/ui-peq-options-dialog.jpg)
 
