@@ -4,7 +4,7 @@ A macro is a recorded sequence of setting changes that you can play back with on
 Instead of changing several settings by hand every time you sit down to watch a movie, record
 those changes once as a macro, then run it from the remote, the Home page, or an input.
 
-![Macros page showing the remote button accordion and Additional Macros](images/ui-macros.png)
+![Macros page showing the remote button accordion and Additional Macros](images/ui-macros.jpg)
 
 ## Remote Button Macros
 

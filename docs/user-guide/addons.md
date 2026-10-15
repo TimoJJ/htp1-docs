@@ -3,6 +3,8 @@
 Addons are optional features that extend the HTP-1's functionality. They are distributed through
 repositories provided by addon developers.
 
+![Addons page with no repositories configured](images/ui-addons.jpg)
+
 ## Adding a Repository
 
 Open **Addons** in the settings sidebar. Paste the repository URL provided by the addon developer

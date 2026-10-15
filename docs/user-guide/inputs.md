@@ -4,7 +4,7 @@ The Inputs page lets you set up each input: its name, whether it shows on the ho
 listening mode, its lip-sync delay, its Dirac Live filter slot, and a macro to run when you select it.
 HDMI CEC and Bluetooth are also set up on this page.
 
-![Inputs page showing the input table with Label, Show on Home, Listening Mode, Lip-Sync Delay, Dirac Live Slot, Run Macro, and UHD Capable columns](images/ui-inputs.png)
+![Inputs page showing the input table with Label, Show on Home, Listening Mode, Lip-Sync Delay, Dirac Live Slot, Run Macro, and UHD Capable columns](images/ui-inputs.jpg)
 
 Clicking an input's name in the **Input** column selects that input immediately, so the table also
 works as an input selector.
@@ -113,7 +113,7 @@ appropriate for almost all modern sources.
 Turn on **Show Advanced Input Settings**, at the top of the Inputs page, to reveal the **PCM Detect
 Sensitivity** column.
 
-![Inputs page with Show Advanced Input Settings on, revealing the PCM Detect Sensitivity column](images/ui-inputs-advanced.png)
+![Inputs page with Show Advanced Input Settings on, revealing the PCM Detect Sensitivity column](images/ui-inputs-advanced.jpg)
 
 The choices depend on the input. Some inputs provide no PCM Detect Sensitivity setting, some provide
 **Auto** and **Biased**, and some provide **Auto**, **Biased**, and **Indicated**.

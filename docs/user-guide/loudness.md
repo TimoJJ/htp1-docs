@@ -10,7 +10,7 @@ one of these equal-loudness curves, so quiet listening still sounds full.
 Turn loudness compensation on or off with the **Loudness Compensation** button at the top of the
 page.
 
-![Loudness page showing the compensation toggle, the interactive chart, Loudness Reference Level, curve select, and Night Mode / Dialog Enhance controls](images/ui-loudness.png)
+![Loudness page showing the compensation toggle, the interactive chart, Loudness Reference Level, curve select, and Night Mode / Dialog Enhance controls](images/ui-loudness.jpg)
 
 The chart follows the selected loudness curve, reference level, and current volume. When Tone Control
 is enabled with a nonzero bass or treble adjustment, an additional curve shows its contribution:

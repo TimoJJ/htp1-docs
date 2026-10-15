@@ -7,7 +7,7 @@ you can still adjust the settings, but they do not affect the audio until Tone C
 
 The page shows an interactive tone curve that updates as you change the settings.
 
-![Tone Control page with the on/off button, interactive tone curve, and the four bass/treble controls](images/ui-tone-control.png)
+![Tone Control page with the on/off button, interactive tone curve, and the four bass/treble controls](images/ui-tone-control.jpg)
 
 | Control | Range |
 |---|---|

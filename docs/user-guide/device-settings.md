@@ -3,7 +3,7 @@
 Device Settings holds the controls for the unit itself — its name, how the web UI finds it, power
 and display behavior, the clock, and the Danger Zone tools used for troubleshooting and reset.
 
-![Device Settings page](images/ui-device-settings.png)
+![Device Settings page](images/ui-device-settings.jpg)
 
 ## Unit Name
 

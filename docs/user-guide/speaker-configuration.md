@@ -12,7 +12,7 @@ Speaker layouts without subwoofers or height speakers are commonly written using
 
 The **Speakers** page (`/#/settings/speakers` in the sidebar) is a great reference for understanding various speaker layouts, and is where you enable speakers and set their size and crossover. See [Speaker Setup](speaker-setup.md) for the full walkthrough.
 
-![Speakers page showing the Bass Manager badge, Dirac Live button group, speaker layout table, and speaker map](images/ui-speakers.png)
+![Speakers page showing the Bass Manager badge, Dirac Live button group, speaker layout table, and speaker map](images/ui-speakers.jpg)
 
 ### The Bass Manager Badge
 

@@ -70,7 +70,7 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 
     Congratulations! You have finished the Basic Setup and are ready to learn more about the advanced features and functionality of the HTP-1.
 
-    ![HTP-1 web interface Home page](images/ui-home.png)
+    ![HTP-1 web interface Home page](images/ui-home.jpg)
 
 18. Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page. This opens the settings sidebar. Explore the **Speakers** page and the **Signal Generator** page — see [Product Overview](product-overview.md#web-interface) for the full page list.
 

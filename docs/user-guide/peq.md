@@ -22,7 +22,7 @@ With PEQ placed **Pre**, filter editing remains available even when BC or ART ca
 With PEQ placed **Post**, storing any BC or ART calibration locks PEQ editing. See
 [PEQ Placement](#peq-placement).
 
-![PEQ page showing the on/off button, Change PEQ Configuration button, and response chart](images/ui-peq.png)
+![PEQ page showing the on/off button, Change PEQ Configuration button, and response chart](images/ui-peq.jpg)
 
 ## Chart and Editor
 

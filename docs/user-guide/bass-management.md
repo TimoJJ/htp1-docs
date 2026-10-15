@@ -16,7 +16,7 @@ The bass management system acknowledges that many speakers cannot reproduce low 
 
 The bass management controls live on the **Speakers** page (`/#/settings/speakers`), in a **Bass Manager** section below the speaker layout table.
 
-![Speakers page with the Bass Manager badge and Bass Manager section visible](images/ui-speakers.png)
+![Speakers page with the Bass Manager badge and Bass Manager section visible](images/ui-speakers.jpg)
 
 Whether that section appears at all depends on the **Bass Manager badge** shown near the top of the page:
 

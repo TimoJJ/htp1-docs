@@ -2,7 +2,7 @@
 
 The HTP-1 provides a set of signal generator functions that can be quite helpful in system setup.
 
-![Signal Generator page with the on/off button, Signal Select and Speaker Select tables, and the Volume Control field](images/ui-signal-generator.png)
+![Signal Generator page with the on/off button, Signal Select and Speaker Select tables, and the Volume Control field](images/ui-signal-generator.jpg)
 
 First choose a signal type from the **Signal Select** list. Then choose a channel from the **Speaker Select** list — the list of channels matches the speakers you have enabled on the speakers page. Then turn the signal generator on using the on/off button at the top of the page.
 

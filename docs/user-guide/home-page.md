@@ -9,7 +9,7 @@ Almost everything on this page is optional. What appears here — which status c
 mode buttons, which Dirac Live slots and macros — is controlled from the [Personalize](personalize.md)
 page.
 
-![Home page showing status cards, volume control, input and upmix buttons, modes, and macros](images/ui-home.png)
+![Home page showing status cards, volume control, input and upmix buttons, modes, and macros](images/ui-home.jpg)
 
 ## Status Cards
 

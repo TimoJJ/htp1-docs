@@ -3,7 +3,7 @@
 Configs lets you save your entire HTP-1 configuration to a file and restore it later, or move it to
 another unit.
 
-![Configs page showing the export preview and import file picker](images/ui-configs.png)
+![Export Preview dialog showing the current configuration](images/ui-export-preview.jpg)
 
 ## Export
 

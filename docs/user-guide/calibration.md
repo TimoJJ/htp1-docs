@@ -5,7 +5,7 @@ that ride on top of them. For setting output levels and the **Reference Output V
 [Volume Setup](volume-setup.md). For lip-sync delay, see [Inputs](inputs.md) — it is set per input,
 not on this page.
 
-![Calibration page showing the Dirac Live filter slot tabs and the per-speaker delay/trim table](images/ui-calibration.png)
+![Calibration page showing the Dirac Live filter slot tabs and the per-speaker delay/trim table](images/ui-calibration.jpg)
 
 ## Dirac Live Filter Slots
 
@@ -93,7 +93,7 @@ zero and cannot be edited here.
 Turn on **Show Advanced Settings** to reveal the Mute Speaker column, Bulk Edit, and Advanced PEQ
 Options described below.
 
-![Calibration page with Show Advanced Settings turned on, showing the Mute Speaker column, Bulk Edit, and Mute Speakers controls](images/ui-calibration-advanced.png)
+![Calibration page with Show Advanced Settings turned on, showing the Mute Speaker column, Bulk Edit, and Mute Speakers controls](images/ui-calibration-advanced.jpg)
 
 ### Bulk Edit
 
