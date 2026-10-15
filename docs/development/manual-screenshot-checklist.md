@@ -93,6 +93,17 @@ No screenshots are required for those features.
 
 - [x] `legacy-1-13-3-art-upgrade-preparation-detail.jpg`: original 1.13.3 preparation page rendered locally at a 1200 px viewport; labelled for the 1.x upgrade procedure. No upgrade action was performed.
 
+## Adopted bass-management and Speaker Map follow-up
+
+- [x] `ui-speakers-21.png`: isolated 1200 px example with Left/Right Small, the source-default 80 Hz crossover, and one subwoofer enabled. LPF for LFE remains 120 Hz and Reinforce Bass remains off. Used in Bass Management; this is an illustrative 2.1 configuration, not the default speaker layout.
+- [x] `ui-speaker-map-detail.png`: dedicated crop showing the Speaker Map heading, warning, legend, and complete rear panel for the default 2.0 layout, with Left and Right highlighted green. Replaces the repeated overview image in Speaker Setup.
+
+Both captures use the shipped WebUI in the isolated preview. The preview supplies the
+firmware-derived output mapping needed to render the map; no physical-unit settings
+were changed. Physical-default confirmation remains pending, as do release captures
+and safe recovery captures. Third-party Dirac app replacements remain deferred until
+after release.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
