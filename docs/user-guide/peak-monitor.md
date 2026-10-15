@@ -22,6 +22,15 @@ While Peak Monitor is active, the bottom of the display shows the highest peak l
 
 Tap the icon again to reset the measurement and stop monitoring. The front panel and web interface use the same peak measurement.
 
+## Front Panel Level Meter
+
+The front panel also offers a **Level Meter**, which shows live signal activity for the active
+speaker channels. Unlike Peak Monitor, it displays changing levels rather than the highest peaks
+held since the last reset.
+
+Press the remote's **Green** button to show or hide the Level Meter, or tap the front panel while
+the Level Meter is displayed to close it. The remote's **Red** button toggles Peak Monitor instead.
+
 ## Table and Bars Views
 
 Switch between **Table** and **Bars** with the buttons above the meters.

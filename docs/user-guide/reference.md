@@ -116,10 +116,19 @@ The remote's color buttons run fixed system functions:
 
 | Button | NEC Code | Command |
 | --- | --- | --- |
-| Red | 51ae | Toggle debug menu on front panel |
-| Green | 52ad | Show playback settings on front panel |
-| Yellow | 53ac | Reload front panel |
+| Red | 51ae | Toggle front-panel Peak Monitor |
+| Green | 52ad | Toggle front-panel Level Meter |
+| Yellow | 53ac | Show detailed processing information |
 | Blue | 54ab | Reset HDMI |
+
+The Red button toggles Peak Monitor on the front panel. The Green button opens a separate
+Level Meter showing live channel levels. The Level Meter shows current signal activity rather
+than Peak Monitor's peak-hold measurements. Press Green again or tap the front panel to close it.
+
+The **A** and **B** macro buttons have initial assignments: **A** shows the front-panel Debug menu,
+and **B** reloads the front panel. These defaults are assigned only when the buttons had no
+previously assigned macro. Existing custom assignments and names are preserved, and you can
+change them on the [Macros](macros.md) page.
 
 The **A**–**D** buttons (55aa, 56a9, 57a8, 58a7) and **Preset 1**–**4** buttons (03fc, 04fb, 05fa,
 06f9) are freely assignable from the [Macros](macros.md) page. Macros can record multiple setting

@@ -18,7 +18,7 @@ the best sound out of your system.
 
 !!! note
     The screenshots of the Dirac Live app on this page show the app itself, which looks the same
-    regardless of HTP-1 firmware version. Screenshots of the HTP-1 web UI on this page are current.
+    as it appeared when this guide was prepared. The Dirac Live app and the HTP-1 WebUI may change with software updates.
 
 ## Before You Start
 
@@ -135,8 +135,8 @@ Complete the [basic setup](basic-setup.md) first — be able to play sound throu
 15. Close the Dirac Live app. The read-only banner on the HTP-1 should clear. If it doesn't, launch
     the Dirac Live app again, then close it.
 16. Open the HTP-1 web UI and go to **Calibration** (`#/settings/calibration`). If a calibration
-    covers fewer speakers than your current layout, the uncalibrated speakers pass through without
-    filtering, and the page highlights them as mismatched.
+    does not match your current speaker layout, the page displays a warning. Check your speaker
+    configuration and the calibration you selected.
 17. The calibration delay and trim values shown are what Dirac Live measured, applied whenever that
     filter is active. Notice that the delay and trim on one channel may read zero — that speaker was
     farthest from the microphone during calibration.
@@ -151,8 +151,13 @@ trim to a large value can work, but it sacrifices headroom you may want for othe
 
 ## Dirac Live State: Off / Bypass / On
 
-Clicking the Dirac Live button, in the web UI or on the remote, cycles the filter through three
-states. The button label names the loaded filter type:
+In the web interface, select **Off**, **Bypass**, or **On** directly. The On button also identifies
+the active calibration type, such as **ART On**.
+
+The physical remote's **Dirac** button cycles through **Off → On → Bypass → Off**.
+
+A slot without a Dirac Live calibration can still be used for manual adjustments. Selecting it
+switches Dirac Live off while retaining that slot's PEQ, delay, and trim settings.
 
 ### Off
 
@@ -185,22 +190,31 @@ off because the calibration can apply substantial negative trim values.
 
 !!! tip
     If you switch between On and Bypass often, consider a macro that does it in one press. See
-    [Macros](reference.md).
+    [Macros](macros.md).
 
 ## Dirac Live Status
 
-A status pill next to "Dirac Live" on the Calibration and Home pages shows one of four states:
+The status indicator shows whether Dirac Live is working correctly, preparing filters, or needs
+attention. Its label and color provide more information than a simple on/off indication.
 
-| State | Meaning |
+| Status | Meaning |
 |---|---|
-| Inactive | No Dirac Live filter is loaded or active. |
-| Active | The calibration is active and the filter is working as expected. |
-| Warning | The calibration is in an unexpected state. Turn Dirac Live off and back on. |
-| Error | The filter failed to load. Restart the Dirac Live server or the HTP-1. |
+| Off / Bypass | Dirac Live filtering is intentionally disabled or bypassed. |
+| Ready | Dirac Live is enabled and ready to process audio when playback starts. |
+| Active | The correct filter is loaded and confirmed active for the selected slot and source. |
+| Loading / Applying / Checking | A filter operation is in progress or the processor's state is being verified. |
+| Filter Missing / Wrong Filter | The required filter is missing or the processor has loaded a different filter than expected. |
+| Not Applied / Still Applied | The processor's actual filtering state does not match the selected setting. |
+| Load Failed / Service Down / Setup Failed | A filter operation or service has failed and needs attention. |
 
-On Error, a **Restart Dirac Live Server** button appears. This restarts just the Dirac Live process,
-which is faster than rebooting the whole HTP-1 and is the recommended first step. A second copy of
-this button lives on the Device Settings page, under Danger Zone.
+The Calibration page provides a detailed explanation when something needs attention. The Home page
+also shows a notice for problems that require action.
+
+When recovery is possible, the interface offers an appropriate button, such as **Load 48 kHz filter**,
+**Load correct filter**, **Apply Dirac Live again**, or **Restart Dirac Live Server**.
+
+Follow the action suggested by the interface. Restarting the Dirac Live server is not always
+necessary and will not resolve every missing-filter problem.
 
 ## Tips for a Successful Dirac Live Calibration
 
@@ -271,6 +285,24 @@ A more comprehensive overview of Dirac Live ART™ is available at
 
 ### Filter Storage and Slot Behavior
 
+#### Filter Preparation
+
+Each Dirac Live calibration uses separate filter versions for the 44.1 kHz and 48 kHz sample-rate
+families.
+
+After a firmware update, the HTP-1 checks the filters for the current speaker layout and prepares
+any missing versions. This can take several minutes during the first startup. Missing versions may
+also be prepared automatically when the unit is idle.
+
+When changing speaker layouts, the HTP-1 transfers the required filters to the audio processor.
+The progress display identifies the filter being loaded and shows an estimated remaining time when
+available.
+
+When switching calibration slots, the HTP-1 keeps audio muted until the selected setup has loaded
+and been verified. Some controls are temporarily unavailable during this operation.
+
+#### Slot Behavior
+
 - **Filters reload on speaker-layout change.** Whenever the speaker layout changes, filters for the
   new layout are loaded into a cache on the DSP. While a filter transfers, a progress overlay shows
   on screen. Once cached, switching between installed calibrations for the same layout is fast.
@@ -280,15 +312,13 @@ A more comprehensive overview of Dirac Live ART™ is available at
     > Dirac Live is disabled; there are no Dirac Live filters available for the current speaker
     > layout.
 
-- **Mismatched layouts are flagged.** If a calibration covers fewer speakers than the current
-  layout, a warning appears and the uncalibrated speaker rows are highlighted on the Calibration
-  page:
+- **Mismatched layouts are flagged.** If the selected calibration does not match the current
+  speaker configuration, a warning appears on the Calibration page:
 
     > The selected Dirac Live calibration does not match the current speaker configuration.
-    > Uncalibrated speakers are highlighted.
 
-  Uncalibrated speakers are passed through without filtering. User delay and trim can still be added
-  to them.
+  Check the speaker layout and selected calibration. Speakers that are not covered by a calibration
+  pass through without filtering; user delay and trim can still be added to them.
 - **Subwoofer mismatches are not flagged.** Using a calibration made with more or fewer subwoofers
   than your current layout will still produce sound, but not optimally: extra subs get a copy of the
   first sub's signal, and a layout with fewer subs than the calibration only gets the primary sub
@@ -302,30 +332,28 @@ A more comprehensive overview of Dirac Live ART™ is available at
 
 ## Troubleshooting
 
-The Dirac Live system is reliable once a calibration is applied and you're listening, but it can
-become confused while you're experimenting with multiple calibrations. The status pill described
-above is the first thing to check.
-
 ![Calibration page Dirac Live controls showing the Off / Bypass / ART On buttons and the green Active status pill](images/art-p14-1.png)
 
-If the status shows a warning or error:
+### Resolving Dirac Live Problems
 
-1. **Make sure an active slot is selected.** If the selected slot has no calibration for the current
-   speaker layout, no filter is applied and a warning appears. Select a slot that has one.
-2. **Select an active input.** A 48 kHz source is recommended but not required — see
-   [Calibrating for Higher Sample Rates](#calibrating-for-higher-sample-rates).
-3. **On a Warning**, turn Dirac Live off and back on.
-4. **On an Error**, turn Dirac Live off and back on first. If that doesn't help, confirm a valid
-   input is selected, then use **Restart Dirac Live Server** (on the Calibration page, or Device
-   Settings → Danger Zone). This is faster than a full reboot and should be tried first.
-5. **If none of that resolves it**, force a cache reload by switching to a different, unused speaker
-   layout and back to your original one. This reloads the Dirac Live cache the same way a reboot
-   does, without the downtime.
+If Dirac Live reports a problem, open the **Calibration** page and read the displayed message.
+
+- **Filter Missing or Wrong Filter:** Use the offered filter-loading button.
+- **Not Applied or Still Applied:** Apply the selected Dirac Live setting again. If this fails,
+  the interface may recommend restarting the Dirac Live server.
+- **Load Interrupted:** Load the filter again when prompted.
+- **Service Down or Setup Failed:** Use **Restart Dirac Live Server** when offered.
+- **Cache Damaged:** The stored calibration may need to be transferred again from the Dirac Live app.
+
+Some filter loads may be refused when no audio is playing. If a load cannot be completed, start
+playback and try the suggested recovery action again.
+
+Dirac Live does not support 32 kHz audio. If the interface reports an unsupported sample rate,
+switch Dirac Live off while playing that source.
 
 !!! tip
-    Loading a large number of filters onto a large speaker layout can take a while — for example,
-    filling all six slots for a 7.3.6 layout can take up to 10 minutes. If you're comparing speaker
-    layouts, limit each layout to one or two calibrations to keep switching fast.
+    Loading several calibrations for a large speaker layout can take several minutes. Wait until
+    the filter transfer has finished before changing the configuration again.
 
 !!! note "Speaker layout after upgrading from a 1.x release"
     Upgrading from any 1.x release resets the speaker layout to 2.0, so that you deliberately choose

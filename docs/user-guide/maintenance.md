@@ -2,38 +2,48 @@
 
 ## Checking Your Version
 
-Open [System Status](system-status.md) to see the software version currently running, under
-**System Software Version**. If a newer release is available, an **Update available** badge
-appears next to the **Open History page** button.
+Open [System Status](system-status.md) to see the software version currently installed and whether
+a newer release is available.
 
-## Reading Release Notes
+Click **Check for updates** to refresh the information. If the release server is unreachable, the
+page explains the problem and may show information from the last successful check.
 
-Click **Release Notes**, next to the software version, to see what changed in the current
-release — new features, fixes, and any known issues. Read these before updating, especially if
-you rely on a feature that could be affected.
+## Version History
 
-## Performing an Update
+Click **Version history** on the System Status page to see available software releases.
 
-Click **Open History page** on the System Status page. This opens a separate page listing
-available software releases.
+Version history lists available firmware versions, release dates, release notes, and installation
+options. Enable **Show release candidates and betas** to include versions that are still being tested.
+These may contain new features and fixes but are not yet final releases.
 
-Releases on the **master** branch are recommended for most users. **Preview**, **Beta** und **Release Candidate** releases are also
-listed; these are newer builds still being tested, and are meant for owners who want to help find
-problems before a release reaches master. Choose a release from the list to install it. You will
-be asked to confirm before the update starts.
+## Installing an Update
+
+Select the version you want to install and click **Install**. You can also reinstall the currently
+installed version or return to an older version listed in Version history.
+
+Review the release notes before installing, then confirm your selection.
+
+Version history is also accessible while the HTP-1 is in standby through
+**View version history and install updates**.
 
 !!! tip
-    Export a configuration backup before updating, in case anything needs to be restored
-    afterward. See [Backup and Restore](configs.md).
+    Export your configuration before updating. See [Backup and Restore](configs.md).
+    Configuration exports do not include Dirac Live filter files.
 
 ## What to Expect
 
-Once an update starts, the web UI switches to a full-screen progress view with a status message
-and a progress bar. This can take several minutes depending on what changed in the release. Don't
-close the browser tab or power down the unit while this is showing — the unit reboots on its own
-when the update finishes.
+During installation, the web interface displays progress messages and a progress bar. Installation
+may take several minutes. Do not disconnect power while the update is running.
 
-User settings, input names, and calibrations are preserved across a normal update.
+The HTP-1 restarts automatically when installation finishes. Open browser tabs reconnect and reload
+when the unit becomes available again.
+
+During startup, you may see **HTP-1 is starting** or **Preparing Dirac Live filters**.
+
+The first startup after updating may take longer because the HTP-1 checks its stored Dirac Live
+filters and prepares missing filter versions.
+
+Your existing settings and calibrations are preserved during a normal firmware update.
 
 ## Upgrading from Version 1.x
 
@@ -82,17 +92,17 @@ personally identifiable information.
 Send this file along when you report a problem — it gives the development team the detail needed
 to reproduce and diagnose it.
 
-### Submitting Feedback
+### Community Discussion
 
-When the HTP-1 is in standby, the web UI shows a **Quick Links** list with a **Submit Feedback**
-link. This opens a form hosted on the unit at `http://<your-htp1-ip>/feedback`.
-
-!!! note
-    This form is not a customer support request — think of it as a suggestion box. It's optional
-    and anonymous unless you choose to leave a contact address. If you need help with a problem,
-    include your contact details or reach out to support directly as well.
+Much of the HTP-1 owners' discussion about setup, troubleshooting, features, and software updates
+takes place in the
+[AVS Forum HTP-1 owners thread](https://www.avsforum.com/threads/the-official-monoprice-monolith-htp-1-owners-thread.3112176/).
+You can also find this link under **Discussion** on the [System Status](system-status.md) page.
 
 ### On-Device Help
 
-Every page has a **Help** entry in the sidebar, and a "?" icon that jumps straight to the section
-for the page you're on.
+Click the **?** icon to open Help for the current page in a side panel without leaving your
+settings.
+
+To browse all available Help topics, select **Help** in the settings sidebar. The online User Manual
+provides more detailed explanations.

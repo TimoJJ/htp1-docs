@@ -58,13 +58,13 @@ The remote's color buttons provide shortcuts to several front-panel functions. S
 1. **POWER:** Press the **POWER** button to turn the unit on or to put it into standby mode.
 2. **USER INPUTS:** Press the number buttons to select individual inputs. The numbers map to the visible inputs, from left to right, on the web interface Home page. Press the **LAST** button to select the last input used.
 3. **INFO:** Press the **INFO** button once for playback details and twice for audio processing status.
-4. **COLORS:** The **Red**, **Green**, and **Yellow** remote buttons control the front panel: **Red** displays the debug screen, **Green** displays audio processing status, and **Yellow** reloads the front panel. The **Blue** button resets the HDMI subsystem.
+4. **COLORS:** **Red** toggles front-panel Peak Monitor, **Green** toggles the live Level Meter, and **Yellow** shows detailed audio processing information. **Blue** resets the HDMI subsystem. See [Remote Color Button Functions](reference.md#color-buttons-and-a-d-preset-buttons).
 5. **HDMI+:** Press the **HDMI+** button to cycle forward through the eight HDMI® inputs as well as the TV input. When using this button the interface will display the HDMI input that will be selected after a short timeout period expires (about 3 seconds). This allows the user to rotate through the input options without actually changing the input (which can slow things down). This delayed input change only applies to this button, not any of the other + buttons.
 6. **SURROUND MODES:** Press the buttons to select the **NATIVE**, **DTS**®, **DIRECT**, **DOLBY**®, or **AURO-3D**® surround modes.
 7. **SPDIF+:** Press the **SPDIF+** button to cycle forward through the digital audio inputs. The cycle order is **COAXIAL 1**, **COAXIAL 2**, **COAXIAL 3**, **OPTICAL 1**, **OPTICAL 2**, **OPTICAL 3**, and **AES/EBU**.
 8. **MASTER:** Press the **+** button to increase the **MASTER** volume level or press the **-** button to decrease the **MASTER** volume level.
 9. **LETTERS:** The **A**, **B**, **C**, and **D** buttons run whatever is assigned to those slots on the **Macros** page.
-10. **DIRAC:** Press the **DIRAC** button to cycle Dirac Live between on, bypass, and off.
+10. **DIRAC:** Press the **DIRAC** button to cycle Dirac Live through Off → On → Bypass → Off.
 11. **NIGHT:** Pressing the **NIGHT** button rotates between off, auto, and on. Night mode is designed for low volume movie viewing. See more details under *Audio Features*.
 12. **LOUD:** Press the **LOUD** button to enable or disable Loudness mode, which boosts low and high frequencies for low volume music listening. This is described in more detail under *Audio Features*.
 13. **BT PAIR:** Press the **BT PAIR** button to initiate Bluetooth® pairing.

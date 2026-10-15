@@ -64,7 +64,7 @@ New to the HTP-1? Start with [Welcome](welcome.md), then [Basic Setup](basic-set
 | Chapter | Covers |
 |---|---|
 | [System Status](system-status.md) | Versions, detailed status, and HDMI diagnostics |
-| [Updates and Support](maintenance.md) | Firmware updates, logs, and feedback |
+| [Updates and Support](maintenance.md) | Firmware updates, logs, and community discussion |
 | [Integrations and Control](integrations.md) | Roon, the mobile remote, and HTTP control |
 | [Reference](reference.md) | Specifications, signal flow, IR codes, and glossary |
 
