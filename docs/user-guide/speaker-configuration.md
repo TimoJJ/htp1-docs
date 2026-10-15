@@ -12,13 +12,15 @@ Speaker layouts without subwoofers or height speakers are commonly written using
 
 The **Speakers** page (`/#/settings/speakers` in the sidebar) is a great reference for understanding various speaker layouts, and is where you enable speakers and set their size and crossover. See [Speaker Setup](speaker-setup.md) for the full walkthrough.
 
-![Speakers page showing the Bass Manager badge, Dirac Live button group, speaker layout table, and speaker map](images/ui-speakers.png)
+![Speakers page showing the Bass Manager badge, Dirac Live button group, speaker layout table, and speaker map](images/ui-speakers.jpg)
 
 ### The Bass Manager Badge
 
 A card at the top of the Speakers page shows a **Bass Manager** badge reading either **HTP-1** or **DIRAC LIVE**. This tells you which system is handling bass redirection right now.
 
-The badge reads **DIRAC LIVE** whenever the loaded Dirac Live filter is a Bass Control, Bass Management, or ART filter. In that case Dirac Live is doing the crossover and subwoofer routing work, and the HTP-1's own Bass Manager section and the speaker size/crossover controls are hidden. See [Bass Management](bass-management.md) for the controls that appear when the badge reads **HTP-1**.
+The badge reads **DIRAC LIVE** when Dirac Live is **On** and the selected slot contains a BM, BC, or ART
+filter. Otherwise, it reads **HTP-1**. Speaker size and crossover controls, together with the HTP-1 Bass
+Manager section, are available when the badge reads **HTP-1**.
 
 ### The Dirac Live Lockout
 
@@ -31,14 +33,17 @@ Next to the badge is the **Dirac Live** button group, a three-state control: **O
 
 Under the speaker diagram, a **Current Layout** readout shows the speaker configuration string (for example `7.1.4h`) for whatever you have enabled. This is the fastest way to confirm what the HTP-1 thinks your layout is.
 
-Each Dirac Live filter slot is calibrated for a specific speaker layout. If the enabled speakers don't match the layout the loaded filter was calibrated for, the page shows:
+The page displays this warning when the selected calibration does not match the current layout:
 
-> The selected Dirac Live calibration does not match the current speaker configuration. Uncalibrated channels are highlighted.
+> The selected Dirac Live calibration does not match the current speaker configuration.
 
-Rows for the mismatched channels are highlighted in the layout table so you can see exactly which speakers have no correction applied. When you open **Edit Speaker Layout** to change speakers, the dialog also lists which layouts currently have a matching Dirac Live filter available, so you can tell in advance whether a change will leave you uncalibrated.
+Check the selected calibration and speaker layout. The warning does not identify individual
+uncalibrated channels. The **Edit Speaker Layout** dialog also lists layouts with available Dirac Live
+filters.
 
 !!! note
-    Most on-page guidance boxes, including this one, can be dismissed permanently. If you don't see the text described here, you (or a previous user) may have already dismissed it. Dismissed notices can be restored from the **Personalize** page.
+    The mismatch warning remains visible while the reported mismatch applies. Restoring dismissed
+    informational notices does not control this warning.
 
 ## Speaker Location Diagrams
 

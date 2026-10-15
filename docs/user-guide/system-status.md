@@ -4,20 +4,24 @@ The System Status page tells you what software the HTP-1 is running, whether an 
 available, and the current state of its network and HDMI connections. It also lists the exact
 hardware and software versions that support will ask for if you report a problem.
 
-![System Status page showing software version, History and Updates, Detailed Status, and version tables](images/ui-system-status.png)
+![System Status page showing software version, update controls, Detailed Status, and version tables](images/ui-system-status.png)
 
-## History and Updates
+## Software Version and Updates
 
-The **System Software Version** row shows the version currently running, with a **Release Notes**
-link next to it. Read the release notes before updating — they list new features, fixed issues,
-and any known issues for that release.
+The System Status page identifies the installed firmware and shows whether a newer public release
+is available.
 
-The **History and Updates** row has an **Open History page** button. This opens a separate page
-where you check for new firmware and install it. See [Updates and Support](maintenance.md) for the
-full update procedure.
+Click **Check for updates** to refresh the available release information.
 
-If a newer release is available, an **Update available** badge appears next to the button. No
-badge means you are already on the latest release for your branch.
+When a new release is available, the page offers an installation button and information about what
+has changed.
+
+Select **Version history** to browse previous releases, read their release notes, or install a
+different version.
+
+If the release server cannot be reached, System Status displays a warning rather than reporting
+that the software is up to date. See [Updates and Support](maintenance.md) for the full update
+procedure.
 
 ## Detailed Status
 
@@ -36,6 +40,12 @@ badge means you are already on the latest release for your branch.
 These last two fields report a short internal status string rather than a friendly sentence.
 Support may ask you to read one of them aloud, or you can copy it exactly when writing in for
 help. See [Reference](reference.md) for a glossary of the terms that appear in them.
+
+## Community Discussion
+
+Under **Discussion** on the System Status page, the
+[AVS Forum HTP-1 owners thread](https://www.avsforum.com/threads/the-official-monoprice-monolith-htp-1-owners-thread.3112176/)
+links to the community conversation about setup, troubleshooting, and new features.
 
 ## Software and Hardware Versions
 

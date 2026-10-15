@@ -2,7 +2,7 @@
 
 Peak Monitor shows how close each channel is getting to clipping (the signal exceeds the available digital range and creates audible distortion), so you can set **Maximum Digital Headroom** by measurement instead of by ear. It does not measure RMS level or analog output voltage and does not determine **Reference Output Voltage** which is configured separately in [Volume Setup](volume-setup.md).
 
-![Peak Monitor page in Table view](images/ui-peak-monitor.png)
+![Peak Monitor page in Table view](images/ui-peak-monitor.jpg)
 
 ## Turning It On
 
@@ -11,6 +11,15 @@ again to turn monitoring off.
 
 **Clear Peaks** resets the peak-hold markers so you can start a fresh measurement — useful when you
 want to check a specific scene or passage without earlier, louder peaks skewing the reading.
+
+The selector beside **Clear Peaks** controls peak-marker visibility in Bars view:
+
+- **Peak hold** shows the held peak marker for each channel.
+- **Over -1dBFS** shows markers only for peaks at or above −1 dBFS, including clipping indications.
+- **No peak hold** hides the markers.
+
+This selector changes the displayed markers, not peak measurement. Held peak values remain available
+in the numeric readings until cleared.
 
 ## Front Panel Display
 
@@ -22,6 +31,17 @@ While Peak Monitor is active, the bottom of the display shows the highest peak l
 
 Tap the icon again to reset the measurement and stop monitoring. The front panel and web interface use the same peak measurement.
 
+## Front Panel Level Meter
+
+The front panel also offers a **Level Meter**, which shows live signal activity for the active
+speaker channels. Unlike Peak Monitor, it displays changing levels rather than the highest peaks
+held since the last reset.
+
+Press the remote's **Green** button to show or hide the Level Meter, or tap the front panel while
+the Level Meter is displayed to close it. The remote's **Red** button toggles Peak Monitor instead.
+
+![Front-panel Level Meter showing live activity for the active channels, including Seat Shaker](images/fp-level-meter.png)
+
 ## Table and Bars Views
 
 Switch between **Table** and **Bars** with the buttons above the meters.
@@ -29,12 +49,13 @@ Switch between **Table** and **Bars** with the buttons above the meters.
 Table view lists each active channel with its peak signal level in dBFS. A channel is shown in red
 once it reaches clipping.
 
-![Peak Monitor page in Bars view](images/ui-peak-monitor-bars.png)
+![Peak Monitor page in Bars view](images/ui-peak-monitor-bars.jpg)
 
-Bars view shows the same channels as vertical meters, with a scale down the left side from +6 to
-below −84 dBFS. Each bar has a peak-hold marker showing the highest level reached since you last
-cleared peaks. The marker is green while there's headroom to spare, amber as the channel approaches
-0 dBFS, and red at or above clipping.
+Bars view shows live channel levels as vertical meters, with a scale from +6 to −84 dBFS. Numeric
+readings show the highest measured peaks. When visible, peak markers are green below −1 dBFS, amber
+from −1 dBFS to below 0 dBFS, and red at or above 0 dBFS.
+
+Very brief transients may be missed by the meters.
 
 If you have a seat shaker channel active, it appears alongside the speaker channels, set apart by a
 divider and its own icon.

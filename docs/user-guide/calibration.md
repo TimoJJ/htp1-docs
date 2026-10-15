@@ -5,21 +5,30 @@ that ride on top of them. For setting output levels and the **Reference Output V
 [Volume Setup](volume-setup.md). For lip-sync delay, see [Inputs](inputs.md) — it is set per input,
 not on this page.
 
-![Calibration page showing the Dirac Live filter slot tabs and the per-speaker delay/trim table](images/ui-calibration.png)
+![Calibration page showing the Dirac Live filter slot tabs and the per-speaker delay/trim table](images/ui-calibration.jpg)
 
 ## Dirac Live Filter Slots
 
-Up to six Dirac Live filter slots are available. Each slot holds one calibration produced by the
-Dirac Live app. Click a tab to switch slots. An empty slot shows as "Uncalibrated".
+Up to six filter slots are available. Each slot can hold a Dirac Live calibration and its own user
+delay and trim settings. PEQ settings are global and shared by all slots. Click a tab to select a slot.
+A slot without a calibration can still be used for manual delay and trim adjustments.
+Selecting a slot without a calibration switches Dirac Live off while global PEQ and the slot's user
+delay and trim settings remain available.
 
 ### Naming a Slot
 
-You can rename a slot from the HTP-1 side. Click the
-pencil icon next to the active slot's name, type a new name, and press Enter. This is only available
-for an empty slot — once a calibration is loaded into a slot, its name comes from Dirac Live and
-cannot be changed here.
+You can give any filter slot a custom name, whether it contains a Dirac Live calibration or not.
+Select the slot, click the pencil (Rename) control, enter a name, and save it.
 
-### Notes
+A custom name replaces the displayed slot name but does not change the calibration name stored by
+Dirac Live. The original Dirac Live name remains available as additional information. Clearing the
+custom name restores the Dirac Live name, or the default name **Slot N** if no calibration name exists.
+
+Renaming is temporarily unavailable while Dirac Live is loading or switching filters.
+
+![Custom slot name Movie Night with the original Dirac Live filter name retained in the rename editor](images/ui-calibration-slot-rename-crop.png)
+
+## Notes
 
 Each slot has a **Notes** field below the table. Use it to record anything about that calibration —
 which microphone positions you used, which speaker layout it covers, or why you made it. Notes are
@@ -73,22 +82,20 @@ remain at zero afterward.
 User delay and trim settings are stored independently with each slot, so you can keep different
 adjustments for each calibration.
 
-A speaker whose calibration doesn't match the current speaker layout is highlighted, and a row can
-also turn red if it carries a leftover nonzero delay or trim from before a BC or ART filter was
-loaded — those values are no longer being applied and should be cleared.
+A warning appears when the selected calibration does not match the current speaker layout. The
+interface does not identify uncalibrated speakers from zero delay or trim values. A row can also turn
+red when it contains a nonzero user adjustment that is currently disallowed, or when the speaker is
+muted.
 
 If you have a seat shaker channel, it is greyed out in this table. Its delay and trim are always
 zero and cannot be edited here.
-
-On a phone-sized screen the table becomes a set of cards, one per speaker, with a slot picker in
-place of the tab strip.
 
 ## Show Advanced Settings
 
 Turn on **Show Advanced Settings** to reveal the Mute Speaker column, Bulk Edit, and Advanced PEQ
 Options described below.
 
-![Calibration page with Show Advanced Settings turned on, showing the Mute Speaker column, Bulk Edit, and Mute Speakers controls](images/ui-calibration-advanced.png)
+![Calibration page with Show Advanced Settings turned on, showing the Mute Speaker column, Bulk Edit, and Mute Speakers controls](images/ui-calibration-advanced.jpg)
 
 ### Bulk Edit
 

@@ -2,7 +2,7 @@
 
 Open the **Speakers** page from the sidebar (`/#/settings/speakers`). This is where you configure the speaker layout, specify the location of each speaker, and define its size. Speaker size determines whether a speaker is treated as **Large** (full-range) or **Small** (bass-managed). For speakers configured as **Small**, bass below the user-selected crossover frequency is redirected by the bass management system to the configured subwoofer(s) or, if no subwoofer is present, to speakers configured as **Large**.
 
-![Speakers page showing the Bass Manager badge, Current Layout readout, and Edit Speaker Layout button](images/ui-speakers.png)
+![Speakers page showing the Bass Manager badge, Current Layout readout, and Edit Speaker Layout button](images/ui-speakers.jpg)
 
 The layout table on the Speakers page is read-only — the checkboxes, crossover fields, and size buttons shown there just reflect your current settings. To change anything, click **Edit Speaker Layout**. This opens a dialog where enabling, disabling, sizing, and setting the crossover for a speaker all take effect.
 
@@ -11,7 +11,7 @@ The layout table on the Speakers page is read-only — the checkboxes, crossover
 
 ## The Edit Speaker Layout Dialog
 
-![Edit Speaker Layout dialog with speaker checkboxes, crossover frequency fields, and size buttons](images/ui-speakers-layout-dialog.png)
+![Edit Speaker Layout dialog with speaker checkboxes, crossover frequency fields, and size buttons](images/ui-speakers-layout-dialog-crop.png)
 
 The dialog lists every possible speaker in three groups — Main Speaker Outputs, Surround Speaker Outputs, and Upper Speaker Outputs — each with up to three controls per row:
 
@@ -54,7 +54,7 @@ Under **Edit Speaker Layout**, the speaker diagram on the right shows the speake
 
 At the bottom of the Speakers page is the **Speaker Map**: an image of the HTP-1's back panel showing which output jack drives which speaker. Click the image to zoom in.
 
-![Speaker Map showing enabled channels highlighted green](images/ui-speakers.png)
+![Speaker Map showing enabled channels highlighted green](images/ui-speakers.jpg)
 
 As you use more of the 16 output channels, the jack assignment changes depending on which speakers you've enabled. This allows layouts ranging from 9.1.6 (nine mains, one subwoofer, six uppers) to layouts with up to five independently configurable subwoofers, such as 5.5.6 or 7.5.4. The Speaker Map always reflects the current assignment and should be considered authoritative over the labels printed on the back panel, which may not match less common configurations.
 
@@ -85,11 +85,14 @@ The back panel of the unit is shown below along with a diagram of the XLR connec
 
 As you use more of the 16 channels, the order of channels assigned to the back panel varies with your choice of speakers. The actual assignment for your current layout is always shown on the [Speaker Map](#the-speaker-map) at the bottom of the Speakers page.
 
+The examples below use screenshots from an earlier web interface. They illustrate speaker layouts
+and output assignments; use the current Speakers page and Speaker Map to configure your unit.
+
 ### Example 7.1.4h Speaker Configuration (Upper Level On the Wall)
 
 This speaker configuration uses 7 surround sound speakers, 1 subwoofer and 4 height speakers. The height speakers are mounted high on the walls, in the corners of the listening area.
 
-![7.1.4h speaker layout diagram](images/p38-1.jpg)
+![Earlier web interface showing a 7.1.4h speaker configuration](images/p38-1.jpg)
 
 ![Back panel connections for the 7.1.4h configuration](images/p38-2.jpg)
 
@@ -97,7 +100,7 @@ This speaker configuration uses 7 surround sound speakers, 1 subwoofer and 4 hei
 
 This speaker configuration uses 7 surround sound speakers, 2 subwoofers and 6 height speakers. The height speakers are mounted in the ceiling.
 
-![7.2.6 speaker layout diagram](images/p39-1.jpg)
+![Earlier web interface showing a 7.2.6 speaker configuration](images/p39-1.jpg)
 
 ![Back panel connections for the 7.2.6 configuration](images/p39-2.jpg)
 
@@ -105,7 +108,7 @@ This speaker configuration uses 7 surround sound speakers, 2 subwoofers and 6 he
 
 This speaker configuration uses 9 surround sound speakers, 3 subwoofers and 4 height speakers. The upper front speakers are mounted in the ceiling. The upper rear speakers are Top and Dolby Atmos Enabled.
 
-![9.3.4 speaker layout diagram](images/p40-1.jpg)
+![Earlier web interface showing a 9.3.4 speaker configuration](images/p40-1.jpg)
 
 ![Back panel connections for the 9.3.4 configuration](images/p40-2.jpg)
 
@@ -113,6 +116,6 @@ This speaker configuration uses 9 surround sound speakers, 3 subwoofers and 4 he
 
 This speaker configuration uses 9 surround sound speakers, 1 subwoofer and 6 height speakers. The height speakers are mounted high on the walls, in the corners of the listening area.
 
-![9.1.6 speaker layout diagram](images/p41-1.jpg)
+![Earlier web interface showing a 9.1.6 speaker configuration](images/p41-1.jpg)
 
 ![Back panel connections for the 9.1.6 configuration](images/p41-2.jpg)

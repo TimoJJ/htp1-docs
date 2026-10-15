@@ -10,12 +10,18 @@ one of these equal-loudness curves, so quiet listening still sounds full.
 Turn loudness compensation on or off with the **Loudness Compensation** button at the top of the
 page.
 
-![Loudness page showing the compensation toggle, the interactive chart, Loudness Reference Level, curve select, and Night Mode / Dialog Enhance controls](images/ui-loudness.png)
+![Loudness page showing the compensation toggle, the interactive chart, Loudness Reference Level, curve select, and Night Mode / Dialog Enhance controls](images/ui-loudness.jpg)
 
-The chart below the button is interactive. It shows the selected loudness curve, the current
-volume, and the contribution of Tone Control, all overlaid so you can see what compensation is
-being applied right now. If loudness compensation is off, a banner reminds you that the settings
-below can still be changed but will have no effect until it is turned on.
+The chart follows the selected loudness curve, reference level, and current volume. When Tone Control
+is enabled with a nonzero bass or treble adjustment, an additional curve shows its contribution:
+**Loudness + Tone** when Loudness is on, or **Tone** when Loudness is off.
+
+With Loudness off, the loudness curve remains visible in gray for reference; it is not being applied
+to the audio. A notice explains that loudness settings have no effect until Loudness is turned on.
+
+The loudness response uses the reported output sample rate. If no supported rate is reported, the
+chart explains that it is using 48 kHz. If a response cannot be fully displayed, check the filter
+frequencies and bandwidths as directed by the warning.
 
 ## Loudness Reference Level
 
@@ -59,7 +65,10 @@ disabled whenever loudness compensation is off.
 **Reset** restores the Vintage defaults: Low Shelf at 63 Hz, High Shelf at 12700 Hz, PEQ at
 1000 Hz, and the High-Pass Filter at 20 Hz.
 
-![Vintage Custom filter editors for Low Shelf, PEQ, High Shelf and High-Pass Filter](images/ui-loudness-vintage-custom.png)
+Switching between curve types preserves your Vintage Custom settings. Use **Reset** to restore
+their defaults.
+
+![Vintage Custom filter editors for Low Shelf, PEQ, High Shelf and High-Pass Filter](images/ui-loudness-vintage-custom-crop.png)
 
 ## Night Mode
 

@@ -31,6 +31,9 @@ Channel Levels, the Seat Shaker/Mix Out path, Bass EQ, and the current Dirac Liv
 described below.
 
 ??? note "Historical (2021) diagram"
+    This historical diagram does not show the current selectable Pre/Post PEQ routing. Use the
+    2.x diagram below and the [PEQ Placement](peq.md#peq-placement) section for current behavior.
+
     ![Signal processing flow: input driver, auto-detect classifier, decoder, split to 48k stereo downmix output and SRC/upmixer path, then bass management, Dirac Live, PEQ, tone, delay, volume, and primary output driver](images/p93-2.jpg)
 
 The diagram below shows the 2.x processing chain for each of the four Dirac Live
@@ -39,6 +42,12 @@ Active Room Treatment (BC/ART). A clearer picture of how the system operates hel
 most accurate and effective calibrations for your specific needs.
 
 ![HTP-1 signal flows for the four Dirac Live configurations. Channel controls (signal generator, channel trim, tone, pre PEQ, loudness) sit upstream of the bass manager; speaker controls (post PEQ, lipsync delay, user delay, user trim, peak meter) sit downstream. In BC/ART mode, post PEQ, user delay, and user trim are locked down after calibration](images/art-p07-1.png)
+
+Pre and Post are alternative positions for the same PEQ filters; they are not two PEQ stages
+operating together. Pre PEQ processes channel signals before bass management and Dirac Live.
+Post PEQ processes speaker signals after Dirac Live and is included in calibration measurements.
+See [PEQ Placement](peq.md#peq-placement) for editing and placement restrictions when BC or ART
+calibrations are stored.
 
 ### Channel Signals and Speaker Signals
 
@@ -79,10 +88,10 @@ remote codes at address 0x36C9. The first table lists the codes sent by the remo
 | Vol Down | 09f6 | User Input 2 | 619e | Green | 52ad |
 | Mute Toggle | 0af5 | User Input 3 | 629d | Yellow | 53ac |
 | Vol Up | 0bf4 | User Input 4 | 639c | Blue | 54ab |
-| Mode None | 1be4 | User Input 5 | 649b | A | 55aa |
+| Mode No Upmix | 1be4 | User Input 5 | 649b | A | 55aa |
 | Mode Dolby Sur | 1ce3 | User Input 6 | 659a | B | 56a9 |
 | Mode Neural-X | 1de2 | User Input 7 | 6699 | C | 57a8 |
-| Mode Native | 1ee1 | User Input 8 | 6798 | D | 58a7 |
+| Mode Auto | 1ee1 | User Input 8 | 6798 | D | 58a7 |
 | Mode Auro | 1fe0 | User Input 9 | 6897 | | |
 | Preset 1 | 03fc | Night Toggle | 40bf | Last Input | 44bb |
 | Preset 2 | 04fb | Dialog Up | 41be | BT Pair | 59a6 |
@@ -116,10 +125,19 @@ The remote's color buttons run fixed system functions:
 
 | Button | NEC Code | Command |
 | --- | --- | --- |
-| Red | 51ae | Toggle debug menu on front panel |
-| Green | 52ad | Show playback settings on front panel |
-| Yellow | 53ac | Reload front panel |
+| Red | 51ae | Toggle front-panel Peak Monitor |
+| Green | 52ad | Toggle front-panel Level Meter |
+| Yellow | 53ac | Show detailed processing information |
 | Blue | 54ab | Reset HDMI |
+
+The Red button toggles Peak Monitor on the front panel. The Green button opens a separate
+Level Meter showing live channel levels. The Level Meter shows current signal activity rather
+than Peak Monitor's peak-hold measurements. Press Green again or tap the front panel to close it.
+
+The **A** and **B** macro buttons have initial assignments: **A** shows the front-panel Debug menu,
+and **B** reloads the front panel. These defaults are assigned only when the buttons had no
+previously assigned macro. Existing custom assignments and names are preserved, and you can
+change them on the [Macros](macros.md) page.
 
 The **A**–**D** buttons (55aa, 56a9, 57a8, 58a7) and **Preset 1**–**4** buttons (03fc, 04fb, 05fa,
 06f9) are freely assignable from the [Macros](macros.md) page. Macros can record multiple setting
@@ -171,21 +189,21 @@ where `XXXX` is the NEC code from the tables above. More than one code may be se
 them with commas. Each code must be sent exactly as shown — 4 lower-case characters. The examples
 below use `wget` and `curl`:
 
-- Selects HDMI 1, Native upmix mode, unmute:
+- Selects HDMI 1, Auto listening mode, and unmute:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=0ff0,1ee1,4cb3"
     curl "http://<your-htp1-ip>/ircmd?code=0ff0,1ee1,4cb3"
     ```
 
-- Selects HDMI 2, Direct upmix mode, mute:
+- Selects HDMI 2, No Upmix, and mute:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=10ef,4bb4,1be4"
     curl "http://<your-htp1-ip>/ircmd?code=10ef,4bb4,1be4"
     ```
 
-- Sets the upmixer to None and activates Dirac Live filter slot 1:
+- Selects No Upmix and Dirac Live filter slot 1:
 
     ```
     wget "http://<your-htp1-ip>/ircmd?code=1be4,7887"

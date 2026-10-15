@@ -4,7 +4,7 @@ A macro is a recorded sequence of setting changes that you can play back with on
 Instead of changing several settings by hand every time you sit down to watch a movie, record
 those changes once as a macro, then run it from the remote, the Home page, or an input.
 
-![Macros page showing the remote button accordion and Additional Macros](images/ui-macros.png)
+![Macros page showing the remote button accordion and Additional Macros](images/ui-macros.jpg)
 
 ## Remote Button Macros
 
@@ -17,6 +17,13 @@ editor, shown as a row in the Remote Buttons accordion.
 1. Open the editor for the slot you want to use and turn on **Record**.
 2. Make the setting changes you want the macro to reproduce, anywhere in the web UI.
 3. Turn **Record** off.
+
+Recording appends commands to the macro's existing list. Review the commands, then press **Save** to
+store the list. Stopping recording alone does not save it.
+
+The macro header shows **Unsaved** when the command list differs from the saved version and
+**Invalid code** when the code editor contains invalid syntax. **Save** is unavailable while the code
+is invalid.
 
 Each change you make while recording is added to the macro as a command. The editor lists the
 recorded commands in order, with the number of commands recorded so far. You can drag a
@@ -33,19 +40,21 @@ over.
 
 ## Additional Macros
 
-Beyond the 8 remote slots, you can create more macros in **Additional
-Macros**. These extra macros can only be run from the web UI — they have no remote button —
-but they can be added to the Home page from [Personalize](personalize.md). Only the 8
-remote-button macros can be set to run automatically from an input; see below.
+Beyond the eight remote-button slots, you can create more macros in **Additional Macros**. These have
+no dedicated physical remote button. They can be added to the Home page through
+[Personalize](personalize.md) or assigned to an input through [Inputs](inputs.md).
 
 Press **Create New Macro** to add one. Each additional macro can also be deleted from its
 editor.
 
+If the page reports an unsupported saved format, creating and editing additional macros is disabled
+to protect the saved data. Export your configuration before attempting a migration.
+
 ## Macro Code Editor
 
-Turn on **Show Macro Code Editor** to reveal the raw list of recorded commands as editable
-text for each macro. This is an advanced view — use it only if you are comfortable editing
-the underlying command list directly.
+Turn on **Show Macro Code Editor** to edit the command objects directly. When combining multiple
+commands in one macro, separate the objects with commas; do not include enclosing square brackets.
+Invalid JSON syntax prevents saving.
 
 ### Supported Operations
 
@@ -54,16 +63,32 @@ In addition to the standard `replace` operation, macros support two convenience 
 - **`toggle`** reverses the current value of a Boolean setting (`true` ↔ `false`).
 - **`increment`** adds the specified numeric `value` to the current value of a numeric setting. Use a negative value to decrease it.
 
-For example:
+The following are three independent examples, each containing one command.
+
+Toggle PEQ:
 
 ```json
 {"op":"toggle","path":"/peq/peqsw"}
+```
+
+Increase the bass level by 1 dB:
+
+```json
 {"op":"increment","path":"/eq/bass/level","value":1}
+```
+
+Decrease the bass level by 1 dB:
+
+```json
 {"op":"increment","path":"/eq/bass/level","value":-1}
 ```
+
+Automatic input macros support `add`, `replace`, and `remove`. A macro containing `toggle` or
+`increment` is skipped in its entirety when triggered automatically by an input, even though those
+operations are supported when the macro is run from the WebUI.
 
 ## Where Macros Appear
 
 - On the **Home Page**, if you have added them in Personalize.
-- On the **[Inputs](inputs.md)** page, where one of the 8 remote-button macros can be set to
-  run automatically when you select that input.
+- On the **[Inputs](inputs.md)** page, where a remote-button or additional macro can be assigned to
+  run automatically.

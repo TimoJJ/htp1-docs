@@ -5,7 +5,7 @@ you see throughout the web UI, and a few display preferences for the interface a
 A live preview of the Home page sits alongside the settings, so you can see the effect of a
 change immediately.
 
-![Personalize page showing homepage settings, shortcuts, modes, and the live preview](images/ui-personalize.png)
+![Personalize page showing homepage settings, shortcuts, modes, and the live preview](images/ui-personalize.jpg)
 
 ## Homepage Status Display
 

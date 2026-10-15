@@ -2,11 +2,12 @@
 
 Tone Control gives you a simple yet effective bass and treble adjustment, similar to the tone controls on a traditional stereo receiver — a broad shelf of boost or cut above or below a corner frequency you choose, rather than the narrow, per-band adjustments PEQ offers.
 
-Turn Tone Control on or off with the **Tone Control** button at the top of the page. When it is off, an alert reminds you that the settings below can still be changed, but they will have no effect until Tone Control is turned on — the controls are disabled to make this clear.
+Turn Tone Control on or off with the **Tone Control** switch at the top of the page. When it is off,
+you can still adjust the settings, but they do not affect the audio until Tone Control is turned on.
 
 The page shows an interactive tone curve that updates as you change the settings.
 
-![Tone Control page with the on/off button, interactive tone curve, and the four bass/treble controls](images/ui-tone-control.png)
+![Tone Control page with the on/off button, interactive tone curve, and the four bass/treble controls](images/ui-tone-control.jpg)
 
 | Control | Range |
 |---|---|

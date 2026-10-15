@@ -55,7 +55,8 @@ New to the HTP-1? Start with [Welcome](welcome.md), then [Basic Setup](basic-set
 | [Personalize](personalize.md) | Choosing what appears in the interface |
 | [Volume Setup](volume-setup.md) | Volume limits, Reference Output Voltage, and headroom |
 | [Peak Monitor](peak-monitor.md) | Watching for clipping |
-| [Device Settings](device-settings.md) | Unit name, power, display, and maintenance tools |
+| [Device Settings](device-settings.md) | Unit name, power, display, triggers, and maintenance tools |
+| [Addons](addons.md) | Installing and managing optional features |
 | [Backup and Restore](configs.md) | Saving and restoring your configuration |
 
 ## Status and Reference
@@ -63,7 +64,7 @@ New to the HTP-1? Start with [Welcome](welcome.md), then [Basic Setup](basic-set
 | Chapter | Covers |
 |---|---|
 | [System Status](system-status.md) | Versions, detailed status, and HDMI diagnostics |
-| [Updates and Support](maintenance.md) | Firmware updates, logs, and feedback |
+| [Updates and Support](maintenance.md) | Firmware updates, logs, and community discussion |
 | [Integrations and Control](integrations.md) | Roon, the mobile remote, and HTTP control |
 | [Reference](reference.md) | Specifications, signal flow, IR codes, and glossary |
 
