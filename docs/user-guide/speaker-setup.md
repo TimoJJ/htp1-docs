@@ -54,7 +54,7 @@ Under **Edit Speaker Layout**, the speaker diagram on the right shows the speake
 
 At the bottom of the Speakers page is the **Speaker Map**: an image of the HTP-1's back panel showing which output jack drives which speaker. Click the image to zoom in.
 
-![Speaker Map showing enabled channels highlighted green](images/ui-speakers.jpg)
+![Speaker Map detail for a 2.0 layout, showing the rear-panel output assignments with Left and Right highlighted green](images/ui-speaker-map-detail.png)
 
 As you use more of the 16 output channels, the jack assignment changes depending on which speakers you've enabled. This allows layouts ranging from 9.1.6 (nine mains, one subwoofer, six uppers) to layouts with up to five independently configurable subwoofers, such as 5.5.6 or 7.5.4. The Speaker Map always reflects the current assignment and should be considered authoritative over the labels printed on the back panel, which may not match less common configurations.
 

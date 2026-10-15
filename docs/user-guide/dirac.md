@@ -167,26 +167,37 @@ switches Dirac Live off while retaining global PEQ and the slot's user delay and
 
 ### Off
 
-Dirac Live calibration delay and trim are ignored. User trim is still applied (for RC/BM filters).
-The HTP-1's own bass manager is used. The button reads **Off**.
+Dirac Live filtering and its calibration delay and trim are disabled. User Delay and User Trim
+remain applied. The HTP-1’s own bass manager is used, regardless of the selected filter type.
+The button reads **Off**.
 
 ### Bypass
 
-The room-correction filter itself is disabled, but the calibration's delay and trim values are still
-applied, along with any user delay/trim. The HTP-1 bass manager is used. The button reads **Bypass**.
-This lets you hear your system with delays and trims set correctly but without the spectral
-correction from the filter.
+Dirac Live filtering is disabled, but the calibration’s delay and trim remain applied, along with
+User Delay and User Trim. The button reads **Bypass**.
+
+- **RC:** The HTP-1’s own bass manager remains in use. Bypass lets you compare room correction on
+  and off while retaining calibration delay, trim, and the same bass-management settings.
+- **BM, BC, or ART:** Bass management switches from Dirac Live to the HTP-1’s own bass manager.
+  The audible difference therefore includes changes in bass management, rather than room
+  correction alone.
 
 !!! note
-    The crossover frequencies of the HTP-1 bass manager are not automatically aligned with the
-    crossover frequencies used by a Dirac Live bass manager.
+    Before using Bypass with a BM, BC, or ART filter, check the HTP-1’s speaker size and crossover
+    settings. These settings are independent of the Dirac Live calibration and are not automatically
+    synchronized. Matching crossover frequencies does not guarantee identical bass management.
 
 ### RC On / BM On / BC On / ART On
 
-The filter is fully engaged — calibration delay and trim, user delay/trim, and the room-correction
-filter itself are all applied. The button reads the loaded filter type followed by "On", for
-example **ART On**. When a BM, BC, or ART filter is on, the HTP-1's own bass manager is disabled so
-Dirac Live can handle bass management instead.
+Dirac Live filtering and the calibration’s delay and trim are active. The button identifies the
+filter type, such as **RC On** or **ART On**.
+
+- **RC:** Dirac Live provides room correction; the HTP-1’s own bass manager handles bass management.
+- **BM, BC, or ART:** Dirac Live provides room correction and bass management; the HTP-1’s own bass
+  manager is disabled.
+
+User Delay and User Trim can be adjusted with RC and BM filters. These adjustments are locked
+for BC and ART filters.
 
 If the current speaker layout has no calibration in any slot, the button instead shows a single
 **No Filter** state.

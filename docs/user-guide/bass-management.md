@@ -14,9 +14,12 @@ The bass management system acknowledges that many speakers cannot reproduce low 
 
 ## Where the Controls Are
 
-The bass management controls live on the **Speakers** page (`/#/settings/speakers`), in a **Bass Manager** section below the speaker layout table.
+The HTP-1 bass manager's controls are on the **Speakers** page (`/#/settings/speakers`):
 
-![Speakers page with the Bass Manager badge and Bass Manager section visible](images/ui-speakers.jpg)
+- **Speaker size and crossover:** use **Edit Speaker Layout** to choose Large, Small, or Dolby. Selecting Small or Dolby reveals the crossover-frequency control, which determines where that speaker's bass is redirected.
+- **LPF for LFE Channel and Reinforce Bass:** these additional controls appear in the **Bass Manager** section below the speaker layout table.
+
+![Speakers page with a 2.1 layout, Left/Right set to Small with an 80 Hz crossover, one subwoofer enabled, and the HTP-1 Bass Manager controls visible](images/ui-speakers-21.png)
 
 Whether that section appears at all depends on the **Bass Manager badge** shown near the top of the page:
 
@@ -28,7 +31,7 @@ Whether that section appears at all depends on the **Bass Manager badge** shown 
 
 ## HTP-1 Bass Manager Controls
 
-When the badge reads **HTP-1**, two controls appear:
+When the badge reads **HTP-1**, the speaker size and crossover settings work together with these two additional controls:
 
 | Control | Range | What it does |
 |---|---|---|
