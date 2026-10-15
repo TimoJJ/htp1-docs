@@ -31,6 +31,9 @@ Channel Levels, the Seat Shaker/Mix Out path, Bass EQ, and the current Dirac Liv
 described below.
 
 ??? note "Historical (2021) diagram"
+    This historical diagram does not show the current selectable Pre/Post PEQ routing. Use the
+    2.x diagram below and the [PEQ Placement](peq.md#peq-placement) section for current behavior.
+
     ![Signal processing flow: input driver, auto-detect classifier, decoder, split to 48k stereo downmix output and SRC/upmixer path, then bass management, Dirac Live, PEQ, tone, delay, volume, and primary output driver](images/p93-2.jpg)
 
 The diagram below shows the 2.x processing chain for each of the four Dirac Live
@@ -39,6 +42,12 @@ Active Room Treatment (BC/ART). A clearer picture of how the system operates hel
 most accurate and effective calibrations for your specific needs.
 
 ![HTP-1 signal flows for the four Dirac Live configurations. Channel controls (signal generator, channel trim, tone, pre PEQ, loudness) sit upstream of the bass manager; speaker controls (post PEQ, lipsync delay, user delay, user trim, peak meter) sit downstream. In BC/ART mode, post PEQ, user delay, and user trim are locked down after calibration](images/art-p07-1.png)
+
+Pre and Post are alternative positions for the same PEQ filters; they are not two PEQ stages
+operating together. Pre PEQ processes channel signals before bass management and Dirac Live.
+Post PEQ processes speaker signals after Dirac Live and is included in calibration measurements.
+See [PEQ Placement](peq.md#peq-placement) for editing and placement restrictions when BC or ART
+calibrations are stored.
 
 ### Channel Signals and Speaker Signals
 

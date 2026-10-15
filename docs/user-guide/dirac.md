@@ -44,6 +44,9 @@ attached to the laptop.
 
 Complete the [basic setup](basic-setup.md) first — be able to play sound through your speaker set.
 
+The Dirac Live application screenshots below show an earlier app version. Screen appearance may
+differ in the version you install.
+
 1. Download and install the Dirac Live app: <https://live.dirac.com/download/>. Use the latest
    version for the best results.
 2. Attach a calibrated USB microphone to the computer.
@@ -59,11 +62,14 @@ Complete the [basic setup](basic-setup.md) first — be able to play sound throu
 6. The HTP-1 web UI is read-only while a Dirac Live calibration session is connected — a banner
    tells you this, and the front panel and remote still work for volume. Closing the Dirac Live app
    restores normal control.
+
+    ![Earlier HTP-1 web interface showing a calibration session connected](images/p51-1.jpg)
+
+    *Earlier HTP-1 interface: a connected Dirac Live calibration session temporarily limits web controls.*
+
 7. Set the volumes for calibration. The volume control on the left side of the Dirac Live screen
    matches the one on the remote control — you can adjust it with the remote. The app sets the
    volume initially to -34 dB.
-
-    ![Dirac Live app volume calibration screen with the master volume control on the left](images/p51-1.jpg)
 
     Use the Dirac Live **Volume Calibration** screen to make sure the test signal is well above the room
     noise floor without clipping. A good target is roughly 20 dB of separation between the ambient

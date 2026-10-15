@@ -114,10 +114,10 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 - [ ] Dirac recovery states, only when safely reproducible.
 - [ ] Current third-party Dirac app workflow images — deferred until after release.
-- [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
-- [ ] Recheck all remaining hardware/measurement figures during rendered review.
+- [x] Signal-flow diagrams reviewed for Pre/Post PEQ placement; current figure clarified and historical figure warning strengthened.
+- [x] Remaining hardware and measurement figures reviewed; retained without replacement.
 - [ ] Confirm source-seeded defaults against a physical unit.
-- [ ] Final rendered-page and image-readability review.
+- [x] Rendered-page and image-readability review completed at 1200 px; four approved caption/context corrections applied.
 
 The Home status cards are blank because the isolated default preview has no audio stream.
 The default Calibration image has empty slots; it does not demonstrate active filtering.

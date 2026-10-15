@@ -85,11 +85,14 @@ The back panel of the unit is shown below along with a diagram of the XLR connec
 
 As you use more of the 16 channels, the order of channels assigned to the back panel varies with your choice of speakers. The actual assignment for your current layout is always shown on the [Speaker Map](#the-speaker-map) at the bottom of the Speakers page.
 
+The examples below use screenshots from an earlier web interface. They illustrate speaker layouts
+and output assignments; use the current Speakers page and Speaker Map to configure your unit.
+
 ### Example 7.1.4h Speaker Configuration (Upper Level On the Wall)
 
 This speaker configuration uses 7 surround sound speakers, 1 subwoofer and 4 height speakers. The height speakers are mounted high on the walls, in the corners of the listening area.
 
-![7.1.4h speaker layout diagram](images/p38-1.jpg)
+![Earlier web interface showing a 7.1.4h speaker configuration](images/p38-1.jpg)
 
 ![Back panel connections for the 7.1.4h configuration](images/p38-2.jpg)
 
@@ -97,7 +100,7 @@ This speaker configuration uses 7 surround sound speakers, 1 subwoofer and 4 hei
 
 This speaker configuration uses 7 surround sound speakers, 2 subwoofers and 6 height speakers. The height speakers are mounted in the ceiling.
 
-![7.2.6 speaker layout diagram](images/p39-1.jpg)
+![Earlier web interface showing a 7.2.6 speaker configuration](images/p39-1.jpg)
 
 ![Back panel connections for the 7.2.6 configuration](images/p39-2.jpg)
 
@@ -105,7 +108,7 @@ This speaker configuration uses 7 surround sound speakers, 2 subwoofers and 6 he
 
 This speaker configuration uses 9 surround sound speakers, 3 subwoofers and 4 height speakers. The upper front speakers are mounted in the ceiling. The upper rear speakers are Top and Dolby Atmos Enabled.
 
-![9.3.4 speaker layout diagram](images/p40-1.jpg)
+![Earlier web interface showing a 9.3.4 speaker configuration](images/p40-1.jpg)
 
 ![Back panel connections for the 9.3.4 configuration](images/p40-2.jpg)
 
@@ -113,6 +116,6 @@ This speaker configuration uses 9 surround sound speakers, 3 subwoofers and 4 he
 
 This speaker configuration uses 9 surround sound speakers, 1 subwoofer and 6 height speakers. The height speakers are mounted high on the walls, in the corners of the listening area.
 
-![9.1.6 speaker layout diagram](images/p41-1.jpg)
+![Earlier web interface showing a 9.1.6 speaker configuration](images/p41-1.jpg)
 
 ![Back panel connections for the 9.1.6 configuration](images/p41-2.jpg)
