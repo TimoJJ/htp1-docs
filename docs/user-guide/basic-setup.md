@@ -45,14 +45,9 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 10. Plug the included AC Power Cord into the C14 power connector on the rear panel, then plug the other end into a nearby AC power outlet.
 11. Plug in and power on all connected devices. Start video playback on your video source device.
 12. Flip the Master Power Switch on the rear panel to the ON position (I side depressed) to boot the system. You should see the Monolith logo displayed on the front panel within seconds after pressing the power switch. The front panel power switch should begin flashing blue. After about a minute the display should show "Almost Ready". Finally the front panel will display the main screen. Once the unit has finished booting, the Front Panel LCD Display will look similar to the display in the [Product Overview](product-overview.md) section. The blue light on the front panel power switch goes dark again when the unit is ready.
-13. For normal operation, use the Power/Standby Button on the front panel to turn the unit on or put it into standby mode, rather than using the Master Power Switch on the rear panel.
+13. For normal operation, use the Power/Standby Button on the front panel to turn the unit on or put it into standby, rather than using the Master Power Switch on the rear panel.
 
-    !!! note
-        The HTP-1 supports two standby modes: **Slow Boot** (default) and **Fast Start**. In **Slow Boot** mode, the unit powers down virtually all internal components, reducing standby power consumption to less than **0.5 W**. The front panel becomes operational in approximately **1&nbsp;minute&nbsp;40&nbsp;seconds**, while additional initialization continues in the background and may take up to **2&nbsp;minutes&nbsp;30&nbsp;seconds** to complete.
-
-        In **Fast Start** mode, most of the internal electronics remain powered, so the unit starts almost instantly. Only the front panel is turned off while in standby, resulting in standby power consumption that is nearly as high as when the unit is fully powered on.
-
-        You can enable **Fast Start** from the **Device Settings** page of the web interface.
+    **Fast Start** controls startup time and standby power consumption. See [Device Settings → Power](device-settings.md#power) for the differences between the two standby modes and how to enable Fast Start.
 
 14. On first startup, the front panel provides the information needed to access the HTP-1's web interface from another device on the same network. Open the **Help** screen by tapping the **?** icon in the top right. It shows the HTP-1's mDNS hostname, network addresses, and a QR code.
 
