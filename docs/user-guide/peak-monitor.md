@@ -2,7 +2,7 @@
 
 Peak Monitor shows how close each channel is getting to clipping (the signal exceeds the available digital range and creates audible distortion), so you can set **Maximum Digital Headroom** by measurement instead of by ear. It does not measure RMS level or analog output voltage and does not determine **Reference Output Voltage** which is configured separately in [Volume Setup](volume-setup.md).
 
-![Peak Monitor page in Table view](images/ui-peak-monitor.png)
+![Peak Monitor page in Table view](images/ui-peak-monitor.jpg)
 
 ## Turning It On
 
@@ -40,6 +40,8 @@ held since the last reset.
 Press the remote's **Green** button to show or hide the Level Meter, or tap the front panel while
 the Level Meter is displayed to close it. The remote's **Red** button toggles Peak Monitor instead.
 
+![Front-panel Level Meter showing live activity for the active channels, including Seat Shaker](images/fp-level-meter.png)
+
 ## Table and Bars Views
 
 Switch between **Table** and **Bars** with the buttons above the meters.
@@ -47,7 +49,7 @@ Switch between **Table** and **Bars** with the buttons above the meters.
 Table view lists each active channel with its peak signal level in dBFS. A channel is shown in red
 once it reaches clipping.
 
-![Peak Monitor page in Bars view](images/ui-peak-monitor-bars.png)
+![Peak Monitor page in Bars view](images/ui-peak-monitor-bars.jpg)
 
 Bars view shows live channel levels as vertical meters, with a scale from +6 to −84 dBFS. Numeric
 readings show the highest measured peaks. When visible, peak markers are green below −1 dBFS, amber

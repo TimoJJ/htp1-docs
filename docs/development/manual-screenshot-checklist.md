@@ -1,6 +1,6 @@
 # User Manual screenshot status
 
-The approved 1200 px captures have been adopted. They use the unmodified shipped WebUI
+The approved default-state 1200 px captures have been adopted. They use the unmodified shipped WebUI
 (0b726dc, assembled build 3f128c9b) with isolated settings seeded from the firmware's
 empty-state initialization. They are not captures of a physically factory-reset unit.
 The capture viewport was 1200 × 900 CSS pixels; full-page images can be taller.
@@ -47,6 +47,16 @@ Network addresses and MAC addresses in this batch are illustrative runtime data.
 No network configuration was applied. BEQ application was confined to the isolated preview.
 The external BEQ artwork failed to load; artwork-complete replacements remain pending.
 
+## Adopted active meter captures
+
+- [x] `ui-peak-monitor.jpg` (Table, 1200 px wide).
+- [x] `ui-peak-monitor-bars.jpg` (Bars with Peak hold, 1200 px wide).
+- [x] `fp-level-meter.png` (native front-panel capture, 800 × 480).
+
+These captures use real signal data and the physical unit's current speaker configuration,
+including Seat Shaker. They are not default-state examples. The user started playback
+and opened the Level Meter; no playback or speaker settings were changed by the capture work.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -67,14 +77,14 @@ System Status screenshot remains until a suitable public-release capture is avai
 ## Remaining screenshot work
 
 - [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
-- [ ] Active Peak Monitor Table/Bars and front-panel Level Meter: actual signal data.
+- [ ] Front-panel Peak Monitor footer (`fp-peak-monitor.png`): active peak level and channel.
 - [ ] Active/recovery Dirac status (`art-p14-1.png`) and custom slot-name example.
 - [ ] Replace legacy `p55-1.jpg` with a suitable calibrated-state image.
 - [ ] Legacy Advanced PEQ Options button crop (`art-p09-1.png`).
 - [ ] Alternative front-panel theme, mini-label and text-color controls.
 - [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
-- [ ] Native front-panel captures, Help/hostname, Peak Monitor, and Remote.
+- [ ] Remaining native front-panel captures, Help/hostname, and Remote.
 - [ ] Current third-party Dirac app workflow images.
 - [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
 - [ ] Recheck all remaining hardware/measurement figures during rendered review.
