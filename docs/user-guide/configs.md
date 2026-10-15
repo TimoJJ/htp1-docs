@@ -33,6 +33,8 @@ file. Some live system values are kept or refreshed, and settings may be adjuste
 If differences are listed, review them and click **Confirm Import Configuration** to proceed. The
 HTP-1 restarts after import.
 
+![Import differences preview showing the selected file, two changed settings, restart explanation, and confirmation button](images/ui-import-differences-detail.png)
+
 If the file matches the current configuration, the page reports that no changes are necessary.
 
 ![Import preview showing a file that matches the current configuration](images/ui-import-default-match.jpg)

@@ -84,6 +84,10 @@ Only display labels were changed; the physical unit was unchanged.
 Alternative-panel theme, mini-labels and text-color controls remain text-only by request.
 No screenshots are required for those features.
 
+## Adopted import differences capture
+
+- [x] `ui-import-differences-detail.png`: relevant Import section cropped from the 1200 px preview, with context above and below. The example changes unit name to Living Room and lip-sync to 20 ms. No import was performed.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -105,7 +109,6 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 - [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
 - [ ] Dirac recovery states, only when safely reproducible.
-- [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
 - [ ] Current third-party Dirac app workflow images.
 - [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
