@@ -61,7 +61,5 @@ underneath, in a **Configuration for Wi-Fi Network** panel identical in layout t
 
 ## Resetting the Network Connection
 
-There is a way to completely reset the network connections from the front panel. Poke your finger on
-the gear icon on the front panel. You may need to move your finger around a bit. The front panel
-responds by displaying information about the network connection. A "Reset Network" button is
-an option there. This is designed to bring the Ethernet and Wi-Fi network back to normal DHCP operation.
+To reset the network connections, tap the Help (?) icon at the top right of the front panel, then tap
+**Reset Network**. This returns Ethernet and Wi-Fi to automatic configuration using DHCP.
