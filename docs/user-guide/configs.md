@@ -12,8 +12,14 @@ Configuration to File** to save it as a JSON file.
 
 !!! tip
     Export a backup before any major change — a firmware update, a factory reset, or a big change to
-    your speaker layout or calibrations. If something goes wrong, you can get back to where you
-    started.
+    your speaker layout or calibrations. If something goes wrong, you can restore your saved
+    configuration settings.
+
+!!! warning "Dirac Live calibrations are not included"
+    A configuration export saves your HTP-1 settings but does not include the actual Dirac Live
+    filter files. Keep your Dirac Live project files separately if you want to restore your
+    calibrations later. Importing a configuration JSON file does not restore deleted Dirac Live
+    filters.
 
 ## Import
 

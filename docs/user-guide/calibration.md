@@ -9,15 +9,22 @@ not on this page.
 
 ## Dirac Live Filter Slots
 
-Up to six Dirac Live filter slots are available. Each slot holds one calibration produced by the
-Dirac Live app. Click a tab to switch slots. An empty slot shows as "Uncalibrated".
+Up to six Dirac Live filter slots are available. Each slot can hold a calibration produced by the
+Dirac Live app or be used for manual PEQ, delay, and trim settings without a calibration. Click a
+tab to select a slot. An empty slot shows as "Uncalibrated" unless you give it a custom name.
+Selecting a slot without a calibration switches Dirac Live off while that slot's manual PEQ, delay,
+and trim settings remain available.
 
 ### Naming a Slot
 
-You can rename a slot from the HTP-1 side. Click the
-pencil icon next to the active slot's name, type a new name, and press Enter. This is only available
-for an empty slot — once a calibration is loaded into a slot, its name comes from Dirac Live and
-cannot be changed here.
+You can give any filter slot a custom name, whether it contains a Dirac Live calibration or not.
+Select the slot, click the pencil (Rename) control, enter a name, and save it.
+
+A custom name replaces the displayed slot name but does not change the calibration name stored by
+Dirac Live. The original Dirac Live name remains available as additional information. Clearing the
+custom name restores the Dirac Live name, or "Uncalibrated" if the slot has no calibration.
+
+Renaming is temporarily unavailable while Dirac Live is loading or switching filters.
 
 ### Notes
 
@@ -79,9 +86,6 @@ loaded — those values are no longer being applied and should be cleared.
 
 If you have a seat shaker channel, it is greyed out in this table. Its delay and trim are always
 zero and cannot be edited here.
-
-On a phone-sized screen the table becomes a set of cards, one per speaker, with a slot picker in
-place of the tab strip.
 
 ## Show Advanced Settings
 

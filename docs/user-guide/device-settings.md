@@ -23,10 +23,31 @@ With **Fast Start** off, the HTP-1 enters a very low-power standby mode. In this
 **Video Passthrough** only works when Fast Start is on — it lets video pass through the HTP-1 while the
 unit itself is off.
 
+## Amplifier Triggers
+
+The HTP-1 has four independently configurable 12 V trigger outputs, normally used to switch external
+amplifiers on and off.
+
+Each trigger can have its own name, automatic power-on setting, and power-on delay of up to 10 seconds.
+Disable **Auto-on** if you don't want a trigger to activate automatically when the HTP-1 starts.
+
+**Manual control** lets you switch individual trigger outputs on or off.
+
+Automatic power-on settings and delays take effect the next time the HTP-1 powers on, including when
+waking from standby. Longer delays also keep audio muted longer while the amplifiers start.
+
 ## Display
 
 **Front Panel Brightness** sets how bright the front panel display is, on a scale of 1 (off) to
 7 (brightest). When set to brightness 1, the front panel will briefly illuminate in response to Volume and Dialog Enhance adjustments.
+
+**Front Panel Theme** chooses the appearance of the front panel display. The Default theme retains
+the original layout; alternative themes offer additional display options.
+
+For an alternative theme, **Front Panel Mini-Labels** lets you turn the labels on or off, choose what
+each label displays, reorder them, and set their on-state colors. **Front Panel Text Color** changes
+the text color throughout the alternative front-panel screens. Use **Restore Defaults** to restore
+the alternative display options.
 
 ## Time Zone
 
@@ -45,5 +66,7 @@ The Danger Zone holds tools for troubleshooting and reset. Each asks you to conf
 | Factory Reset | Resets all settings to factory defaults and reboots the unit automatically. Network settings are left unchanged. |
 
 !!! warning
-    Factory Reset also deletes your Dirac Live calibrations, not just your other settings. Export a
-    backup on [Configs](configs.md) before you use it if you want to keep your current setup.
+    Factory Reset deletes your Dirac Live calibrations as well as other settings. A configuration
+    export does not include the actual Dirac Live filter files, so importing a saved JSON
+    configuration cannot restore deleted calibrations. Save your Dirac Live project files separately
+    before resetting the unit. See [Backup and Restore](configs.md).

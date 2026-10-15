@@ -117,6 +117,7 @@ nav:
           - Volume Setup: user-guide/volume-setup.md
           - Peak Monitor: user-guide/peak-monitor.md
           - Device Settings: user-guide/device-settings.md
+          - Addons: user-guide/addons.md
           - Backup and Restore: user-guide/configs.md
       - Status and Reference:
           - System Status: user-guide/system-status.md

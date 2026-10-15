@@ -97,12 +97,13 @@ Which of these rows appear, and in what order, is controlled from the **Personal
 
 ### Settings
 
-Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page to open the settings area. It replaces the Home page with a **sidebar** down the left side and the selected settings page on the right. The sidebar lists **Home** at the top, then twenty pages in three groups, then **Power Off** at the bottom:
+Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page to open the settings area. It replaces the Home page with a **sidebar** down the left side and the selected settings page on the right. The sidebar lists **Home** at the top, then settings and other pages organized by task, with **Power Off** at the bottom:
 
 | Group | Pages |
 |---|---|
 | Speakers & audio | Speakers, Calibration, Channel Levels, Signal Generator, PEQ, Seat Shaker, Bass EQ, Tone Control, Loudness, Upmix |
-| Setup | Inputs, Network, Macros, Personalize, Volume Setup, Peak Monitor, Device Settings, Configs |
+| Setup | Inputs, Network, Macros, Personalize, Volume Setup, Peak Monitor, Device Settings |
+| Optional features | [Addons](addons.md) |
 | Status & help | System Status, Help |
 
 Once you are inside settings, a small line of text at the top of the screen — `<volume> dB · <input> · <upmix>` — shows current status and links back to Home. A row of **shortcut icons** also sits in the top-right corner; which pages appear there is chosen on the Personalize page, so you can jump straight to the pages you use most.
