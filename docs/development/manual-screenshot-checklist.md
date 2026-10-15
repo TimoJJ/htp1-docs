@@ -45,7 +45,8 @@ No physical-unit configuration was changed. Hardware-default confirmation remain
 
 Network addresses and MAC addresses in this batch are illustrative runtime data.
 No network configuration was applied. BEQ application was confined to the isolated preview.
-The external BEQ artwork failed to load; artwork-complete replacements remain pending.
+The BEQ captures were subsequently replaced with artwork-loaded mobe1969 catalogue entries.
+Both replacement captures retain the 1200 px viewport; BEQ application stayed in the isolated preview.
 
 ## Adopted active meter captures
 
@@ -107,7 +108,6 @@ System Status screenshot remains until a suitable public-release capture is avai
 
 ## Remaining screenshot work
 
-- [ ] BEQ: replace the adopted Author and applied-versus-browsed captures when external catalogue artwork is available.
 - [ ] Dirac recovery states, only when safely reproducible.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
 - [ ] Current third-party Dirac app workflow images.
