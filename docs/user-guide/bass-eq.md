@@ -14,15 +14,26 @@ Search the catalogue using the fields at the top of the page:
 - **Year**
 - **Source** — the streaming service, disc, or other release the filter was measured from.
 - **Language**
+- **Author** — the contributor who supplied the filter.
 
-Results appear in a scrollable, paged list. Select a title to see its details — overview, genres, rating, runtime, and cover art — on the right.
+Results appear in a paged list. Select an entry to browse its details and images. Browsing does not
+apply the filter. The currently applied entry has an **Applied** badge, distinct from the selected entry.
 
 ![Bass EQ page with the search fields, results list, and a selected title's detail panel](images/ui-bass-eq.png)
 
 ## Applying a Filter
 
-Select a title, then click **Apply** on its result row. The filter's bands are written into your subwoofer channels' PEQ, and PEQ is turned on if it wasn't already.
+Choose the entry matching your soundtrack's source, edition, and audio format, then click **Apply** on
+its result row. The filters are written into available zero-gain PEQ bands on the active subwoofer
+channels, and PEQ is switched on.
 
-The **Active BEQ Filter** panel at the top of the page always shows what is currently applied. Click its name to jump back to that title's details, or click **Clear** to remove the filter and restore your subwoofer PEQ to its previous state.
+The **Active BEQ Filter** panel identifies the applied catalogue entry. Click its link to display that
+entry's details.
 
-Applying a new filter automatically clears whichever one was active before it.
+Click **Clear** to remove the bands marked as BEQ. Those bands are reset rather than restored from a
+saved copy of their previous settings. Other PEQ bands are left unchanged, and clearing BEQ does not
+switch PEQ off.
+
+Applying another BEQ filter clears the previous one first. BEQ is also cleared automatically when
+changing inputs, powering off, waking from standby, or starting the unit. Automatic clearing works
+with the web interface closed.

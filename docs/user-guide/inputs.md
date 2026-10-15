@@ -4,7 +4,7 @@ The Inputs page lets you set up each input: its name, whether it shows on the ho
 listening mode, its lip-sync delay, its Dirac Live filter slot, and a macro to run when you select it.
 HDMI CEC and Bluetooth are also set up on this page.
 
-![Inputs page showing the input table with Label, Visible on Homepage, Listening Mode, Lip-Sync Delay, Dirac Live Slot, Run Macro, and UHD Capable columns](images/ui-inputs.png)
+![Inputs page showing the input table with Label, Show on Home, Listening Mode, Lip-Sync Delay, Dirac Live Slot, Run Macro, and UHD Capable columns](images/ui-inputs.png)
 
 Clicking an input's name in the **Input** column selects that input immediately, so the table also
 works as an input selector.
@@ -15,7 +15,7 @@ works as an input selector.
 |---|---|
 | Input | Shows the input's name. Click it to select that input. |
 | Label | The name shown for this input on the front panel, the homepage, and the remote. |
-| Visible on Homepage | Turns this input's button on or off on the Home page. |
+| Show on Home | Turns this input's button on or off on the Home page. |
 | Listening Mode | The upmixer applied when you select this input, or **Last Used** to keep whatever upmixer was last chosen. |
 | Lip-Sync Delay (ms) | Extra audio delay for this input, 0–340 ms. See [Lip-Sync Delay](#lip-sync-delay) below. |
 | Dirac Live Slot | The Dirac Live filter slot applied when you select this input, or **Last Used**. |
@@ -32,7 +32,7 @@ works as an input selector.
 Type a name into the **Label** field for any input to change what is displayed for it on the front
 panel, the homepage, and the remote.
 
-To make an input's button appear on the Home page, turn on its **Visible on Homepage** switch. Every
+To make an input's button appear on the Home page, turn on its **Show on Home** switch. Every
 input with this switch on appears on the homepage — there is no limit there. The HTP-1 remote's USER
 INPUT buttons work differently: they map to your visible inputs in order, and the remote can only
 reach the first nine.
@@ -63,15 +63,24 @@ The **340 ms** figure is a ceiling on the total delay applied to a channel, not 
 
 ## Dirac Live Slot
 
-**Dirac Live Slot** sets the Dirac Live filter slot the HTP-1 switches to whenever you select this
-input. Each option shows the slot's name along with a badge for its filter type (ART, BC, BM, or RC).
-Choose **Last Used** to leave the current filter slot alone.
+**Dirac Live Slot** sets the filter slot the HTP-1 switches to whenever you select this input. Options
+show the slot name and, where available, its filter-type abbreviation: ART, BC, BM, or RC. Choose
+**Last Used** to leave the current filter slot unchanged.
 
 ## Run Macro
 
-**Run Macro** runs a macro automatically whenever you select this input — useful for things like
-turning on a TV or switching an AV receiver's input at the same time. Choose **None** to do nothing.
-The macros available here are the ones you have created on the [Macros](macros.md) page.
+**Run Macro** assigns a saved macro to this input. Choose **None** to disable the assignment. Both
+remote-button macros and additional macros can be selected.
+
+The HTP-1 applies the input's listening mode, lip-sync delay, and filter-slot defaults when the input
+is selected while powered on, then runs its assigned macro. This works with the web interface closed.
+
+The assigned macro also runs when waking from standby. A cold startup restores the input defaults
+without running the assigned macro. Opening or refreshing the web interface does not run it again.
+
+During Dirac Live calibration or filter transfer, input defaults wait until the operation finishes,
+but an input macro triggered during that period is skipped. See [Macros](macros.md) for automatic-macro
+compatibility limits.
 
 ## UHD Capable
 
