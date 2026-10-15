@@ -30,6 +30,14 @@ No physical-unit configuration was changed. Hardware-default confirmation remain
 - [x] `ui-export-preview.jpg` replaces the obsolete embedded configuration pane.
 - [x] `ui-addons.jpg` added to the Addons chapter.
 
+- [x] `ui-inputs-cec.jpg`
+- [x] `ui-loudness-vintage-custom.jpg`
+- [x] `ui-peq-editor.jpg`
+- [x] `ui-peq-options-dialog.jpg`
+- [x] `ui-speakers-layout-dialog.jpg`
+- [x] `ui-sinewave.jpg`
+- [x] `ui-import-default-match.jpg`
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -54,11 +62,9 @@ System Status screenshot remains until a suitable public-release capture is avai
 - [ ] Active Peak Monitor Table/Bars and front-panel Level Meter: actual signal data.
 - [ ] Active/recovery Dirac status (`art-p14-1.png`) and custom slot-name example.
 - [ ] Replace legacy `p55-1.jpg` with a suitable calibrated-state image.
-- [ ] Sinewave detail (`p64-1.jpg`), Vintage Custom and PEQ Editor states.
-- [ ] Speaker-layout and Advanced PEQ Options dialogs and legacy button crop.
+- [ ] Legacy Advanced PEQ Options button crop (`art-p09-1.png`).
 - [ ] Alternative front-panel theme, mini-label and text-color controls.
-- [ ] Import differences and restart explanation.
-- [ ] CEC-on detail view.
+- [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
 - [ ] Native front-panel captures, Help/hostname, Peak Monitor, and Remote.
 - [ ] Current third-party Dirac app workflow images.

@@ -68,7 +68,7 @@ disabled whenever loudness compensation is off.
 Switching between curve types preserves your Vintage Custom settings. Use **Reset** to restore
 their defaults.
 
-![Vintage Custom filter editors for Low Shelf, PEQ, High Shelf and High-Pass Filter](images/ui-loudness-vintage-custom.png)
+![Vintage Custom filter editors for Low Shelf, PEQ, High Shelf and High-Pass Filter](images/ui-loudness-vintage-custom.jpg)
 
 ## Night Mode
 

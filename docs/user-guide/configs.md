@@ -35,5 +35,7 @@ HTP-1 restarts after import.
 
 If the file matches the current configuration, the page reports that no changes are necessary.
 
+![Import preview showing a file that matches the current configuration](images/ui-import-default-match.jpg)
+
 Nothing is changed until you confirm. Check that you selected the intended file, particularly when
 importing settings from another unit or speaker layout.

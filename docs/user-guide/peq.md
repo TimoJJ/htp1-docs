@@ -31,7 +31,7 @@ The PEQ page shows a response chart for the bands you have set. Two buttons abov
 - **Chart** — a read-only plot of the combined response.
 - **Editor** — an interactive chart where you can drag a band's marker to change its frequency and gain, and drag its edges to change Q. The Editor is available when grouping **By Channel** on wider screens. Phone layouts keep the chart and the numeric fields and sliders.
 
-![PEQ page in Editor mode, showing draggable band markers on the response chart](images/ui-peq-editor.png)
+![PEQ page in Editor mode, showing draggable band markers on the response chart](images/ui-peq-editor.jpg)
 
 Two more buttons control what the chart displays:
 
@@ -110,7 +110,7 @@ Open the **Advanced PEQ Options** dialog to change placement. On the PEQ page, t
 
 ![Advanced PEQ Options button on the PEQ page](images/art-p09-1.png)
 
-![Advanced PEQ Options dialog with pre-Dirac Live (default) and post-Dirac Live radio buttons](images/ui-peq-options-dialog.png)
+![Advanced PEQ Options dialog with pre-Dirac Live (default) and post-Dirac Live radio buttons](images/ui-peq-options-dialog.jpg)
 
 The dialog stages your choice locally — nothing is applied until you click **Save**. A banner reads *"You have unsaved changes. Click Save to apply them."* until you do.
 
