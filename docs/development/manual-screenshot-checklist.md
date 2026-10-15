@@ -58,6 +58,16 @@ These captures use real signal data and the physical unit's current speaker conf
 including Seat Shaker. They are not default-state examples. The user started playback
 and opened the Level Meter; no playback or speaker settings were changed by the capture work.
 
+## Adopted Help and Remote captures
+
+- [x] `fp-help.png` (physical front-panel Help/hostname, native 800 × 480).
+- [x] `remote.jpg` (Mobile Remote with default controls, 414 × 896 portrait viewport).
+
+Help shows the unit's actual hostname, QR code and Wi-Fi connection; no network settings
+were changed. Remote uses production controls and styling with source-initialized defaults
+and cleared browser preferences; only its connection transport was redirected to the isolated
+preview. The smaller portrait viewport reflects the Remote page's phone-oriented layout.
+
 ## Available detail captures
 
 These approved images are retained for later placement; they do not replace the
@@ -84,7 +94,7 @@ System Status screenshot remains until a suitable public-release capture is avai
 - [ ] Alternative front-panel theme, mini-label and text-color controls.
 - [ ] Import differences example with a nonmatching configuration file; the matching-file preview already shows the restart explanation.
 - [ ] 1.13.3 ART Upgrade Preparation screen, clearly identified as legacy.
-- [ ] Remaining native front-panel captures, Help/hostname, and Remote.
+- [ ] Other native front-panel illustrations (`fp-p01-1.png`) and alternative appearance states.
 - [ ] Current third-party Dirac app workflow images.
 - [ ] Signal-flow diagram agreement with Pre/Post PEQ placement.
 - [ ] Recheck all remaining hardware/measurement figures during rendered review.
