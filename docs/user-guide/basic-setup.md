@@ -70,7 +70,7 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 
     Congratulations! You have finished the Basic Setup and are ready to learn more about the advanced features and functionality of the HTP-1.
 
-    ![HTP-1 web interface Home page](images/ui-home.png)
+    ![HTP-1 web interface Home page](images/ui-home.jpg)
 
 18. Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page. This opens the settings sidebar. Explore the **Speakers** page and the **Signal Generator** page — see [Product Overview](product-overview.md#web-interface) for the full page list.
 
@@ -90,7 +90,9 @@ The [Connectivity](connectivity.md) chapter gives further information on Wi-Fi, 
 
 ## Update the Firmware
 
-After you have completed the basic setup is a good time to check for firmware updates. Available firmware updates are advertised on the **System Status** page, under **History and Updates**. See [Firmware Updates & Support](maintenance.md) for the update process.
+After completing basic setup, open **System Status** and click **Check for updates**. Select
+**Version history** to browse releases and read their release notes. See
+[Updates and Support](maintenance.md) for installation instructions.
 
 ## Interface Description
 

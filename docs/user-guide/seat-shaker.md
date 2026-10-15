@@ -5,7 +5,7 @@ or to a riser under the seating. It turns low-frequency signal into motion you f
 sound you hear. The HTP-1 generates a dedicated seat shaker signal with its own input source,
 filtering, delay, gain, trim and PEQ, and routes it either to an XLR output or to the Mix Out RCA outputs.
 
-![Seat Shaker page showing the output and content buttons, response chart, and PEQ table](images/ui-seat-shaker.png)
+![Seat Shaker page showing the output and content buttons, response chart, and PEQ table](images/ui-seat-shaker.jpg)
 
 ## Output
 

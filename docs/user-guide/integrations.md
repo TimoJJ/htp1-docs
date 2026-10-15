@@ -14,11 +14,9 @@ HTP-1 does not perform either of these roles; it is only the output device.
 Select the **Roon** input on the HTP-1, then pick the HTP-1 as the output zone in Roon. It appears
 in Roon's device list under whatever you've set as your **Unit Name** on the Device Settings page.
 
-The Roon input works like any other input on the HTP-1: you can apply any of the upmixers to
-expand a stereo Roon stream across your speaker layout, or leave it at **Direct** to pass the
-source sample rate through unchanged. Every other upmixer resamples to 48 kHz (or 44.1 kHz), and
-any loaded Dirac Live filter also caps output at 48 kHz — so a stream above that rate only stays
-at its original rate with Direct selected and Dirac Live off.
+The Roon input uses the same listening modes as other inputs. Choose **No Upmix** to play without
+upmixing. For high-resolution playback at the source sample rate, also switch Dirac Live off. See
+[Sample Rates and No Upmix](upmix.md#sample-rates-and-no-upmix) for the processing limits.
 
 !!! note
     Streaming at 44.1 kHz can be less stable through the Dirac Live path than 48 kHz. If you see
@@ -33,7 +31,7 @@ The HTP-1 serves a simple remote control page for phones and tablets at
 `http://<your-htp1-ip>/remote/`. It gives you a lightweight way to control volume, bass, upmixer, center/surrounds/heights level, and
 power without loading the full web UI.
 
-![Mobile Remote page showing playback and volume controls](images/remote.png){ width="50%" style="display: block; margin: 0 auto;" }
+![Mobile Remote page showing playback and volume controls](images/remote.jpg){ width="50%" style="display: block; margin: 0 auto;" }
 
 ## HTTP Control
 
@@ -54,7 +52,7 @@ More than one code can be sent at once, separated by commas.
     curl "http://<your-htp1-ip>/ircmd?code=7887,4cb3"
     ```
 
-- Select HDMI 1 and set the upmixer to Native:
+- Select HDMI 1 and set the listening mode to Auto:
 
     ```
     curl "http://<your-htp1-ip>/ircmd?code=0ff0,1ee1"

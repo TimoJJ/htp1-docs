@@ -6,7 +6,7 @@ The Upmix page lists the available listening modes, lets you select one, choose 
 as a button on the Home page, and adjust its settings. These modes include upmixing and no
 upmixing. **All Mono** and **All Stereo** distribute the downmixed source across all speakers.
 
-![Upmix page with Auto, No Upmix, Dolby Surround, DTS Neural:X, AURO-3D, All Mono and All Stereo in order, plus Show on Home switches and per-mode controls](images/ui-upmix.png)
+![Upmix page with Auto, No Upmix, Dolby Surround, DTS Neural:X, AURO-3D, All Mono and All Stereo in order, plus Show on Home switches and per-mode controls](images/ui-upmix.jpg)
 
 You request a listening mode through the interface, but the requested mode may not always be
 possible. The current mode is shown in the audio status. This is most often noticed when you

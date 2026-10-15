@@ -51,10 +51,10 @@ This product uses features licensed from several suppliers:
     The HTP-1 is designed to run inside your home network, behind a firewall or router. Do not
     expose it directly to the internet.
 
-The HTP-1 does not hold an open connection to any outside service. It reaches the internet only
-when it checks for or downloads a software update, and when you submit feedback from the web
-interface. Everything else — the web interface, the mobile remote, Dirac Live calibration, and
-control from a home automation system — happens on your own network.
+The web interface, mobile remote, and local automation controls communicate with the HTP-1 over your
+home network. Features that use online services require internet access, including software updates,
+Bass EQ catalogue browsing, and retrieving addons from configured repositories. Third-party
+applications and services may have their own network and privacy requirements.
 
 ## Regulatory Compliance
 

@@ -11,14 +11,14 @@
 
 ## Front Panel Display
 
-![Front panel touchscreen controls](images/fp-p01-1.png)
+![Front panel touchscreen controls](images/fp-main.png)
 
 The touchscreen shows the current input, program format, volume, upmix selection, and other system status information, and doubles as a set of touch controls:
 
 - **Help icon (top right):** Tap to open the Help screen, which shows network information and lets you reset the network connections. The icon turns red when no network connection is available.
 - **Peak monitoring icon (top left):** Tap to start or stop Peak Monitor. While active, the display shows the highest peak level and its channel. See [Peak Monitor](peak-monitor.md#front-panel-display) for details.
 - **Input source display (top center):** Tap to show video input details. This area also shows if the signal generator is on. Tap twice to view detailed playback and processing information.
-- **Master volume level (center):** Tap to mute your HTP-1. Tap again to unmute. When muted, the display changes from white to red. The displayed value is the current master volume. 0 dB represents the configured **Reference Output Voltage**; negative values indicate attenuation below that level.
+- **Master volume level (center):** Tap to mute your HTP-1. Tap again to unmute. When muted, the display changes from white to red. The displayed value uses the Zero Point scale configured in [Volume Setup](volume-setup.md). Reference Output Voltage describes a 0 dBFS sine wave at internal 0 dB master volume; it is not a measurement of the current audio output.
 - **Input format (middle left):** Tap to show more details.
 - **Output format (middle right):** Tap to show more details.
 - **Audio input details (bottom left):** Tap to show more information about the audio input. Tap twice to view detailed playback and processing information.
@@ -58,13 +58,13 @@ The remote's color buttons provide shortcuts to several front-panel functions. S
 1. **POWER:** Press the **POWER** button to turn the unit on or to put it into standby mode.
 2. **USER INPUTS:** Press the number buttons to select individual inputs. The numbers map to the visible inputs, from left to right, on the web interface Home page. Press the **LAST** button to select the last input used.
 3. **INFO:** Press the **INFO** button once for playback details and twice for audio processing status.
-4. **COLORS:** The **Red**, **Green**, and **Yellow** remote buttons control the front panel: **Red** displays the debug screen, **Green** displays audio processing status, and **Yellow** reloads the front panel. The **Blue** button resets the HDMI subsystem.
+4. **COLORS:** **Red** toggles front-panel Peak Monitor, **Green** toggles the live Level Meter, and **Yellow** shows detailed audio processing information. **Blue** resets the HDMI subsystem. See [Remote Color Button Functions](reference.md#color-buttons-and-a-d-preset-buttons).
 5. **HDMI+:** Press the **HDMI+** button to cycle forward through the eight HDMI® inputs as well as the TV input. When using this button the interface will display the HDMI input that will be selected after a short timeout period expires (about 3 seconds). This allows the user to rotate through the input options without actually changing the input (which can slow things down). This delayed input change only applies to this button, not any of the other + buttons.
 6. **SURROUND MODES:** Press the buttons to select the **NATIVE**, **DTS**®, **DIRECT**, **DOLBY**®, or **AURO-3D**® surround modes.
 7. **SPDIF+:** Press the **SPDIF+** button to cycle forward through the digital audio inputs. The cycle order is **COAXIAL 1**, **COAXIAL 2**, **COAXIAL 3**, **OPTICAL 1**, **OPTICAL 2**, **OPTICAL 3**, and **AES/EBU**.
 8. **MASTER:** Press the **+** button to increase the **MASTER** volume level or press the **-** button to decrease the **MASTER** volume level.
 9. **LETTERS:** The **A**, **B**, **C**, and **D** buttons run whatever is assigned to those slots on the **Macros** page.
-10. **DIRAC:** Press the **DIRAC** button to cycle Dirac Live between on, bypass, and off.
+10. **DIRAC:** Press the **DIRAC** button to cycle Dirac Live through Off → On → Bypass → Off.
 11. **NIGHT:** Pressing the **NIGHT** button rotates between off, auto, and on. Night mode is designed for low volume movie viewing. See more details under *Audio Features*.
 12. **LOUD:** Press the **LOUD** button to enable or disable Loudness mode, which boosts low and high frequencies for low volume music listening. This is described in more detail under *Audio Features*.
 13. **BT PAIR:** Press the **BT PAIR** button to initiate Bluetooth® pairing.
@@ -79,7 +79,7 @@ The remote's color buttons provide shortcuts to several front-panel functions. S
 
 The web interface is where you configure the HTP-1 and where day-to-day control happens from a phone, tablet, or computer. Reach it by typing `http://` followed by the HTP-1's IP address into a browser's address bar — for example, `http://192.168.1.101/`. The front panel display shows the current IP address (tap the Help icon in the top right). Some browsers default to `https://`, which will not work; type `http://` explicitly. Pages within the interface use hash-style addresses, such as `http://<your-htp1-ip>/#/settings/speakers` — bookmark the plain `http://<your-htp1-ip>/` address rather than a settings page.
 
-![HTP-1 web interface Home page](images/ui-home.png)
+![HTP-1 web interface Home page](images/ui-home.jpg)
 
 ### Home Page
 
@@ -97,19 +97,20 @@ Which of these rows appear, and in what order, is controlled from the **Personal
 
 ### Settings
 
-Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page to open the settings area. It replaces the Home page with a **sidebar** down the left side and the selected settings page on the right. The sidebar lists **Home** at the top, then twenty pages in three groups, then **Power Off** at the bottom:
+Click the **gear** icon (labeled **Settings**) in the top-left corner of the Home page to open the settings area. It replaces the Home page with a **sidebar** down the left side and the selected settings page on the right. The sidebar lists **Home** at the top, then settings and other pages organized by task, with **Power Off** at the bottom:
 
 | Group | Pages |
 |---|---|
 | Speakers & audio | Speakers, Calibration, Channel Levels, Signal Generator, PEQ, Seat Shaker, Bass EQ, Tone Control, Loudness, Upmix |
-| Setup | Inputs, Network, Macros, Personalize, Volume Setup, Peak Monitor, Device Settings, Configs |
+| Setup | Inputs, Network, Macros, Personalize, Volume Setup, Peak Monitor, Device Settings |
+| Optional features | [Addons](addons.md) |
 | Status & help | System Status, Help |
 
 Once you are inside settings, a small line of text at the top of the screen — `<volume> dB · <input> · <upmix>` — shows current status and links back to Home. A row of **shortcut icons** also sits in the top-right corner; which pages appear there is chosen on the Personalize page, so you can jump straight to the pages you use most.
 
 ### System Status, Help and Power
 
-![Help page showing the full sidebar and page-by-page help sections](images/ui-help.png)
+![Help page showing the full sidebar and page-by-page help sections](images/ui-help.jpg)
 
 The **?** button in the top-right corner of every page opens **Help**, a set of sections — one per settings page — that explains the controls on the page you came from.
 

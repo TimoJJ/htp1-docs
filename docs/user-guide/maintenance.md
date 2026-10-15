@@ -2,97 +2,126 @@
 
 ## Checking Your Version
 
-Open [System Status](system-status.md) to see the software version currently running, under
-**System Software Version**. If a newer release is available, an **Update available** badge
-appears next to the **Open History page** button.
+Open [System Status](system-status.md) to see the software version currently installed and whether
+a newer release is available.
 
-## Reading Release Notes
+Click **Check for updates** to refresh the information. If the release server is unreachable, the
+page explains the problem and may show information from the last successful check.
 
-Click **Release Notes**, next to the software version, to see what changed in the current
-release — new features, fixes, and any known issues. Read these before updating, especially if
-you rely on a feature that could be affected.
+## Version History
 
-## Performing an Update
+Click **Version history** on the System Status page to see available software releases.
 
-Click **Open History page** on the System Status page. This opens a separate page listing
-available software releases.
+Version history lists available firmware versions, release dates, release notes, and installation
+options. Enable **Show release candidates and betas** to include versions that are still being tested.
+These may contain new features and fixes but are not yet final releases.
 
-Releases on the **master** branch are recommended for most users. **Preview**, **Beta** und **Release Candidate** releases are also
-listed; these are newer builds still being tested, and are meant for owners who want to help find
-problems before a release reaches master. Choose a release from the list to install it. You will
-be asked to confirm before the update starts.
+## Installing an Update
+
+Select the version you want to install and click **Install**. You can also reinstall the currently
+installed version or return to an older version listed in Version history.
+
+Review the release notes before installing, then confirm your selection.
+
+Version history is also accessible while the HTP-1 is in standby through
+**View version history and install updates**.
 
 !!! tip
-    Export a configuration backup before updating, in case anything needs to be restored
-    afterward. See [Backup and Restore](configs.md).
+    Export your configuration before updating. See [Backup and Restore](configs.md).
+    Configuration exports do not include Dirac Live filter files.
 
 ## What to Expect
 
-Once an update starts, the web UI switches to a full-screen progress view with a status message
-and a progress bar. This can take several minutes depending on what changed in the release. Don't
-close the browser tab or power down the unit while this is showing — the unit reboots on its own
-when the update finishes.
+During installation, the web interface displays progress messages and a progress bar. Installation
+may take several minutes. Do not disconnect power while the update is running.
 
-User settings, input names, and calibrations are preserved across a normal update.
+The HTP-1 restarts automatically when installation finishes. Open browser tabs reconnect and reload
+when the unit becomes available again.
+
+During startup, you may see **HTP-1 is starting** or **Preparing Dirac Live filters**.
+
+The first startup after updating may take longer because the HTP-1 checks its stored Dirac Live
+filters and prepares missing filter versions.
+
+Your existing settings and calibrations are preserved during a normal firmware update.
 
 ## Upgrading from Version 1.x
 
-Moving from the version 1.x software to the version 2 software is a one-time procedure with a few
-extra steps. The update backs up your existing system so you can roll back, but take your own
-backup first if you have spent time configuring the unit.
+Moving from version 1.x to version 2 replaces the Dirac Live filter system. Existing version 1.x
+filters cannot be used by version 2; you will need to run a new Dirac Live calibration.
 
-Export your settings from the [Backup and Restore](configs.md) page before you begin. You can also
-export your existing Dirac Live filters from that page as an extra copy. Those exports are in the
-older filter format and cannot be loaded into the new system, but they are worth keeping.
+This is a one-time migration. If your HTP-1 already runs version 2.x, use the normal update procedure
+above.
 
-![Configs page showing the export and import controls](images/art-p05-1.png)
+Before starting, export your configuration and keep your Dirac Live project files separately. A
+configuration JSON export does not include the Dirac Live filters.
 
-Then perform the update in two stages:
+### Prepare and Install
 
-1. Open **History and Updates** from the [System Status](system-status.md) page. It can take a few
-   moments for the list to appear. If it times out the first time, try again.
-2. Install the release labeled **final non-ART build** first. This creates the backup files that let
-   you revert later.
-3. When that finishes, a new release supporting Dirac Live ART becomes available. Install it.
+1. While still running version 1.x, use its software-update controls to install **version 1.13.3**.
+   This release includes fixes for the upgrade process and speaker-layout preservation.
 
-Your existing Dirac Live filters are preserved, and you can revert to the earlier software if you
-need to.
+2. After the update finishes, open the **Info / Detailed Status** page and follow the
+   **ART Preparation** link. If you previously declined the upgrade, use **Prepare for ART Upgrade**.
+
+    ![Legacy version 1.13.3 ART Upgrade Preparation screen](images/legacy-1-13-3-art-upgrade-preparation-detail.jpg)
+
+    *Legacy version 1.13.3 — ART Upgrade Preparation for upgrading from version 1.x.*
+
+3. Before initiating the upgrade, follow the preparation page's link to the filter-save dialog.
+   Click **prepare for download**, wait for preparation to finish, then save the files for your
+   occupied filter slots to your computer. Audio is interrupted during preparation. These files are
+   useful only if you return to version 1.x; they cannot be imported into version 2.
+
+4. Return to **ART Upgrade Preparation**, read the information provided, and click **Initiate Upgrade!**
+
+5. Allow the installation and automatic restarts to finish. Do not disconnect power during the upgrade.
+
+6. Once version 2 is running, check the installed version on **System Status**. Use **Version history**
+   to install a newer public release if needed, following the normal update procedure above.
 
 ### Your First Calibration Afterward
 
-No Dirac Live filters are loaded when the new software starts for the first time. To be sure the
-unit begins in a consistent state, change the speaker layout twice before calibrating: select a
-layout you do not intend to use, then switch to the layout you want to calibrate. Preparing an
-unused layout takes about 30 seconds. This is only needed once.
+Check that the **Speakers** page shows your intended speaker layout before starting Dirac Live.
+Correct the layout if necessary and wait for any configuration operation to finish.
 
-!!! tip
-    Each time you change the speaker layout, the filter cache is cleared and reloaded for the new
-    layout. With large speaker configurations this takes a while — loading six filters for a 7.3.6
-    layout can take up to 10 minutes. If you want to compare layouts, keep one or two calibrations
-    per layout to reduce the wait.
+Run a new Dirac Live calibration and transfer the resulting filters to the HTP-1. The filters used
+under version 1.x are not available for playback under version 2.
+
+Review your Volume Setup and Calibration settings after migration. The upgrade resets
+calibration-related configuration, so do not assume that every previous value has carried over.
+
+If Dirac Live reports a problem, follow the status message and recovery action on the **Calibration**
+page. See [Dirac Live](dirac.md#dirac-live-status).
+
+!!! warning "Returning to version 1.x"
+    Returning to version 1.x requires the dedicated downgrade procedure rather than a normal
+    version-history installation. It removes the version 2 filters and attempts to restore the
+    pre-upgrade filters. Restoration is not guaranteed. Keep your downloaded version 1.x filter
+    backups and Dirac Live project files separately.
 
 ## Support
 
 ### Downloading Logs
 
-Open **Device Settings**, then the **Danger Zone** section, and click **Download Logs**. This
-downloads `quicklogs.zip`, a set of logs useful for troubleshooting. It does not contain any
-personally identifiable information.
+Open **Device Settings → Danger Zone** and click **Download Logs**. This downloads a diagnostic ZIP
+archive containing logs and the current configuration. Its filename includes the unit's serial number
+and the download date and time. Review the archive before sharing it publicly.
 
 Send this file along when you report a problem — it gives the development team the detail needed
 to reproduce and diagnose it.
 
-### Submitting Feedback
+### Community Discussion
 
-When the HTP-1 is in standby, the web UI shows a **Quick Links** list with a **Submit Feedback**
-link. This opens a form hosted on the unit at `http://<your-htp1-ip>/feedback`.
-
-!!! note
-    This form is not a customer support request — think of it as a suggestion box. It's optional
-    and anonymous unless you choose to leave a contact address. If you need help with a problem,
-    include your contact details or reach out to support directly as well.
+Much of the HTP-1 owners' discussion about setup, troubleshooting, features, and software updates
+takes place in the
+[AVS Forum HTP-1 owners thread](https://www.avsforum.com/threads/the-official-monoprice-monolith-htp-1-owners-thread.3112176/).
+You can also find this link under **Discussion** on the [System Status](system-status.md) page.
 
 ### On-Device Help
 
-Every page has a **Help** entry in the sidebar, and a "?" icon that jumps straight to the section
-for the page you're on.
+Click the **?** icon to open Help for the current page in a side panel without leaving your
+settings.
+
+To browse all available Help topics, select **Help** in the settings sidebar. The online User Manual
+provides more detailed explanations.
