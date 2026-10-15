@@ -168,10 +168,11 @@
   margin-top: 0.9rem;
 }
 
+/* Match the visible artwork height, allowing for padding inside each asset. */
 .md-typeset .product-hero .format-logos img[alt="Dolby Atmos"] { height: 21px; width: auto; }
-.md-typeset .product-hero .format-logos img[alt="DTS:X"]       { height: 31px; width: auto; }
+.md-typeset .product-hero .format-logos img[alt="DTS:X"]       { height: 34px; width: auto; }
 .md-typeset .product-hero .format-logos img[alt="Auro-3D"]     { height: 28px; width: auto; }
-.md-typeset .product-hero .format-logos img[alt="Dirac"]       { height: 28px; width: auto; }
+.md-typeset .product-hero .format-logos img[alt="Dirac"]       { height: 42px; width: auto; }
 
 /* --- Tables --------------------------------------------------------------- */
 
