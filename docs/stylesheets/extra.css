@@ -168,10 +168,14 @@
   margin-top: 0.9rem;
 }
 
-.md-typeset .product-hero .format-logos img[alt="Dolby Atmos"] { height: 21px; width: auto; }
-.md-typeset .product-hero .format-logos img[alt="DTS:X"]       { height: 31px; width: auto; }
-.md-typeset .product-hero .format-logos img[alt="Auro-3D"]     { height: 28px; width: auto; }
-.md-typeset .product-hero .format-logos img[alt="Dirac"]       { height: 28px; width: auto; }
+/* Proportional logo sizing, as in the front-panel logos.html study:
+   visible width = 45px * (visible aspect ratio ** 0.525).
+   These asset widths also account for the embedded white/transparent padding. */
+.md-typeset .product-hero .format-logos img { height: auto; }
+.md-typeset .product-hero .format-logos img[alt="Dolby Atmos"] { width: 126px; }
+.md-typeset .product-hero .format-logos img[alt="DTS:X"]       { width: 91px; }
+.md-typeset .product-hero .format-logos img[alt="Auro-3D"]     { width: 121px; }
+.md-typeset .product-hero .format-logos img[alt="Dirac"]       { width: 107px; }
 
 /* --- Tables --------------------------------------------------------------- */
 
