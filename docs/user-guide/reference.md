@@ -41,7 +41,11 @@ configurations: no Dirac Live, Room Correction (RC), Bass Management (BM), and B
 Active Room Treatment (BC/ART). A clearer picture of how the system operates helps you achieve the
 most accurate and effective calibrations for your specific needs.
 
-![HTP-1 signal flows for the four Dirac Live configurations. Channel controls (signal generator, channel trim, tone, pre PEQ, loudness) sit upstream of the bass manager; speaker controls (post PEQ, lipsync delay, user delay, user trim, peak meter) sit downstream. In BC/ART mode, post PEQ, user delay, and user trim are locked down after calibration](images/art-p07-1.png)
+[![HTP-1 signal flow for the four Dirac Live configurations](images/htp1-signal-flow-261016.png)](images/htp1-signal-flow-261016.pdf)
+
+*HTP-1 signal flow, revised 16 October 2026. Pre and Post are alternative positions for the same PEQ filters.*
+
+[Open full-resolution signal-flow diagram (PDF)](images/htp1-signal-flow-261016.pdf)
 
 Pre and Post are alternative positions for the same PEQ filters; they are not two PEQ stages
 operating together. Pre PEQ processes channel signals before bass management and Dirac Live.

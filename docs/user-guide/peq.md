@@ -33,7 +33,9 @@ The PEQ page shows a response chart for the bands you have set. Two buttons abov
 - **Chart** — a read-only plot of the combined response.
 - **Editor** — an interactive chart where you can drag a band's marker to change its frequency and gain, and drag its edges to change Q. The Editor is available when grouping **By Channel** on wider screens. Phone layouts keep the chart and the numeric fields and sliders.
 
-![PEQ page in Editor mode, showing draggable band markers on the response chart](images/ui-peq-editor-crop.png)
+![PEQ Editor showing two example filters and the selected band’s frequency, gain and Q handles](images/ui-peq-editor-crop.png)
+
+*PEQ Editor with two example filters. Drag a numbered marker to change frequency and gain, or its side handles to adjust Q. Values are illustrative, not recommended settings.*
 
 Two more buttons control what the chart displays:
 
