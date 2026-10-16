@@ -53,7 +53,7 @@ This table lists every version number that identifies your unit:
 
 | Field | What it is |
 | --- | --- |
-| System Software | The main firmware version, for example `V2.1.1`. |
+| System Software | The main firmware version, for example `V2.2.0`. |
 | Node-RED GUI | The build of the control and automation layer. |
 | avController | The version of the component that manages audio control and device state. |
 | APM Module | The version of the audio processing module. |
