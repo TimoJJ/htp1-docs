@@ -62,6 +62,9 @@ Each active speaker gets a row. Columns:
 | Total Trim | Calibration trim plus user trim. |
 | Mute Speaker | Mutes the speaker. Only shown when **Show Advanced Settings** is on. |
 
+New User Delay edits round to the nearest 0.1 ms, and User Trim edits to the nearest 0.5 dB,
+including Bulk Edit. Existing saved values are preserved until explicitly edited.
+
 Trim adjusts output levels, while delay compensates for differences in speaker distance based on the
 speed of sound — roughly one foot per millisecond, or 0.34 m/ms. A properly completed Dirac Live
 calibration sets optimal delay and trim automatically, so user delay and user trim should normally
