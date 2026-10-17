@@ -10,21 +10,49 @@ page explains the problem and may show information from the last successful chec
 
 ## Version History
 
-Click **Version history** on the System Status page to see available software releases.
+Open **Version history** from **System Status**. In standby, select
+**View version history and install updates**. The page's return link takes you back to
+**System Status** or standby, depending on the unit's current power state.
 
-Version history lists available firmware versions, release dates, release notes, and installation
-options. Enable **Show release candidates and betas** to include versions that are still being tested.
-These may contain new features and fixes but are not yet final releases.
+### Reading the Release List
+
+Each entry shows the version, available release date and release stage. **Installed** identifies
+the release on your unit; **Newer than installed** identifies later releases. Expand
+**Release notes** beneath an entry to read its changes. If notes are unavailable, the entry says so.
+
+**Show release candidates and betas** includes nonfinal releases that are still being tested.
+It is enabled initially. Turning it off hides other nonfinal entries, but your installed release
+and releases newer than it remain visible. A visible entry is therefore not necessarily a final
+release; check its release stage before installing.
+
+Select **Show … older versions** below the list to reveal the remaining entries. Versions before
+2.0 are not listed. To return to the 1.x series, follow the **Downgrade page** link and the
+[version 1.x downgrade precautions](#upgrading-from-version-1x); do not use a normal release
+installation for that migration.
+
+### Refreshing and Connection Problems
+
+Select **Check for updates** to refresh release information. **Last checked** shows when the
+information was checked. If the release server is unreachable, the warning reports the failed
+check and the list comes from the last successful check; newer releases may be missing. Check
+the HTP-1's internet connection and select **Check for updates** again.
+
+If software information cannot be loaded, select **Try again**. If no releases are found, check
+the unit's internet connection and refresh the list.
 
 ## Installing an Update
 
-Select the version you want to install and click **Install**. You can also reinstall the currently
-installed version or return to an older version listed in Version history.
+1. Read the selected release's **Release notes** and check its release stage.
+2. Select **Install** for a listed newer or older release, or **Reinstall** for your current release.
+3. In the confirmation, compare **Installed now** with **Will install**. Select **Cancel** to leave
+   the current version unchanged, or **Install** followed by the version number to proceed.
+4. Wait for installation and the automatic restart to finish. Confirm the installed version on
+   **System Status** when the interface reconnects.
 
-Review the release notes before installing, then confirm your selection.
-
-Version history is also accessible while the HTP-1 is in standby through
-**View version history and install updates**.
+!!! warning "Returning to an older release"
+    Settings saved by newer software may not carry over to older software. Export your configuration
+    before changing versions and review the selected release's requirements. Returning to version
+    1.x requires the separate downgrade procedure described above.
 
 !!! tip
     Export your configuration before updating. See [Backup and Restore](configs.md).
@@ -33,7 +61,8 @@ Version history is also accessible while the HTP-1 is in standby through
 ## What to Expect
 
 During installation, the web interface displays progress messages and a progress bar. Installation
-may take several minutes. Do not disconnect power while the update is running.
+may take several minutes. Audio and HDMI pass-through stop while the unit restarts.
+Do not disconnect power while the update is running.
 
 The HTP-1 restarts automatically when installation finishes. Open browser tabs reconnect and reload
 when the unit becomes available again.
