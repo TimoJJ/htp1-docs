@@ -32,10 +32,15 @@ amplifiers on and off.
 Each trigger can have its own name, automatic power-on setting, and power-on delay of up to 10 seconds.
 Disable **Auto-on** if you don't want a trigger to activate automatically when the HTP-1 starts.
 
-**Manual control** lets you switch individual trigger outputs on or off.
+Auto-on is enabled for all four triggers by default, with delays of 0, 1, 2 and 3 seconds. A saved
+delay has no effect while Auto-on is off; triggers with equal delays activate together. Changes to
+Auto-on or delay apply at the next power-on, including when waking from standby, and do not alter an active sequence. Manual switching
+acts immediately while the unit is on without changing the saved startup settings; switching a
+trigger during startup cancels its pending automatic activation. Output changes can be recorded in
+macros.
 
-Automatic power-on settings and delays take effect the next time the HTP-1 powers on, including when
-waking from standby. Longer delays also keep audio muted longer while the amplifiers start.
+After wake from standby, audio stays muted until automatic trigger activation finishes and a short
+settling time has passed. If every Auto-on switch is off, there is no trigger-related mute hold.
 
 ## Display
 
@@ -47,8 +52,10 @@ the original layout; alternative themes offer additional display options.
 
 For an alternative theme, **Front Panel Mini-Labels** lets you turn the labels on or off, choose what
 each label displays, reorder them, and set their on-state colors. **Front Panel Text Color** changes
-the text color throughout the alternative front-panel screens. Use **Restore Defaults** to restore
-the alternative display options.
+the text color throughout the alternative front-panel screens.
+
+For alternative themes, **Restore Defaults** turns mini-labels on, restores their default
+configuration, and resets front-panel text to white.
 
 ## Time Zone
 
@@ -63,6 +70,7 @@ The Danger Zone holds tools for troubleshooting and reset. Each asks you to conf
 |---|---|
 | Download Logs | Downloads a diagnostic ZIP archive containing logs and the current configuration. See [Downloading Logs](maintenance.md#downloading-logs). |
 | Restart Dirac Live Server | Restarts the Dirac Live server if you're seeing issues with Dirac Live filters. Takes about 30 seconds. |
+| Reload Dirac Live Filters | Reload Dirac Live Filters reloads the selected calibration for the current source sample rate and then re-enables filtering. Audio is muted briefly while it loads. Use the recovery action offered for the current status. |
 | Restart avController | Restarts the avController component — the part of the system that handles most day-to-day control. Faster than a full reboot, taking about 60 seconds. |
 | Factory Reset | Resets all settings to factory defaults and reboots the unit automatically. Network settings are left unchanged. |
 
