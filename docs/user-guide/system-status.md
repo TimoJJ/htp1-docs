@@ -17,7 +17,11 @@ When a new release is available, the page offers an installation button and info
 has changed.
 
 Select **Version history** to browse previous releases, read their release notes, or install a
-different version.
+different version. It identifies the installed release and newer versions, lets you show release
+candidates/betas and older entries, and offers **Reinstall** for the current release. The same page
+is available in standby through **View version history and install updates**. See
+[Version History](maintenance.md#version-history) for the controls, installation consequences and
+older-version precautions.
 
 If the release server cannot be reached, System Status displays a warning rather than reporting
 that the software is up to date. See [Updates and Support](maintenance.md) for the full update
