@@ -83,11 +83,12 @@ meters, and adjust until peaks land close to 0 dBFS without crossing it.
 
 ## Peak Monitor and Seat Shaker
 
-The Seat Shaker XLR output and the Seat Shaker Mix Out RCA output use different volume control, which affects how you check for clipping:
+The XLR outputs combine analog and digital volume control. Full configured digital headroom is
+retained only up to Highest playback volume that preserves digital headroom in Volume Setup; above
+it, the reserve decreases. Volume-dependent processing such as Loudness can affect peak readings.
 
-- The **XLR outputs** use analog volume control up to the digital headroom limit as explained above. Clipping on the XLR outputs can be checked at any master volume.
-- The **Mix Out RCA output** uses digital volume control. Because its level changes with the master volume, check for clipping at the loudest master volume you plan to use.
+For Seat Shaker on Mix Out RCA, check digital clipping at the loudest master-volume level you plan
+to use. Peak Monitor does not detect analog output-stage clipping.
 
 !!! warning "Hearing safety"
-    To protect your hearing and your speakers, mute all speakers on the
-    [Calibration](calibration.md) page before setting headroom for the seat shaker RCA outputs.
+    Mute all speakers on [Calibration](calibration.md) before setting headroom for the Seat Shaker RCA outputs.

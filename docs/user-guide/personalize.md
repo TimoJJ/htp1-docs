@@ -35,6 +35,9 @@ shown or hidden, along with every other settings page.
 If the Power Off shortcut is turned on, choose which buttons appear in the power dialog:
 Shutdown, Sleep, Restart, and Cancel.
 
+These choices affect only the dialog opened from the Power Off navigation shortcut. Other ways of
+opening the Power dialog show all options.
+
 ## Sound Controls
 
 Choose which buttons appear in the Home page’s Sound Controls section: Dirac Live, PEQ, Tone Control,
@@ -57,7 +60,7 @@ any additional macros you have created. See [Macros](macros.md).
 |---|---|
 | Dark Mode | Switches the web UI (other than the Home page, which is always dark) between light and dark display styles. |
 | Vertical Padding | Adjusts the row spacing used in tables throughout the web UI, from 0 to 0.4 rem. |
-| Restore All Dismissed Notices | Brings back any on-page notices you have dismissed. |
+| Restore All Dismissed Notices | Restores optional tips hidden on this HTP-1. Dismissals are saved on the unit and shared by all browsers. |
 
 ## User CSS
 
@@ -66,5 +69,6 @@ appearance of the web UI beyond what Dark Mode and Vertical Padding offer.
 
 ## Preview
 
-A live, scaled copy of the Home page sits next to the settings on this page, so you can check
-each change as you make it.
+The preview shows the compact Home layout. On wide screens it stays beside the controls and can be
+scrolled independently; on smaller screens it appears below them. Desktop labels, navigation
+shortcuts and Power Off dialog buttons are not included.

@@ -124,15 +124,17 @@ setting to keep the signal below this threshold for optimal performance without 
 
 ## Setting Levels and Headroom
 
-The two output paths use different volume control, which changes how you check for clipping:
+The XLR outputs combine analog and digital volume control. Full configured digital headroom is
+preserved up to Highest playback volume that preserves digital headroom, shown in Volume Setup.
+Above that threshold, available headroom decreases and clipping may occur. Loudness and other
+volume-dependent processing can also change peak readings.
 
-- The **XLR outputs** use analog volume control up to a digital headroom limit. XLR clipping can be
-  checked at any volume.
-- The seat shaker signal on the **Mix Out RCA** uses digital volume control. Its level changes with
-  master volume, so clipping is only displayed accurately when the master volume is set to the
-  loudest level you plan to use.
+The Seat Shaker signal on Mix Out RCA uses digital volume control. Check it at the loudest master-volume
+level you plan to use. Peak Monitor measures digital sample peaks, not analog output-stage
+clipping.
 
 !!! warning "Hearing safety"
-    To protect your hearing and your speakers, mute all speakers on the
-    [Calibration](calibration.md) page before setting headroom for the seat shaker RCA outputs.
+    To protect your hearing and speakers, mute all speakers on [Calibration](calibration.md)
+    before setting headroom for the Seat Shaker RCA outputs. Large EQ boosts can also cause
+    clipping.
     See also [Safety](safety.md).

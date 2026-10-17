@@ -57,9 +57,12 @@ Each band has the following controls:
 | Center Frequency | 15–20000 Hz | New edits use whole-Hz steps. |
 | Gain | −63 to 20 dB | New edits use 0.5 dB steps. A gain of 0 dB is equivalent to bypassing the filter. |
 | Q | 0.1–10 | Hidden for filter types that don't use Q. |
-| Filter Type | PEQ, Low Shelf, High Shelf | |
+| Filter Type | PEQ, Low Shelf, High Shelf, All Pass 1st Order, All Pass 2nd Order, LPF, HPF | Available fields depend on type. |
 | Bypass | on/off | Turns the individual band off without losing its settings. |
 | Reset | — | Resets that one band back to a flat, unmodified state. |
+
+Available frequency, gain and Q fields depend on the selected type. Frequency sets the center or
+corner, gain the boost or cut, and Q the bandwidth or response shape.
 
 An inline slider panel (the gear icon on each row) gives you frequency, gain and Q sliders with step buttons, if you prefer dragging to typing numbers.
 
@@ -83,6 +86,9 @@ The PEQ page offers several import and export operations, at different scopes:
 - **Import Band PEQ Configuration to Band {n}**
 - **Import Channel PEQ Configuration or REW Filter to Channel {name}** (or to all linked channels, if any are linked) — this accepts both the HTP-1's own channel export format and a filter file exported from Room EQ Wizard (REW).
 - **Import Full PEQ Configuration File**
+
+The selected channel can also be exported as a Dirac Live target curve. This produces a target-curve
+file for the Dirac Live app; it does not export a Dirac Live calibration.
 
 !!! tip
     Importing a REW filter file is a fast way to bring in PEQ bands you designed in REW.

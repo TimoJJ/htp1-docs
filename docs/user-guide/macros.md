@@ -14,8 +14,10 @@ editor, shown as a row in the Remote Buttons accordion.
 
 ### Recording a Macro
 
+Only one remote-button editor is open at a time.
+
 1. Open the editor for the slot you want to use and turn on **Record**.
-2. Make the setting changes you want the macro to reproduce, anywhere in the web UI.
+2. With Record on, actions made using the physical remote or the WebUI are recorded.
 3. Turn **Record** off.
 
 Recording appends commands to the macro's existing list. Review the commands, then press **Save** to
@@ -36,7 +38,7 @@ wherever the macro is shown — on the remote-triggered slot, on the Home page, 
 Inputs page.
 
 Press **Save** to keep your changes, or **Clear All Commands** to empty the macro and start
-over.
+over. After **Clear All Commands**, select **Save** to store the empty sequence.
 
 ## Additional Macros
 
