@@ -1,2 +1,4 @@
 mkdocs-material>=9.5
 mkdocs-glightbox>=0.4
+# 1.0.1 detaches images while mkdocs-glightbox wraps them in links.
+selectolax==1.0.0

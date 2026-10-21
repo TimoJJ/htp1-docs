@@ -4,7 +4,7 @@ The approved default-state 1200 px captures have been adopted. They use the unmo
 (0b726dc, assembled build 3f128c9b) with isolated settings seeded from the firmware's
 empty-state initialization. They are not captures of a physically factory-reset unit.
 The capture viewport was 1200 × 900 CSS pixels; full-page images can be taller.
-No physical-unit configuration was changed. Hardware-default confirmation remains pending.
+No physical-unit configuration was changed. Physical factory-default confirmation is deferred until after the final v2.2 release.
 
 ## Adopted
 
@@ -100,8 +100,8 @@ No screenshots are required for those features.
 
 Both captures use the shipped WebUI in the isolated preview. The preview supplies the
 firmware-derived output mapping needed to render the map; no physical-unit settings
-were changed. Physical-default confirmation remains pending, as do release captures
-and safe recovery captures. Third-party Dirac app replacements remain deferred until
+were changed. Physical factory-default confirmation is deferred until after the final v2.2 release. Release captures
+and safe recovery captures were completed in the later rc1 batches below. Third-party Dirac app replacements remain deferred until
 after release.
 
 ## Available detail captures
@@ -131,7 +131,7 @@ customer unit without a development remote; no physical settings were changed.
 - [ ] Current third-party Dirac app workflow images — deferred until after release.
 - [x] Signal-flow diagrams reviewed for Pre/Post PEQ placement; current figure clarified and historical figure warning strengthened.
 - [x] Remaining hardware and measurement figures reviewed; retained without replacement.
-- [ ] Confirm source-seeded defaults against a physical unit.
+- [ ] Physical factory-default confirmation — deferred until after the final v2.2 release. Source-derived effective-default verification is complete; no reset has been performed.
 - [x] Rendered-page and image-readability review completed at 1200 px; four approved caption/context corrections applied.
 
 The Home status cards are blank because the isolated default preview has no audio stream.
@@ -161,4 +161,4 @@ All unfinished screenshot items listed above remain pending.
 - [x] `ui-device-settings.jpg`: approved 1200 px isolated rc1 capture now shows all four trigger outputs On, representing settled power-on with the default Auto-on settings and 0/1/2/3-second delays. Fast Start remains On and Video Passthrough remains Off.
 - [x] Device Settings → Power now identifies Fast Start On as the software default, consistent with rc1 initialization and the screenshot.
 
-No physical-unit settings were changed. Physical-default confirmation and third-party Dirac app replacements retain their pending/deferred status above; no other outstanding item is closed by this update.
+No physical-unit settings were changed. Physical factory-default confirmation is deferred until after the final v2.2 release. Third-party Dirac app replacements retain their separate deferred status above; no other outstanding item is closed by this update.
