@@ -58,7 +58,7 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 
     Make sure to include `http://` explicitly, as some browsers default to `https://`, which will not work. You can also scan the displayed QR code with your mobile phone to open the web interface directly.
 
-    Bookmark the plain address rather than a settings page, since pages within the interface use hash-mode addresses such as `http://htp-1.local/#/settings/speakers`.
+    Bookmark the main address, such as `http://htp-1.local/`, rather than an individual settings page. Use the web interface’s navigation to open settings.
 
 16. If your source connected to HDMI 1 is playing, you should see the front panel and the Home page describe the program format and the listening format. The front panel should display -50dB as the default initial volume.
 

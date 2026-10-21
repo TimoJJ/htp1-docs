@@ -120,24 +120,30 @@ Bass Control and ART are optional, separately licensed upgrades.
 
     ![Dirac Live app measure screen showing measurement positions and a completed frequency response](images/p52-1.jpg)
 
-    If the volume is too low, the calibration will fail for "missing samples" or "poor signal to
-    noise ratio". If it's too high, it will fail with clipping. If a run fails, go back to the
-    volume page and adjust. Also check that your speaker configuration is correct: if you set up
-    for 7.1.4 but have only 7.1.2, the missing speakers show as "missing samples".
+    If the volume is too low, the calibration may fail with “missing samples” or “poor
+    signal-to-noise ratio.” If it is too high, it may fail with clipping. Return to
+    **Measurement Levels** and adjust. Dirac Live resets **Master output** to its initial
+    −34 dB value when you return to this screen, so you may need to restore the level you
+    established earlier.
+
+    Also check your speaker configuration: if you configure 7.1.4 but have only 7.1.2,
+    the missing speakers can cause “missing samples” errors.
 
 9. The Dirac Live app encourages multiple sweep locations. Try a calibration with one location
     first to become familiar with the process, then do a full set of measurement locations for a
     better correction.
-10. Proceed to the **Filter Design** screen, select **Bass management**, and see the correction Dirac Live suggests. You can drag
-    the left and right endpoints, investigate the cutoff frequency for your speakers, and grab the
-    dots to adjust the target curve. With Dirac Live Bass Management you can drag the crossover
-    point and recalculate. Dirac Live's default target curve has a slight downward tilt at the low
+10. Proceed to **Filter Design**, select **Bass management**, and review the correction Dirac Live
+    suggests. Drag the left and right correction limits to set the frequency range over which
+    Dirac Live applies correction. These limits do not set the speakers’ crossover frequencies.
+    Drag the target-curve points to change the desired response. With Bass Management, you can
+    also adjust the crossover point and recalculate. Dirac Live's default target curve has a slight downward tilt at the low
     end; most users want more bass than that default:
 
     ![Dirac Live app Filter Design screen with Bass management selected and a front-speaker crossover](images/p53-1.jpg)
 
-11. The "groups" at the right let you view one set of speakers at a time.
-    Review the target curve and crossover response for each speaker group.
+11. The groups on the right let you review and adjust speakers together. You can move speakers
+    between groups; the destination group’s target curve and crossover settings then apply to
+    those speakers. Review the target curve and crossover response for each group.
 
 12. Choose a slot to store this calibration in. The HTP-1 has up to six Dirac Live filter slots
     (the exact number is shown on the Calibration page heading). You can store calibrations for
@@ -155,7 +161,7 @@ Bass Control and ART are optional, separately licensed upgrades.
     a different serial number, but you can ignore the warning that results from changing the name.
 15. Close the Dirac Live app. The read-only banner on the HTP-1 should clear. If it doesn't, launch
     the Dirac Live app again, then close it.
-16. Open the HTP-1 web UI and go to **Calibration** (`#/settings/calibration`). If a calibration
+16. Open the HTP-1 web interface and go to **Settings → Calibration**. If a calibration
     does not match your current speaker layout, the page displays a warning. Check your speaker
     configuration and the calibration you selected.
 17. The calibration delay and trim values shown are what Dirac Live measured, applied whenever that

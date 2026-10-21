@@ -10,7 +10,7 @@ When describing the playback system, the HTP-1 uses the second number to indicat
 
 Speaker layouts without subwoofers or height speakers are commonly written using fewer fields. For example, **5.0** is equivalent to **5.0.0**, and **5.1** is equivalent to **5.1.0**.
 
-The **Speakers** page (`/#/settings/speakers` in the sidebar) is a great reference for understanding various speaker layouts, and is where you enable speakers and set their size and crossover. See [Speaker Setup](speaker-setup.md) for the full walkthrough.
+The **Speakers** page under **Settings** is a great reference for understanding various speaker layouts, and is where you enable speakers and set their size and crossover. See [Speaker Setup](speaker-setup.md) for the full walkthrough.
 
 ![Speakers page showing the Bass Manager badge, Dirac Live button group, speaker layout table, and speaker map](images/ui-speakers.jpg)
 

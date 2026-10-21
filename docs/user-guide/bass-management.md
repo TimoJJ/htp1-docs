@@ -14,7 +14,7 @@ The bass management system acknowledges that many speakers cannot reproduce low 
 
 ## Where the Controls Are
 
-The HTP-1 bass manager's controls are on the **Speakers** page (`/#/settings/speakers`):
+The HTP-1 bass manager's controls are on **Settings → Speakers**:
 
 - **Speaker size and crossover:** use **Edit Speaker Layout** to choose Large, Small, or Dolby. Selecting Small or Dolby reveals the crossover-frequency control, which determines where that speaker's bass is redirected.
 - **LPF for LFE Channel and Reinforce Bass:** these additional controls appear in the **Bass Manager** section below the speaker layout table.
@@ -73,7 +73,7 @@ A tactile transducer ("seat shaker") output can be assigned to one of the subwoo
 The seat shaker channel normally consumes one of the 16 available output channels. Alternatively, the **Mix Out** outputs can be configured as the seat shaker output, leaving all 16 speaker output channels available. The seat shaker appears in the speaker layout table with a couch icon instead of a checkbox, and is highlighted yellow (not green) on the Speaker Map. It is excluded from Dirac Live calibrations and receives no Dirac Live filter correction while Dirac Live is enabled.
 
 !!! note
-    Bass EQ (`/#/settings/bass-eq`, sidebar entry **Bass EQ**) is a separate feature: it pulls filters from an online catalog to bring back low-frequency content that may have been reduced during post-production. It is not the same thing as bass management, and does not appear on the Speakers page.
+    **Bass EQ**, also available under **Settings**, is a separate feature: it pulls filters from an online catalog to bring back low-frequency content that may have been reduced during post-production. It is not the same thing as bass management, and does not appear on the Speakers page.
 
 !!! tip
     Redirecting several channels' worth of bass into one or two subwoofers is a common cause of clipping on the sub channels. If you hear distortion during bass-heavy scenes, check the sub channels on the Peak Monitor page (sidebar entry **Peak Monitor**).

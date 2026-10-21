@@ -1,6 +1,6 @@
 # Speaker Setup
 
-Open the **Speakers** page from the sidebar (`/#/settings/speakers`). This is where you configure the speaker layout, specify the location of each speaker, and define its size. Speaker size determines whether a speaker is treated as **Large** (full-range) or **Small** (bass-managed). For speakers configured as **Small**, bass below the user-selected crossover frequency is redirected by the bass management system to the configured subwoofer(s) or, if no subwoofer is present, to speakers configured as **Large**.
+Open **Settings → Speakers** in the web interface. This is where you configure the speaker layout, specify the location of each speaker, and define its size. Speaker size determines whether a speaker is treated as **Large** (full-range) or **Small** (bass-managed). For speakers configured as **Small**, bass below the user-selected crossover frequency is redirected by the bass management system to the configured subwoofer(s) or, if no subwoofer is present, to speakers configured as **Large**.
 
 ![Speakers page showing the Bass Manager badge, Current Layout readout, and Edit Speaker Layout button](images/ui-speakers.jpg)
 
