@@ -77,7 +77,7 @@ The remote's color buttons provide shortcuts to several front-panel functions. S
 
 ## Web Interface
 
-The web interface is where you configure the HTP-1 and where day-to-day control happens from a phone, tablet, or computer. Reach it by typing `http://` followed by the HTP-1's IP address into a browser's address bar — for example, `http://192.168.1.101/`. The front panel display shows the current IP address (tap the Help icon in the top right). Some browsers default to `https://`, which will not work; type `http://` explicitly. Pages within the interface use hash-style addresses, such as `http://<your-htp1-ip>/#/settings/speakers` — bookmark the plain `http://<your-htp1-ip>/` address rather than a settings page.
+The web interface is where you configure the HTP-1 and where day-to-day control happens from a phone, tablet, or computer. Reach it by typing `http://` followed by the HTP-1's IP address into a browser's address bar — for example, `http://192.168.1.101/`. The front panel display shows the current IP address (tap the Help icon in the top right). Some browsers default to `https://`, which will not work; type `http://` explicitly. Bookmark the main `http://<your-htp1-ip>/` address rather than an individual settings page, and use the web interface’s navigation to open settings.
 
 ![HTP-1 web interface Home page](images/ui-home.jpg)
 

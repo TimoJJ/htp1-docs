@@ -227,7 +227,7 @@ the web UI itself.
     `/ircmd` has no authentication. The HTP-1 is designed to sit inside your home network — do not
     expose it directly to the internet.
 
-Web UI page addresses are hash-mode, for example `http://<your-htp1-ip>/#/settings/speakers`.
+Open the HTP-1’s main web address and use **Settings → Speakers** to configure speakers.
 
 ## Custom Presets, Macros, and Bass EQ
 
