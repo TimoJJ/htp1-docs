@@ -10,7 +10,9 @@ The **Current Settings** table shows the wired connection's Hostname, IP Address
 Network Cable is Connected or Disconnected, and the interface's MAC Address.
 
 !!! note
-    In earlier system software builds the wired network interface could fail to obtain an IP address if connected to a gigabit Ethernet port. This problem has been resolved in the latest software. If your unit still fails to get an IP address by DHCP when cold-booted, you have a few options. Often unplugging the Ethernet cable for a few seconds and then plugging it back in will result in your router assigning an address. You can also configure the switch or router port it is connected to for 100 Mbit/s. When you have updated to the latest software you will not have this problem.
+    Version 2.2.0 restores gigabit Ethernet operation after updating and restarting the HTP-1.
+    Earlier releases limited the connection to 100 Mbit/s to work around a compatibility problem.
+    If DHCP still fails, check the cable and router or switch, then try reconnecting the Ethernet cable.
 
 Under **Configuration for Wired Network**, leave **Use DHCP** on to obtain network settings automatically.
 

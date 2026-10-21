@@ -31,7 +31,8 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 4. Using a Cat5e or Cat6 Ethernet cable (not included), plug one end into the ETHERNET jack on the rear panel, then plug the other end into your Wi-Fi® router or Ethernet switch.
 
     !!! note
-        In earlier system software builds the wired network interface could fail to obtain an IP address if connected to a gigabit Ethernet port. This problem has been resolved. If your unit still fails to get an IP address by DHCP when cold-booted, you have a few options. Configure the switch or router port it is connected to for 100 Mbit/s. Often unplugging the Ethernet cable for a few seconds and then plugging it back in will result in your router assigning an address. You can also reset the HTP-1's network interfaces from the **Help** screen by tapping the **?** icon on the front panel and selecting **Reset Network**.
+        Version 2.2.0 restores gigabit Ethernet operation. For connection problems and older-software
+        workarounds, see [Network → Ethernet](network.md#ethernet).
 
 5. Using an HDMI Cable (not included), plug one end into the input on your HDMI® display, then plug the other end into HDMI OUTPUT 1 on the rear panel. A "Premium High Speed" HDMI cable is specified for UHD/4K operation.
 
@@ -44,7 +45,7 @@ The best way to become familiar with the HTP-1 is to simply start using it! Befo
 9. Ensure that the Master Power Switch on the rear panel is in the OFF position (O side depressed).
 10. Plug the included AC Power Cord into the C14 power connector on the rear panel, then plug the other end into a nearby AC power outlet.
 11. Plug in and power on all connected devices. Start video playback on your video source device.
-12. Flip the Master Power Switch on the rear panel to the ON position (I side depressed) to boot the system. You should see the Monolith logo displayed on the front panel within seconds after pressing the power switch. The front panel power switch should begin flashing blue. After about a minute the display should show "Almost Ready". Finally the front panel will display the main screen. Once the unit has finished booting, the Front Panel LCD Display will look similar to the display in the [Product Overview](product-overview.md) section. The blue light on the front panel power switch goes dark again when the unit is ready.
+12. Flip the Master Power Switch on the rear panel to the ON position (I side depressed) to boot the system. You should see the Monolith logo displayed on the front panel within seconds after pressing the power switch. The front panel power switch should begin flashing blue. Startup normally takes about a minute. During startup, you may see **Almost Ready**, **HTP-1 is starting**, or **Preparing Dirac Live filters** before the main screen appears. The first startup after updating can take several minutes while missing Dirac Live filter versions are prepared. Once the unit has finished booting, the Front Panel LCD Display will look similar to the display in the [Product Overview](product-overview.md) section. The blue light on the front panel power switch goes dark again when the unit is ready.
 13. For normal operation, use the Power/Standby Button on the front panel to turn the unit on or put it into standby, rather than using the Master Power Switch on the rear panel.
 
     **Fast Start** controls startup time and standby power consumption. See [Device Settings → Power](device-settings.md#power) for the differences between the two standby modes and how to enable Fast Start.

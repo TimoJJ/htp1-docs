@@ -311,6 +311,10 @@ After a firmware update, the HTP-1 checks the filters for the current speaker la
 any missing versions. This can take several minutes during the first startup. Missing versions may
 also be prepared automatically when the unit is idle.
 
+Missing filters normally load automatically when nothing is playing. If the selected input
+continuously reports playback, the interface offers **Load now**. Loading pauses room correction
+for a few seconds.
+
 When changing speaker layouts, the HTP-1 transfers the required filters to the audio processor.
 The progress display identifies the filter being loaded and shows an estimated remaining time when
 available.
