@@ -125,7 +125,9 @@ customer unit without a development remote; no physical settings were changed.
 
 ## Remaining screenshot work
 
-- [ ] Dirac recovery states, only when safely reproducible.
+- [x] Dirac recovery details: Filter Missing, Load now, and Service Down. Approved crops use
+  exact shipped rc1 assets and isolated status fixtures at a 1200 px viewport. No physical
+  fault was induced and no recovery action was executed.
 - [ ] Current third-party Dirac app workflow images — deferred until after release.
 - [x] Signal-flow diagrams reviewed for Pre/Post PEQ placement; current figure clarified and historical figure warning strengthened.
 - [x] Remaining hardware and measurement figures reviewed; retained without replacement.

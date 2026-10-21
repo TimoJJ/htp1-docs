@@ -315,6 +315,8 @@ Missing filters normally load automatically when nothing is playing. If the sele
 continuously reports playback, the interface offers **Load now**. Loading pauses room correction
 for a few seconds.
 
+![Dirac Live filter preparation message offering Load now for an input that continuously reports playback](images/ui-dirac-load-now-crop.png)
+
 When changing speaker layouts, the HTP-1 transfers the required filters to the audio processor.
 The progress display identifies the filter being loaded and shows an estimated remaining time when
 available.
@@ -365,6 +367,10 @@ If Dirac Live reports a problem, open the **Calibration** page and read the disp
 - **Load Interrupted:** Load the filter again when prompted.
 - **Service Down or Setup Failed:** Use **Restart Dirac Live Server** when offered.
 - **Cache Damaged:** The stored calibration may need to be transferred again from the Dirac Live app.
+
+![Dirac Live Filter Missing message with the Load 48 kHz filter recovery button](images/ui-dirac-filter-missing-crop.png)
+
+![Dirac Live Service Down message with the Restart Dirac Live Server recovery button](images/ui-dirac-service-down-crop.png)
 
 Some filter loads may be refused when no audio is playing. If a load cannot be completed, start
 playback and try the suggested recovery action again.
