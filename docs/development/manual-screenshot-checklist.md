@@ -155,3 +155,10 @@ Page overviews and native front-panel captures are unchanged.
 - [x] `ui-export-preview-crop.png`
 
 All unfinished screenshot items listed above remain pending.
+
+## Adopted effective-defaults correction
+
+- [x] `ui-device-settings.jpg`: approved 1200 px isolated rc1 capture now shows all four trigger outputs On, representing settled power-on with the default Auto-on settings and 0/1/2/3-second delays. Fast Start remains On and Video Passthrough remains Off.
+- [x] Device Settings → Power now identifies Fast Start On as the software default, consistent with rc1 initialization and the screenshot.
+
+No physical-unit settings were changed. Physical-default confirmation and third-party Dirac app replacements retain their pending/deferred status above; no other outstanding item is closed by this update.
