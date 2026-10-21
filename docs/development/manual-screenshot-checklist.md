@@ -113,17 +113,21 @@ pending active-state illustrations.
 - `ui-context-help.jpg`
 - `ui-peak-monitor-off.jpg`
 
-## Pending release captures
+## Adopted rc1 release captures
 
-These placeholders are tracking assets, not product screenshots. The existing
-System Status screenshot remains until a suitable public-release capture is available.
+- [x] System Status: `ui-system-status.png`.
+- [x] Version history: `ui-version-history.png`.
 
-- [ ] System Status: [placeholder](../user-guide/images/pending/ui-system-status-pending.png).
-- [ ] Version history: [placeholder](../user-guide/images/pending/ui-version-history-pending.png).
+Approved 1200 px captures use the exact public V2.2.0 Release Candidate 1 WebUI
+(9055a744, public release 1cc90056) in an isolated default-setting preview. Release
+and hardware metadata were read from the physical unit. The preview represents a
+customer unit without a development remote; no physical settings were changed.
 
 ## Remaining screenshot work
 
-- [ ] Dirac recovery states, only when safely reproducible.
+- [x] Dirac recovery details: Filter Missing, Load now, and Service Down. Approved crops use
+  exact shipped rc1 assets and isolated status fixtures at a 1200 px viewport. No physical
+  fault was induced and no recovery action was executed.
 - [ ] Current third-party Dirac app workflow images — deferred until after release.
 - [x] Signal-flow diagrams reviewed for Pre/Post PEQ placement; current figure clarified and historical figure warning strengthened.
 - [x] Remaining hardware and measurement figures reviewed; retained without replacement.
@@ -151,3 +155,10 @@ Page overviews and native front-panel captures are unchanged.
 - [x] `ui-export-preview-crop.png`
 
 All unfinished screenshot items listed above remain pending.
+
+## Adopted effective-defaults correction
+
+- [x] `ui-device-settings.jpg`: approved 1200 px isolated rc1 capture now shows all four trigger outputs On, representing settled power-on with the default Auto-on settings and 0/1/2/3-second delays. Fast Start remains On and Video Passthrough remains Off.
+- [x] Device Settings → Power now identifies Fast Start On as the software default, consistent with rc1 initialization and the screenshot.
+
+No physical-unit settings were changed. Physical-default confirmation and third-party Dirac app replacements retain their pending/deferred status above; no other outstanding item is closed by this update.
