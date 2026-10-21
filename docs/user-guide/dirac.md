@@ -92,10 +92,11 @@ Bass Control and ART are optional, separately licensed upgrades.
     noise floor without clipping. A good target is roughly 20 dB of separation between the ambient
     noise floor and the test signal, with more being better if the room is quiet.
 
-    1. Start with the master output low and raise the microphone gain until the background noise is
-       just below the -50 dB mark, or barely peaking above it. If the room is noisy, reduce the mic
-       gain and use a louder test signal level; if the room is quiet, you can use more mic gain and a
-       lower test signal level.
+    1. Start with **Master output** low and adjust **Mic gain** until the background noise is just
+       below the −50 dB mark, or barely peaking above it. Depending on your microphone and room,
+       you may need to reduce or increase the gain. If the room is noisy, reduce the mic gain and
+       use a louder test signal level; if the room is quiet, you can use more mic gain and a lower
+       test signal level.
     2. Move all speaker and subwoofer channel sliders to their maximum, then turn the subwoofer's
        own gain or level control down as a precaution. If the subwoofer has a low-pass filter, make
        sure it is switched off or set to the highest value.
