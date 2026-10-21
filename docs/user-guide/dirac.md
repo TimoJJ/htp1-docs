@@ -34,6 +34,20 @@ the best sound out of your system.
 - A calibrated USB microphone is required. Using an uncalibrated mic, or a laptop's built-in mic,
   will skew the frequency response of your system.
 
+### Multiple Subwoofers with Dirac Live Bass Management
+
+Connect all subwoofers to a **single HTP-1 subwoofer output**, using a suitable signal splitter,
+distribution device, or the subwoofers’ supported daisy-chain connections. Enable only that one
+subwoofer output in the HTP-1 speaker configuration. Dirac Live then measures and corrects the
+subwoofers together as one system.
+
+With separate subwoofer outputs, regular Room Correction and Bass Management optimize each
+subwoofer independently. They do not optimize how the subwoofers combine acoustically, so the
+combined response can differ substantially from the individual responses shown in the Dirac Live app.
+
+This recommendation also applies to Room Correction used with the HTP-1’s own bass manager.
+Bass Control and ART provide joint optimization and support individually connected subwoofers.
+
 Dirac® calibration requires a PC or Mac laptop running the Dirac Live app with an external mic
 attached to the laptop.
 
@@ -44,14 +58,17 @@ attached to the laptop.
 
 Complete the [basic setup](basic-setup.md) first — be able to play sound through your speaker set.
 
-The Dirac Live application screenshots below show an earlier app version. Screen appearance may
-differ in the version you install.
+These steps use Dirac Live Room Correction with Bass Management, included with the HTP-1.
+Dirac Live handles room correction, speaker delays and levels, and bass management, including
+crossovers. When this calibration is active, it replaces the HTP-1’s own bass manager.
+
+Bass Control and ART are optional, separately licensed upgrades.
 
 1. Download and install the Dirac Live app: <https://live.dirac.com/download/>. Use the latest
    version for the best results.
 2. Attach a calibrated USB microphone to the computer.
-3. Launch Dirac Live and log in. The ownership of the HTP-1 conveys a license for basic Dirac Live
-   usage.
+3. Launch Dirac Live and log in. The HTP-1 includes Dirac Live Room Correction
+   with Bass Management.
 4. Open Dirac Live and connect to the Monolith HTP-1. The Dirac Live app finds the HTP-1 using
    common networking protocols. The name it shows is the HTP-1's name, set on the **Device
    Settings** page.
@@ -63,15 +80,15 @@ differ in the version you install.
    tells you this, and the front panel and remote still work for volume. Closing the Dirac Live app
    restores normal control.
 
-    ![Earlier HTP-1 web interface showing a calibration session connected](images/p51-1.jpg)
+    ![HTP-1 web interface showing the Dirac Live calibration-connected read-only banner](images/p51-1.jpg)
 
-    *Earlier HTP-1 interface: a connected Dirac Live calibration session temporarily limits web controls.*
+    *A connected Dirac Live calibration session temporarily puts the HTP-1 web interface into read-only mode.*
 
 7. Set the volumes for calibration. The volume control on the left side of the Dirac Live screen
    matches the one on the remote control — you can adjust it with the remote. The app sets the
    volume initially to -34 dB.
 
-    Use the Dirac Live **Volume Calibration** screen to make sure the test signal is well above the room
+    Use the Dirac Live **Measurement Levels** screen to make sure the test signal is well above the room
     noise floor without clipping. A good target is roughly 20 dB of separation between the ambient
     noise floor and the test signal, with more being better if the room is quiet.
 
@@ -111,18 +128,16 @@ differ in the version you install.
 9. The Dirac Live app encourages multiple sweep locations. Try a calibration with one location
     first to become familiar with the process, then do a full set of measurement locations for a
     better correction.
-10. Proceed to the **Filter Design** screen and see the correction Dirac Live suggests. You can drag
+10. Proceed to the **Filter Design** screen, select **Bass management**, and see the correction Dirac Live suggests. You can drag
     the left and right endpoints, investigate the cutoff frequency for your speakers, and grab the
     dots to adjust the target curve. With Dirac Live Bass Management you can drag the crossover
     point and recalculate. Dirac Live's default target curve has a slight downward tilt at the low
     end; most users want more bass than that default:
 
-    ![Dirac Live app filter design screen with an adjusted target curve raising the low end](images/p53-1.jpg)
+    ![Dirac Live app Filter Design screen with Bass management selected and a front-speaker crossover](images/p53-1.jpg)
 
-11. The "groups" at the right let you view one set of speakers at a time. The spread between
-    measurements shows where more work is needed on the crossover and target curve.
-
-    ![Dirac Live app filter design screen showing the spread between measurements, with a dip at the crossover](images/p53-2.jpg)
+11. The "groups" at the right let you view one set of speakers at a time.
+    Review the target curve and crossover response for each speaker group.
 
 12. Choose a slot to store this calibration in. The HTP-1 has up to six Dirac Live filter slots
     (the exact number is shown on the Calibration page heading). You can store calibrations for
@@ -131,7 +146,7 @@ differ in the version you install.
     UI, so choose something meaningful to you. The description is not visible in the HTP-1 UI, but
     you can add your own note to the slot afterward — see [Calibration: Notes](calibration.md#notes).
 
-    ![Dirac Live app filter export screen showing the calibration slots](images/p54-1.jpg)
+    ![Dirac Live app export form for slot 1 with Movie Night as the example filter name](images/p54-1.jpg)
 
 13. Export the filter. This takes a minute or two. When complete, the resulting filter is installed
     and enabled on the HTP-1. You can see this on the [Calibration](calibration.md) page.
