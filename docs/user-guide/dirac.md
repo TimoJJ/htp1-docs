@@ -103,10 +103,12 @@ Bass Control and ART are optional, separately licensed upgrades.
        that channel plays at a comfortable level. The noise plays for about 30 seconds; press play
        again if you need to. Then click the play button for each speaker in turn and note which one
        is the softest. Omit the subwoofer for this step.
-    4. Click the play button for the softest speaker and raise the master output until that channel
-       reaches at least roughly -20 to -30 dB on the meter, which is about 20 dB above the noise
-       floor. Then click the play button for the left speaker and reduce its level so it also falls
-       into that range. Repeat this for all other speakers except the subwoofer.
+    4. Click the play button for the softest speaker and raise **Master output** until its test
+       signal is at least 20 dB above the room’s noise floor. Greater separation is better,
+       provided playback remains comfortable and the input does not clip. In the illustrated
+       example, this results in readings around −20 to −30 dB. Then play each other speaker in
+       turn and reduce its channel level to match the softest speaker. Leave the subwoofer for
+       the next step.
     5. Move the subwoofer channel slider roughly to the same value as the loudest speaker, then click
        the play button for the subwoofer and turn the subwoofer's own gain or level knob up until it
        also reaches the same target range. Do not use the Dirac Live subwoofer slider for this step;
