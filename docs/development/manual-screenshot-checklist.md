@@ -101,8 +101,7 @@ No screenshots are required for those features.
 Both captures use the shipped WebUI in the isolated preview. The preview supplies the
 firmware-derived output mapping needed to render the map; no physical-unit settings
 were changed. Physical factory-default confirmation is deferred until after the final v2.2 release. Release captures
-and safe recovery captures were completed in the later rc1 batches below. Third-party Dirac app replacements remain deferred until
-after release.
+and safe recovery captures were completed in the later rc1 batches below. Third-party Dirac app replacements were completed in the Bass Management batch below.
 
 ## Available detail captures
 
@@ -128,7 +127,7 @@ customer unit without a development remote; no physical settings were changed.
 - [x] Dirac recovery details: Filter Missing, Load now, and Service Down. Approved crops use
   exact shipped rc1 assets and isolated status fixtures at a 1200 px viewport. No physical
   fault was induced and no recovery action was executed.
-- [ ] Current third-party Dirac app workflow images — deferred until after release.
+- [x] Current third-party Dirac Live app workflow images — approved Bass Management walkthrough adopted; see capture notes below.
 - [x] Signal-flow diagrams reviewed for Pre/Post PEQ placement; current figure clarified and historical figure warning strengthened.
 - [x] Remaining hardware and measurement figures reviewed; retained without replacement.
 - [ ] Physical factory-default confirmation — deferred until after the final v2.2 release. Source-derived effective-default verification is complete; no reset has been performed.
@@ -161,4 +160,27 @@ All unfinished screenshot items listed above remain pending.
 - [x] `ui-device-settings.jpg`: approved 1200 px isolated rc1 capture now shows all four trigger outputs On, representing settled power-on with the default Auto-on settings and 0/1/2/3-second delays. Fast Start remains On and Video Passthrough remains Off.
 - [x] Device Settings → Power now identifies Fast Start On as the software default, consistent with rc1 initialization and the screenshot.
 
-No physical-unit settings were changed. Physical factory-default confirmation is deferred until after the final v2.2 release. Third-party Dirac app replacements retain their separate deferred status above; no other outstanding item is closed by this update.
+No physical-unit settings were changed. Physical factory-default confirmation is deferred until after the final v2.2 release. Third-party Dirac app replacements were completed in the Bass Management batch below; no other outstanding item is closed by this update.
+
+
+## Adopted Dirac Live Bass Management walkthrough
+
+- [x] Device discovery, Measurement Levels, one completed measurement position, Bass Management Filter Design, and export-form details from Dirac Live 3.15.1.
+- [x] Current WebUI read-only calibration banner from a 1200 px isolated preview.
+- [x] Removed the obsolete Spread explanation and figure from the walkthrough.
+
+The walkthrough uses one HTP-1 subwoofer output and explains external splitting for
+multiple physical subwoofers with regular Room Correction / Bass Management.
+Account email, installed filters 2–6 and the mouse cursor are excluded. The approved
+Measurement Levels illustration uses an illustrative subwoofer reading and microphone
+noise-floor reading; it does not document a measured subwoofer level. The irrelevant
+ART recommendation was removed from the measurement image.
+
+One measurement position was captured with the user's approval. No filter was exported.
+The temporary one-subwoofer layout was restored to the original 5.2.0 layout; the
+original settings and filter metadata were verified, apart from regenerated internal
+filter IDs for slots 3–6. The project was saved separately.
+
+Physical factory-default confirmation remains deferred until after the final v2.2
+release. Aaron's disabled volume-calibration wizard remains outside the manual and
+untouched; it requires further work before inclusion.
