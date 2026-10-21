@@ -44,6 +44,9 @@ extra_css:
 extra_javascript:
   - javascripts/copy-link.js
 
+hooks:
+  - hooks/preserve_images.py
+
 markdown_extensions:
   - admonition
   - attr_list
