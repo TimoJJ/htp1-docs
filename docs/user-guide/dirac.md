@@ -1,20 +1,12 @@
 # Dirac Live
 
-The Monolith™ HTP-1 supports Dirac Live® room correction. Using a calibrated microphone, the system
-listens to the response of your room and your speakers and applies corrections to make the system
-more linear and hence more correct. Calibration itself is done with the Dirac Live app on a PC or
-Mac; the result is transferred to a filter slot on the HTP-1, described in
-[Calibration](calibration.md).
+Dirac Live helps your speakers perform better in your room. Using a calibrated microphone, it measures how the speakers and room affect the sound at several positions around your listening area.
 
-The calibration system addresses several aspects of the system:
+From these measurements, Dirac Live sets speaker levels and delays and creates correction filters. These filters adjust the tonal balance (frequency response) toward a target curve you can choose. They can also correct certain timing and phase problems that ordinary equalization cannot address.
 
-1. **It sets the delays on the speakers.** Sound travels about one foot per millisecond. The delays are designed to ensure that sound from all speakers reaches your ears at the same time. If the delays are not set correctly you are likely to perceive a sound in the center as coming from one side or the other.
-2. **It sets the trim for each speaker.** Different speakers and amplifiers produce a different sound level for a given amplifier power. Distance also plays a role. Speaker trims are included so that the same sound from each speaker reaches your ears with the same loudness.
-3. **It corrects the frequency response of the system.** The frequency response of speakers is often not flat. The Dirac Live system measures the frequency response and renders it flatter.
-4. **It provides measurements of the frequency response of each of your speakers**, allowing you to set up the crossovers in the bass manager. The frequency response measurement reveals the low-frequency performance (the cutoff frequency) of each speaker. This is the information you need to set up bass management.
+Calibration is done with the Dirac Live app on a PC or Mac. The resulting filters are stored in a calibration slot on the HTP-1 and applied during playback when enabled.
 
-You should do a Dirac Live calibration. Setting up your speakers correctly is a key part of getting
-the best sound out of your system.
+Dirac Live can reduce audible problems, particularly in the bass, but it cannot fix everything. Speaker placement, crossover settings, and room acoustics still matter.
 
 !!! note
     Screenshots on this page illustrate the calibration steps. The appearance of the Dirac Live
